@@ -1,0 +1,20 @@
+{
+  "name": "@ajhalili2006/tildeverse-web",
+  "version": "0.1.0",
+  "description": "Personal website for my tildes + Gemini version of blog posts",
+  "scripts": {
+    "dev": "mkdocs serve",
+    "build": "mkdocs build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@git.sr.ht/~ajhalili2006/tildeweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://todo.sr.ht/~ajhalili2006/tildeweb"
+  },
+  "homepage": "https://git.sr.ht/~ajhalili2006/tildeweb#readme"
+}

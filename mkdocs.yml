@@ -1,0 +1,54 @@
+# basics
+site_name: ~ajhalili2006 on tildeverse
+site_url: https://ajhalili2006.vern.cc/
+site_dir: public_html
+copyright: >
+  Copyright &copy; 2022-present - Andrei Jiroh Halili and contributors, licensed under the
+  <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> license.
+
+docs_dir: markdown
+
+repo_url: https://mau.dev/ajhalili2006/tildeverse-web
+edit_uri: edit/main/markdown
+repo_name: source code
+
+theme:
+  name: material
+  icon:
+    repo: material/gitlab
+  feature:
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg

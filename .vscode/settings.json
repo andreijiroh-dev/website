@@ -1,0 +1,8 @@
+{
+  "yaml.schemas": {
+    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs*.yml"
+  },
+  "marquee.widgets.npm-stats.packageNames": [
+    "@ajhalili2006/tildeverse-web"
+  ]
+}

@@ -1,0 +1,20 @@
+image: alpine/edge
+packages:
+  - openssh-client
+  - python3
+  - py3-pip
+sources:
+  - https://git.sr.ht/~ajhalili2006/tildeweb
+triggers:
+  - action: email
+    condition: always
+    to: Public Inbox <~ajhalili2006/public-inbox@lists.sr.ht>
+    cc: ctrl-c.clib/~ajhalili2006 <ajhalili2006@gmail.com>
+tasks:
+  - build:
+      cd tildeweb && pip3 install -r requirements.txt
+      mkdocs build
+  - deploy:
+      cd tildeweb
+      echo "StrictHostKeyChecking=no" >> ~/.ssh/config
+      echo "TODO: Implement SSH-based deployments over here."
