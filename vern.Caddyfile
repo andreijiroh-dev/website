@@ -1,0 +1,12 @@
+{
+    admin off
+    auto_https off
+    order respond before reverse_proxy
+    #email ${USER}@vern.cc
+    default_bind unix//home/{$USER}/.webserver.sock
+}
+
+http://preview-ajhalili2006.vern.cc {
+    # use an random port here to avoid port collision hellscape
+    reverse_proxy * localhost:18034
+}
