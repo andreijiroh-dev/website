@@ -12,8 +12,16 @@ repo_url: https://mau.dev/ajhalili2006/tildeverse-web
 edit_uri: edit/main/markdown
 repo_name: source code
 
+nav:
+ - Homepage: index.md
+ - "Resume and portfolio": resume.md
+ - Keys: keys/index.md
+ - Blog: "https://blog.andreijiroh.uk.eu.org/?wordpress=1"
+ - "All my links": "https://ajhalili2006.bio.link"
+
 theme:
   name: material
+  custom_dir: overrides
   icon:
     repo: material/gitlab
   feature:
