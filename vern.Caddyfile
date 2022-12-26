@@ -4,6 +4,9 @@
     order respond before reverse_proxy
     #email ${USER}@vern.cc
     default_bind unix//home/{$USER}/.webserver.sock
+    log {
+      format console
+    }
 }
 
 http://preview-ajhalili2006.vern.cc {
