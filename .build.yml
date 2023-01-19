@@ -5,16 +5,22 @@ packages:
   - py3-pip
 sources:
   - https://git.sr.ht/~ajhalili2006/tildeweb
+secrets:
+  - b4ffc5fb-bc8c-4e89-b38a-48b56155a443
 triggers:
   - action: email
     condition: always
-    to: Public Inbox <~ajhalili2006/public-inbox@lists.sr.ht>
-    cc: ctrl-c.clib/~ajhalili2006 <ajhalili2006@gmail.com>
+    to: ~ajhalili2006/public-inbox@lists.sr.ht
+    cc: ajhalili2006@gmail.com
 tasks:
-  - build:
+  - build: |
       cd tildeweb && pip3 install -r requirements.txt
-      mkdocs build
-  - deploy:
+      mkdocs build -d public -f mkdocs.yml && mkdocs build -d public_ctrl-c -f mkdocs.ctrl-c.yml
+  - deploy: |
       cd tildeweb
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
-      echo "TODO: Implement SSH-based deployments over here."
+      eval $(ssh-agent) && ssh-add ~/.ssh/passwordless-auth-sshfs
+      rsync -rP public ajhalili2006@vern.cc:/home/ajhalili2006/public_html/
+      rsync -rP public_ctrl-c ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html/
+      #rsync -rP gmi ajhalili2006@vern.cc:/home/ajhalili2006/public_gemini/
+      #rsync -rP gmi ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_gemini/
