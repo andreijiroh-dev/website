@@ -14,7 +14,8 @@ triggers:
     cc: ajhalili2006@gmail.com
 tasks:
   - build: |
-      cd tildeweb && pip3 install -r requirements.txt
+      cd tildeweb && pip3 install -r requirements.txt --user
+      export PATH="$PATH:$HOME/.local/bin"
       mkdocs build -d public -f mkdocs.yml && mkdocs build -d public_ctrl-c -f mkdocs.ctrl-c.yml
   - deploy: |
       cd tildeweb
