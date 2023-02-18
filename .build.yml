@@ -3,6 +3,8 @@ packages:
   - openssh-client
   - python3
   - py3-pip
+  - py3-wheel
+  - py3-setuptools
 sources:
   - https://git.sr.ht/~ajhalili2006/tildeweb
 secrets:
@@ -13,11 +15,26 @@ triggers:
     to: ~ajhalili2006/public-inbox@lists.sr.ht
     cc: ajhalili2006@gmail.com
 tasks:
+  # in case of triggered from hottub
+  - repo-sync: |
+      cd tildeweb
+      env
+
+      git remote add hub https://github.com/ajhalili2006/tildeverse-web && git pull hub main
+      git remote add lab https://mau.dev/ajhalili2006/tildeverse-web && git pull lab main
+
+      if [ "$BUILD_REASON" != "patchset" ] && [ "$BUILD_SUBMITTER" != "hub.sr.ht" ]; then
+        git remote set-url origin ssh://git@git.sr.ht/~ajhalili2006/tildeweb
+      fi
   - build: |
       cd tildeweb && pip3 install -r requirements.txt --user
       export PATH="$PATH:$HOME/.local/bin"
       mkdocs build -d public -f mkdocs.yml && mkdocs build -d public_ctrl-c -f mkdocs.ctrl-c.yml
   - deploy: |
+      if [ "$BUILD_REASON" != "patchset" ] && [ "$BUILD_SUBMITTER" != "hub.sr.ht" ]; then
+        complete-build
+      fi
+
       cd tildeweb
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
       eval $(ssh-agent) && ssh-add ~/.ssh/passwordless-auth-sshfs
@@ -25,3 +42,4 @@ tasks:
       rsync -rP public_ctrl-c ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html/
       #rsync -rP gmi ajhalili2006@vern.cc:/home/ajhalili2006/public_gemini/
       #rsync -rP gmi ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_gemini/
+      git push origin -o skip-ci

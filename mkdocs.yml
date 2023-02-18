@@ -64,7 +64,13 @@ theme:
 # plugins
 plugins:
   - search
-  - info
+  # debugging/bug reporting purposes only, proceed with caution
+  #- info
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+      fallback_to_build_date: true
+      enable_creation_date: true
+  # TODO: Get Insiders for contributors and authors
 
 # makrdown extensions
 markdown_extensions:
@@ -81,13 +87,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - git-revision-date-localized:
-      enabled: !ENV [CI, false]
-      fallback_to_build_date: true
-      enable_creation_date: true
-  - offline:
-      enabled: !ENV [FF_OFFLINE_MKDOCS_PLUGIN, false]
-  # TODO: Get Insiders for contributors and authors
 
 # extras
 extra:
@@ -117,5 +116,3 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/ajhalili2006
       name: ~ajhalili2006 on linkedin for employers
-
-
