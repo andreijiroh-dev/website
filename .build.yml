@@ -31,7 +31,7 @@ tasks:
       export PATH="$PATH:$HOME/.local/bin"
       mkdocs build -d public -f mkdocs.yml && mkdocs build -d public_ctrl-c -f mkdocs.ctrl-c.yml
   - deploy: |
-      if [ "$BUILD_REASON" != "patchset" ] && [ "$BUILD_SUBMITTER" != "hub.sr.ht" ]; then
+      if [ "$BUILD_REASON" == "patchset" ] && [ "$BUILD_SUBMITTER" == "hub.sr.ht" ]; then
         complete-build
       fi
 
@@ -42,4 +42,6 @@ tasks:
       rsync -rP public_ctrl-c ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html/
       #rsync -rP gmi ajhalili2006@vern.cc:/home/ajhalili2006/public_gemini/
       #rsync -rP gmi ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_gemini/
+
       git push origin -o skip-ci
+      git remote set-url lab ssh://git@mau.dev/ajhalili2006/tildeverse-web && git push lab main
