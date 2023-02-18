@@ -14,6 +14,7 @@ copyright: >
   Copyright &copy; 2022-present - Andrei Jiroh Halili and contributors, licensed under the
   <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> license.
 docs_dir: markdown
+use_directory_urls: true
 
 # repos
 repo_url: https://mau.dev/ajhalili2006/tildeverse-web
