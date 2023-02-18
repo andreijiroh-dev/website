@@ -1,0 +1,5 @@
+# Cloudflare Pages specific config
+INHERIT: mkdocs.yml
+site_name: ~ajhalili2006
+site_url: https://andreijiroh.eu.org
+site_dir: site
