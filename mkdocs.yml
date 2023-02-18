@@ -1,24 +1,38 @@
+# This is the root configuration for my personal website and also the default
+# for userpage at ~vern.
+#
+# SEE ALSO
+#   mkdocs.pages.dev.yml - configuration specifics for cloudflare pages (username dot (uk dot) eu dot org)
+#   mkdocs.ctrl-c.yml - ctrl-c.club/~ajhalili2006
+
 # basics
 site_name: ~ajhalili2006 on tildeverse
 site_url: https://ajhalili2006.vern.cc/
 site_dir: public_html
+site_author: Andrei Jiroh Halili
 copyright: >
   Copyright &copy; 2022-present - Andrei Jiroh Halili and contributors, licensed under the
   <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> license.
-
 docs_dir: markdown
 
+# repos
 repo_url: https://mau.dev/ajhalili2006/tildeverse-web
 edit_uri: edit/main/markdown
 repo_name: source code
 
+# navbar
 nav:
- - Homepage: index.md
- - "Resume and portfolio": resume.md
- - Keys: keys/index.md
- - Blog: "https://blog.andreijiroh.uk.eu.org/?wordpress=1"
- - "All my links": "https://ajhalili2006.bio.link"
+  - Homepage: index.md
+  - Personal user manual:
+    - Readme: user-manual/index.md
+    - "Resume and portfolio": user-manual/resume.md
+    - Keys: keys/index.md
+    - Anything else: https://coda.io/@ajhalili2006/readme
+  - Projects: projects.md
+  - Blog: "https://blog.andreijiroh.eu.org"
+  - "All my links": "https://ajhalili2006.bio.link" # todo update to start.page
 
+# theme
 theme:
   name: material
   custom_dir: overrides
@@ -28,6 +42,10 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.top
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -43,9 +61,12 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
+# plugins
 plugins:
   - search
+  - info
 
+# makrdown extensions
 markdown_extensions:
   - toc:
       permalink: true
@@ -60,3 +81,41 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+      fallback_to_build_date: true
+      enable_creation_date: true
+  - offline:
+      enabled: !ENV [FF_OFFLINE_MKDOCS_PLUGIN, false]
+  # TODO: Get Insiders for contributors and authors
+
+# extras
+extra:
+  # my socials
+  social:
+    - icon: simple/substack
+      link: https://ajhalili2006.substack.com
+      name: ~ajhalili2006's personal substack
+    - icon: fontawesome/brands/mastodon
+      link: https://tilde.zone/@ajhalili2006
+      name: ~ajhalili2006 on tildeverse
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Kuys_Potpot
+      link: ~ajhalili2006 on twitter, under his old username
+    - icon: fontawesome/brands/github
+      link: https://github.com/ajhalili2006
+      name: ~ajhalili2006 on github
+    - icon: fontawesome/brands/gitlab
+      link: https://mau.dev/ajhalili2006
+      name: ~ajhalili2006 on mauinum gitLab instance
+    - icon: fontawesome/brands/git-alt
+      link: https://sr.ht/~ajhalili2006
+      name: ~ajhalili2006 on sr.ht
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/ajhalili2006
+      name: ~ajhalili2006's personal (slash professional profile) facebook account
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/ajhalili2006
+      name: ~ajhalili2006 on linkedin for employers
+
+
