@@ -4,13 +4,16 @@ description: An typical homepage, built with Mkdocs in Markdown.
 ---
 # Well hello there!
 
-I'm ~ajhalili2006 (he/him/they/them) and this is my personal website, statically hosted on [~vern][tilde-vern]
-(with [an mirror on ctrl-c.club][tilde-ctrlc]). This also serves as an mini personal wiki, although I run
+I'm ~ajhalili2006 (he/they[^1]) and this is my personal website, statically hosted on [~vern][tilde-vern]
+(with [an mirror on ctrl-c.club][tilde-ctrlc] and [tilde-agonistic one] via [CF Pages]). This also serves as an mini personal wiki, although I run
 [a wiki over at Miraheze](https://ajhalili2006.miraheze.org) with more content like my user manual, how to
 contact me over encrypted lines of communications and other stuff.
 
 [tilde-vern]: https://ajhalili2006.vern.cc
 [tilde-ctrlc]: https://ctrl-c.club/~ajhalili2006
+[tilde-agonistic one]: https://andreijiroh.eu.org
+[CF Pages]: https://pages.dev
+[^1]: Technically `he/him/they/them`, although I mostly prefer `they/them`. See [communications section of my user manual](./user-manual/communications.md)
 
 ## Directories within this hub
 
