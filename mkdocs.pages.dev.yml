@@ -3,11 +3,3 @@ INHERIT: mkdocs.yml
 site_name: ~ajhalili2006
 site_url: https://andreijiroh.eu.org
 site_dir: site
-
-repo_url: https://github.com/ajhalili2006/tildeverse-web
-edit_uri: edit/main/markdown
-repo_name: source code (gh mirror)
-
-theme:
-  icon:
-    repo: material/github

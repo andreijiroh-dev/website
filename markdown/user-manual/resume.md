@@ -7,3 +7,7 @@ curious on what kind of work I'm doing in the past and present.
 
 * [Resume itself](https://go.recaptime.eu.org/crew/ajhalili2006/resume)
 * [Portfolio](https://go.recaptime.eu.org/crew/ajhalili2006/portfolio)
+
+## Need customized ones?
+
+Contact ~ajhalili2006 over chat or email.

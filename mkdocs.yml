@@ -29,10 +29,14 @@ nav:
     - "Resume and portfolio": user-manual/resume.md
     - Keys: keys/index.md
     - Anything else: https://coda.io/@ajhalili2006/readme
-  - Projects: projects.md
-  - Communities: communities.md
-  - Tildes: tildes.md
+  - Lists:
+    - Projects: projects.md
+    - Communities: communities.md
+    - Tildes: tildes.md
   - Blog: "https://blog.andreijiroh.eu.org"
+  - Misc:
+    - nowpage: now.md
+    - Contact: contact.md
   - "All my links": "https://ajhalili2006.bio.link" # todo update to start.page
 
 # theme
@@ -41,7 +45,7 @@ theme:
   custom_dir: overrides
   icon:
     repo: material/gitlab
-  feature:
+  features:
     - search.suggest
     - search.highlight
     - search.share
@@ -70,7 +74,7 @@ plugins:
   # debugging/bug reporting purposes only, proceed with caution
   #- info
   - git-revision-date-localized:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [FF_ENABLE_COMMIT_DATA, false]
       fallback_to_build_date: true
       enable_creation_date: true
   # TODO: Get Insiders for contributors and authors
@@ -90,6 +94,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - footnotes
+  - md_in_html
+  - admonition
+  - abbr
 
 # extras
 extra:
