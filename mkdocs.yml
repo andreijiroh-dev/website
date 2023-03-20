@@ -23,7 +23,11 @@ repo_name: source code
 
 # navbar
 nav:
-  - Homepage: index.md
+  - Homepage: 
+    - index.md
+    - nowpage: now.md
+    - Contact: contact.md
+    - Portfolio: portfolio.md
   - Personal user manual:
     - Readme: user-manual/index.md
     - "Resume and portfolio": user-manual/resume.md
@@ -34,9 +38,6 @@ nav:
     - Communities: communities.md
     - Tildes: tildes.md
   - Blog: "https://blog.andreijiroh.eu.org"
-  - Misc:
-    - nowpage: now.md
-    - Contact: contact.md
   - "All my links": "https://ajhalili2006.bio.link" # todo update to start.page
 
 # theme
