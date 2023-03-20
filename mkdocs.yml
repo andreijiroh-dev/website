@@ -30,7 +30,7 @@ nav:
     - Portfolio: portfolio.md
   - Personal user manual:
     - Readme: user-manual/index.md
-    - "Resume and portfolio": user-manual/resume.md
+    - Resume: user-manual/resume.md
     - Keys: keys/index.md
     - Anything else: https://coda.io/@ajhalili2006/readme
   - Lists:
