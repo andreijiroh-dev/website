@@ -18,16 +18,18 @@ contact me over encrypted lines of communications and other stuff.
 ## Directories within this hub
 
 * [`/things`](./things) - usually screenshots and personal snippet hosting stuff
-* [`/resume`](./resume) - links to my CV + resume and portfolio
+* [`/resume`](./resume) - links to my CV ([here's for my portfolio](./portfolio.md))
 * [`/projects`](./projects) - information about different projects I currently doing and in the past
-* [`~/public_gcdn/pkgs`](https://gcdn.vern.cc/users/ajhalili2006/pkgs) - personal Linux package repositories, usually as redirect targets from
+* [`~/public_gcdn/pkgs`](https://gcdn.vern.cc/users/ajhalili2006/pkgs)[^2] - personal Linux package repositories, usually as redirect targets from
 `cdn.andreijiroh.eu.org`
 (uptime: ![Website](https://img.shields.io/website?down_color=red&down_message=Not%20reachable&label=cdn.andreijiroh.dev&style=for-the-badge&up_color=light%20green&up_message=Reachable&url=https%3A%2F%2Fajhalili2006-cdnserve.builtwithdark.com))
 * [`/keys`](./keys) - PGP and OpenSSH public keys for identity verification and encryption
 
+[^2]: ~vern is currently experiencing technical diffculties lately, so I might point to Storj DCS in the future.
+
 ## Where to find me elsewhere
 
-See also [his bio.link page][biolink] for all the socials where I'm active and contact details. The badges (and also the footer
+See also [his start.page][startpage-buffer] for all the socials where I'm active and contact details. The badges (and also the footer
 in this website) below has been linked with some of his socials for quick access.
 
 * [Mastodon ![Mastodon Follow](https://img.shields.io/mastodon/follow/108807402634952369?domain=https%3A%2F%2Ftilde.zone&label=%40ajhalili2006%40tilde.zone&logo=mastodon&style=for-the-badge)][mstdn]
@@ -35,5 +37,5 @@ in this website) below has been linked with some of his socials for quick access
 * [Reddit ![Reddit User Karma](https://img.shields.io/reddit/user-karma/combined/andreihalili?logo=reddit&style=for-the-badge)][reddit]
 
 [reddit]: https://reddit.com/user/andreihalili
-[biolink]: https://ajhalili2006.bio.link
+[startpage-buffer]: https://ajhalili2006.start.page
 [mstdn]: https://tilde.zone/@ajhalili2006
