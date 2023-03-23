@@ -3,3 +3,4 @@ public_html
 public_ctrl-c
 site
 venv
+.venv
