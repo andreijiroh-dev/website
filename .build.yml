@@ -1,4 +1,6 @@
 image: alpine/edge
+environment: 
+  FF_ENABLE_COMMIT_DATA: "true"
 packages:
   - openssh-client
   - python3
@@ -36,20 +38,24 @@ tasks:
   - generate-archive: |
       cd tildeweb
       tar cvzf tildeweb-prod-build.tar.gz public public_ctrl-c public_pages.dev
-  #- deploy: |
-  #    if [ "$BUILD_REASON" == "patchset" ] && [ "$BUILD_SUBMITTER" == "hub.sr.ht" ]; then
-  #      complete-build
-  #    fi
-  #
-  #    cd tildeweb
-  #    echo "StrictHostKeyChecking=no" >> ~/.ssh/config
-  #    eval $(ssh-agent) && ssh-add ~/.ssh/passwordless-auth-sshfs
-  #    rsync -rP public ajhalili2006@vern.cc:/home/ajhalili2006/public_html/
-  #    rsync -rP public_ctrl-c ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html/
-  #    #rsync -rP gmi ajhalili2006@vern.cc:/home/ajhalili2006/public_gemini/
-  #    #rsync -rP gmi ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_gemini/
-  #
-  #    git push origin -o skip-ci
-  #    git remote set-url lab ssh://git@mau.dev/ajhalili2006/tildeverse-web && git push lab main
+  - deploy: |
+      if [ "$BUILD_REASON" == "patchset" ] && [ "$BUILD_SUBMITTER" == "hub.sr.ht" ]; then
+        complete-build
+        exit 0
+      elif [ ! -f "$HOME/.ssh/passowrdless-auth-sshfs" ]; then
+        complete-build
+        exit 0
+      fi
+  
+      cd tildeweb
+      echo "StrictHostKeyChecking=no" >> ~/.ssh/config
+      eval $(ssh-agent) && ssh-add ~/.ssh/passwordless-auth-sshfs
+      rsync -rP public ajhalili2006@vern.cc:/home/ajhalili2006/public_html/ || true
+      rsync -rP public_ctrl-c ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html/ || true
+      #rsync -rP gmi ajhalili2006@vern.cc:/home/ajhalili2006/public_gemini/
+      #rsync -rP gmi ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_gemini/
+  
+      git push origin -o skip-ci
+      git remote set-url lab ssh://git@mau.dev/ajhalili2006/tildeverse-web && git push lab main
 artifacts:
   - tildeweb/tildeweb-prod-build.tar.gz
