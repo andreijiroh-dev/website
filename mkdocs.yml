@@ -6,9 +6,9 @@
 #   mkdocs.ctrl-c.yml - ctrl-c.club/~ajhalili2006
 
 # basics
-site_name: ~ajhalili2006 on tildeverse
-site_url: https://ajhalili2006.vern.cc/
-site_dir: public_html
+site_name: ~ajhalili2006
+site_url: https://andreijiroh.eu.org/
+site_dir: public
 site_author: Andrei Jiroh Halili
 copyright: >
   Copyright &copy; 2022-present - Andrei Jiroh Halili and contributors, licensed under the
@@ -23,29 +23,43 @@ repo_name: source code
 
 # navbar
 nav:
-  - Homepage: 
-    - index.md
+  - Main Hub: 
+    - Homepage: index.md
     - nowpage: now.md
     - Contact: contact.md
-    - Portfolio: portfolio.md
   - Personal user manual:
-    - Readme: user-manual/index.md
+    - Manual Homepage: user-manual/index.md
     - Resume: user-manual/resume.md
     - Keys: keys/index.md
+    - Portfolio: portfolio.md
     - Anything else: https://coda.io/@ajhalili2006/readme
   - Lists:
     - Projects: projects.md
     - Communities: communities.md
     - Tildes: tildes.md
-  - Blog: "https://blog.andreijiroh.eu.org"
-  - "All my links": "https://ajhalili2006.bio.link" # todo update to start.page
+  - Blog: "https://blog.andreijiroh.eu.org" # todo: point to substack
+  - "All my links": "https://ajhalili2006.start.page" # todo update to start.page
 
-# theme
+# theme settings
 theme:
   name: material
   custom_dir: overrides
   icon:
+    logo: material/account-box
     repo: material/gitlab
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
   features:
     - announce.dismiss
     - content.action.edit
@@ -87,7 +101,12 @@ theme:
 
 # plugins
 plugins:
+  - social:
+      cards: !ENV [FF_GENERATE_SOCIAL_CARDS, false]
   - search
+  - redirects:
+      redirect_maps:
+        "user-manual/portfolio.md": "portfolio.md"
   # debugging/bug reporting purposes only, proceed with caution
   #- info
   - git-revision-date-localized:
