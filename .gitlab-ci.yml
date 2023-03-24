@@ -1,0 +1,52 @@
+image:
+  name: dock.mau.dev/ajhalili2006/tildeverse-web/build-ci
+  entrypoint:
+    - /bin/sh
+
+.build-configs:
+  variables:
+    FF_ENABLE_COMMIT_DATA: "true"
+    FF_GENERATE_SOCIAL_CARDS: "true"
+    SECURE_FILES_DOWNLOAD_PATH: /run/secrets
+
+.setupkit:
+  before_script:
+    - apk add curl gnupg
+    - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+    - (curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh || wget -t 3 -qO- https://cli.doppler.com/install.sh) | sudo sh
+
+stages:
+  - build
+  - lint
+  - deploy
+
+build:main:
+  extends: [ .build-configs ]
+  stage: build
+  script:
+    - mkdocs build
+  artifacts:
+    paths:
+      - public
+    untracked: false
+    when: on_success
+    expire_in: "30 days"
+  cache:
+    paths:
+      - .cache
+    key: pages-build-main
+  rules:
+    - if: $CI_COMMIT_BRANCH == 'main'
+      changes:
+        - mkdocs.yml
+        - markdown/*
+        - markdown/**/*
+
+deploy:main:
+  extends: [ .setupkit, .build-configs ]
+  needs:
+    - build:main
+  script:
+    - apk add nodejs-lts npm
+    - ls -Al
+    - doppler run -- echo hi
