@@ -4,5 +4,18 @@
   },
   "marquee.widgets.npm-stats.packageNames": [
     "@ajhalili2006/tildeverse-web"
-  ]
+  ],
+  "conventionalCommits.scopes": [
+    "mkdocs.yml",
+    "gitlab-ci",
+    "builds.sr.ht",
+    "docker",
+    "markdown",
+    "readme",
+    "meta",
+    "global"
+  ],
+  "conventionalCommits.autoCommit": false,
+  "conventionalCommits.promptCI": true,
+  "git.alwaysSignOff": true
 }

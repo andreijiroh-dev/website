@@ -5,7 +5,8 @@
 {% extends "main.html" %}
 {% block content %}
   <h1>404 - Not found</h1>
+  <p>Either the URL has been moved without redirects, taken down for any reasons, or it doesn't exist (yet).</p>
   <h2>Troubleshooting tips</h2>
   <p>Try checking the URL for any misspellings or improper use of dashes, underscores and periods.</p>
-  <p>If you're developing this site and you hit an URL that's</p>
+  <p>If you're working in this site and you hit an URL configured for redirects (at Cloudflare Pages or similiar), try <a href="https://go.recaptime.eu.org/pkgs/pip3/mkdocs-redirects">configuring redirects in the config first</a>.</p>
 {% endblock %}

@@ -1,12 +1,19 @@
 image: alpine/edge
 environment: 
   FF_ENABLE_COMMIT_DATA: "true"
+  FF_GENERATE_SOCIAL_CARDS: "true"
 packages:
   - openssh-client
   - python3
   - py3-pip
   - py3-wheel
   - py3-setuptools
+  - cairo-dev
+  - freetype-dev
+  - libffi-dev
+  - jpeg-dev
+  - libpng-dev
+  - zlib-dev
 sources:
   - https://git.sr.ht/~ajhalili2006/tildeweb
 secrets:
@@ -32,12 +39,10 @@ tasks:
       cd tildeweb && pip3 install -r requirements.txt --user
       export PATH="$PATH:$HOME/.local/bin"
 
-      mkdocs build -d public -f mkdocs.yml \
-        && mkdocs build -d public_ctrl-c -f mkdocs.ctrl-c.yml \
-        && mkdocs build -d public_pages.dev -f mkdocs.pages.dev.yml
+      mkdocs build -d public -f mkdocs.yml
   - generate-archive: |
       cd tildeweb
-      tar cvzf tildeweb-prod-build.tar.gz public public_ctrl-c public_pages.dev
+      tar cvzf tildeweb-prod-build.tar.gz public
   - deploy: |
       if [ "$BUILD_REASON" == "patchset" ] && [ "$BUILD_SUBMITTER" == "hub.sr.ht" ]; then
         complete-build
@@ -51,7 +56,7 @@ tasks:
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
       eval $(ssh-agent) && ssh-add ~/.ssh/passwordless-auth-sshfs
       rsync -rP public ajhalili2006@vern.cc:/home/ajhalili2006/public_html/ || true
-      rsync -rP public_ctrl-c ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html/ || true
+      rsync -rP public ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html/ || true
       #rsync -rP gmi ajhalili2006@vern.cc:/home/ajhalili2006/public_gemini/
       #rsync -rP gmi ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_gemini/
   

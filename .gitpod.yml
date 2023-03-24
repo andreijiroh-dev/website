@@ -4,12 +4,22 @@
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
+checkoutLocation: tildeweb-ajhalili2006
+
+image:
+  file: .gitpod.Dockerfile
+
 tasks:
   - init: |
       python3 -m venv .venv
       source .venv/bin/activate
       pip3 install -r requirements.txt
-    command: mkdocs serve
+    command: |
+      # since it might not be carried on venv shell, we did this instead
+      FF_ENABLE_COMMIT_DATA=true mkdocs serve
+    name: site-localdev
+    env:
+      FF_ENABLE_COMMIT_DATA: "true" # Required to use git-revision-date-localized, like in prod.
 
 ports:
   - port: 8000
