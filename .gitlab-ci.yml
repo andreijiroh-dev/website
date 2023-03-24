@@ -43,6 +43,7 @@ build:main:
         - markdown/**/*
 
 deploy:main:
+  stage: deploy
   extends: [ .setupkit, .build-configs ]
   needs:
     - build:main

@@ -1,5 +1,6 @@
 ---
 title: Currently cooking now
+description: What ~ajhalili2006 been doing lately, sometimes behind the scenes.
 ---
 
 Hey, you’re lurking on [my own now page][nowpage-info].
