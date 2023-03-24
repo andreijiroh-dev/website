@@ -5,3 +5,5 @@ site
 venv
 .venv
 .cache
+node_modules
+.env

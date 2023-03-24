@@ -13,7 +13,8 @@
     "markdown",
     "readme",
     "meta",
-    "global"
+    "global",
+    "deps-dev"
   ],
   "conventionalCommits.autoCommit": false,
   "conventionalCommits.promptCI": true,
