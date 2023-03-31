@@ -14,7 +14,8 @@
     "readme",
     "meta",
     "global",
-    "deps-dev"
+    "deps-dev",
+    "docker"
   ],
   "conventionalCommits.autoCommit": false,
   "conventionalCommits.promptCI": true,
