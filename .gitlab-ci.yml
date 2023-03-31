@@ -43,6 +43,10 @@ build:main:
         - mkdocs.yml
         - markdown/*
         - markdown/**/*
+        - .gitlab-ci.yml
+        - docker/Dockerfile
+        - package*.json
+        - .trigger-deploy
 
 deploy:main:
   stage: deploy
@@ -63,3 +67,7 @@ deploy:main:
         - mkdocs.yml
         - markdown/*
         - markdown/**/*
+        - .gitlab-ci.yml
+        - docker/Dockerfile
+        - package*.json
+        - .trigger-deploy
