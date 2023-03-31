@@ -1,4 +1,4 @@
-FROM squidfunk/mkdocs-material
+FROM python:alpine3.17
 
 # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/#linux but for Alpine
 RUN apk add --no-cache \
@@ -10,11 +10,12 @@ RUN apk add --no-cache \
      zlib-dev \
      bash \
      coreutils
-RUN pip3 install \
+RUN /usr/local/bin/pip3 install \
+      mkdocs-material \ 
+      mkdocs-redirects \
       mkdocs-git-revision-date-localized-plugin \
       pillow \
       cairosvg
 
-COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
+ENTRYPOINT [ "mkdocs" ]
 CMD [ "serve" ]

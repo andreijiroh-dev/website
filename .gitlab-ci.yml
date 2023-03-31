@@ -1,5 +1,7 @@
 image:
   name: dock.mau.dev/ajhalili2006/tildeverse-web/build-ci:commit-6c3c12ebba8921d9f7afc66681073aec5500a809
+  entrypoint:
+    - /bin/bash
 
 variables:
   DEBUG: "1"
