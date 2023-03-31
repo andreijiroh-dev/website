@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "Personal website for my tildes + Gemini version of blog posts",
   "scripts": {
-    "dev": "mkdocs serve",
-    "build": "mkdocs build"
+    "dev": "./bin/localdev.sh",
+    "build": "mkdocs build",
+    "docker:ci": "docker build -t dock.mau.dev/ajhalili2006/tildeverse-web/build-ci:localdev ./docker"
   },
   "repository": {
     "type": "git",
