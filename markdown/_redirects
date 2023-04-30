@@ -8,12 +8,8 @@
 /socials https://ajhalili2006.bio.link
 
 # user manual
-/user-manual/communications/ https://coda.io/@ajhalili2006/readme/communications-10
-/user-manual/boundaries/ https://coda.io/@ajhalili2006/readme/personal-and-professional-boundaries-9
-/user-manual/flaws-and-quirks/ https://coda.io/@ajhalili2006/readme/flaws-and-quirks-11
-/user-manual/job-employment-availability/ https://coda.io/@ajhalili2006/readme/job-employment-availability-12
-/user-manual/roleplaying-hellspace/ https://coda.io/@ajhalili2006/readme/roleplaying-hellscape-13
-/user-manual/rp/ https://coda.io/@ajhalili2006/readme/roleplaying-hellscape-13
+/manual /user-manual
+/manual/* /user-manual/:path
 
 # legal
 /privacy /legal/privacy
@@ -21,3 +17,6 @@
 /legal/privacy/coda https://coda.io/@ajhalili2006/readme/privacy-policy-for-coda-hosted-pages-4
 /coc https://coda.io/@ajhalili2006/readme/community-code-of-conduct-7
 /code-of/conduct https://coda.io/@ajhalili2006/readme/community-code-of-conduct-7
+
+# this is obvious, right?
+/favicon.ico /assets/images/favicon.png

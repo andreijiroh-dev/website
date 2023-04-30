@@ -1,9 +1,5 @@
 # This is the root configuration for my personal website and also the default
 # for userpage at ~vern.
-#
-# SEE ALSO
-#   mkdocs.pages.dev.yml - configuration specifics for cloudflare pages (username dot (uk dot) eu dot org)
-#   mkdocs.ctrl-c.yml - ctrl-c.club/~ajhalili2006
 
 # basics
 site_name: ~ajhalili2006
@@ -27,25 +23,28 @@ nav:
     - Homepage: index.md
     - nowpage: now.md
     - Contact: contact.md
+    - "All my links": "https://ajhalili2006.start.page"
   - Personal user manual:
     - Manual Homepage: user-manual/index.md
     - Resume: user-manual/resume.md
+    - Boundaries: user-manual/boundaries.md
+    - Communications: user-manual/communications.md
     - Keys: keys/index.md
-    - Portfolio: portfolio.md
     - Anything else: https://coda.io/@ajhalili2006/readme
-  - Lists:
+  - Portfolio: 
+    - Summary: portfolio.md
     - Projects: projects.md
     - Communities: communities.md
     - Tildes: tildes.md
   - Blog: "https://blog.andreijiroh.eu.org" # todo: point to substack
-  - "All my links": "https://ajhalili2006.start.page" # todo update to start.page
 
 # theme settings
 theme:
   name: material
   custom_dir: overrides
+  favicon: assets/images/favicon.png
   icon:
-    logo: material/account-box
+    logo: octicons/person-16
     repo: material/gitlab
     admonition:
       note: octicons/tag-16
@@ -88,6 +87,8 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: green
+      accent: yellow
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -95,6 +96,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: green
+      accent: yellow
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -147,7 +150,7 @@ extra:
       name: ~ajhalili2006 on tildeverse
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/Kuys_Potpot
-      link: ~ajhalili2006 on twitter, under his old username
+      name: ~ajhalili2006 on twitter, under his old username
     - icon: fontawesome/brands/github
       link: https://github.com/ajhalili2006
       name: ~ajhalili2006 on github
