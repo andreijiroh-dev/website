@@ -21,7 +21,7 @@ I'm Andrei Jiroh, a Filipino 16-year-old junior high school student at day and N
 
 ## Contents
 
-Most of the links below will redirect you to the Coda version of my personal README
+Although they originally editied in Coda, I slowly moving some of them here.
 
 * [:material-chat: Communications](./communications.md)
 * [:material-fence: Personal and professional boundaries](./boundaries.md)

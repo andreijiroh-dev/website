@@ -15,6 +15,8 @@ tasks:
       source .venv/bin/activate
       pip3 install -r requirements.txt
     command: |
+      source .venv/bin/activate
+      
       # since it might not be carried on venv shell, we did this instead
       FF_ENABLE_COMMIT_DATA=true mkdocs serve
     name: site-localdev

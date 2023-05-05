@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
-set -e
+set -ea
 if [[ $DEBUG != "" ]]; then
   set -x
 fi
 
 ## source vars from .env first ##
 _root_directory_git=$(git rev-parse --show-toplevel)
-export "$(xargs < "$_root_directory_git/.env")"
+# shellcheck file=/dev/null
+source "$_root_directory_git/.env"
 
 _branch_name_git=$(git rev-parse --abbrev-ref HEAD)
 _commit_sha=$(git rev-parse HEAD)
@@ -50,3 +51,4 @@ fi
 if [[ $DEBUG != "" ]]; then
   set +x
 fi
+set +a

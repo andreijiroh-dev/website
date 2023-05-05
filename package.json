@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "description": "Personal website for my tildes + Gemini version of blog posts",
   "scripts": {
-    "dev": "./bin/localdev.sh",
-    "build": "mkdocs build",
-    "docker:ci": "docker build -t dock.mau.dev/ajhalili2006/tildeverse-web/build-ci:localdev ./docker"
+    "start": "npm run dev",
+    "dev": "bash ./bin/localdev.sh",
+    "build": "bash ./bin/build.sh",
+    "deploy": "./bin/deploykit-pages.sh",
+    "docker:ci": "DOCKER_BUILDKIT=1 docker build -t dock.mau.dev/ajhalili2006/tildeverse-web/build-ci:localdev ./docker"
   },
   "repository": {
     "type": "git",

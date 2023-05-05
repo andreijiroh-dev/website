@@ -22,6 +22,33 @@ stages:
   - lint
   - deploy
 
+build:mr:
+  extends: [ .setupkit ]
+  stage: build
+  script:
+    - bash ./bin/build.sh
+  artifacts:
+    paths:
+      - public
+    untracked: false
+    when: on_success
+    expire_in: "21 days"
+  cache:
+    paths:
+      - .cache
+      - .venv
+    key: pages-build-main
+  rules:
+    - if: $CI_COMMIT_BRANCH != 'main' && $CI_PIPELINE_SOURCE == "merge_request"
+      changes:
+        - mkdocs.yml
+        - markdown/*
+        - markdown/**/*
+        - .gitlab-ci.yml
+        - docker/Dockerfile
+        - package*.json
+        - .trigger-deploy
+
 build:main:
   extends: [ .setupkit ]
   stage: build

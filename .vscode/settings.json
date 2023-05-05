@@ -15,9 +15,11 @@
     "meta",
     "global",
     "deps-dev",
-    "docker"
+    "docker",
+    "scripts"
   ],
   "conventionalCommits.autoCommit": false,
   "conventionalCommits.promptCI": true,
-  "git.alwaysSignOff": true
+  "git.alwaysSignOff": true,
+  "gitlens.remotes": [{ "domain": "mau.dev", "type": "GitLab" }]
 }

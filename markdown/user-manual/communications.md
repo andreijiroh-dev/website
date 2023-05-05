@@ -40,18 +40,21 @@ Generally, I’m not a fan of sync meetings, especially if iot is scheduled outs
 
 ### Office Hours
 
+!!! warning "Currently left TBD due to school"
+
 | Day | Regular Hours in PHT | Holidays / Rest Days [^1] |
 | --- | --- | --- |
-| Weekdays | | |
-| Weekends | | |
+| Weekdays | TBD | TBD |
+| Weekends | TBD | TBD |
 
 ### Recap Time Squad specifics
 
 * Work-related stuff should be discussed in Recap Time Squad’s chatrooms (either public or staff-only, although anything confidential/internal should be stay in staff-only chat).
 * Ping me when only needed. Also, DO NOT ping @everyone.
+* I don't usually read email, but if you sent me some important emails (via my `@crew.recaptime.eu.org` )
 
 ## Additional resources
 
 TBD
 
-[^1]: My regular rest days usually happen on Saturdays.
+[^1]: My regular rest days usually happen on Saturdays, although they might be adjusted because of holidays and other reasons.

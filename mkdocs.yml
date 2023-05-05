@@ -110,6 +110,10 @@ plugins:
   - redirects:
       redirect_maps:
         "user-manual/portfolio.md": "portfolio.md"
+        "dni.md": "user-manual/dni.md"
+        "resume.md": "user-manual/resume.md"
+        "blog.md": "https://ajhalili2006.substack.com"
+        "socials.md": "https://ajhalili2006.start.page"
   # debugging/bug reporting purposes only, proceed with caution
   #- info
   - git-revision-date-localized:
@@ -137,6 +141,10 @@ markdown_extensions:
   - md_in_html
   - admonition
   - abbr
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 
 # extras
 extra:

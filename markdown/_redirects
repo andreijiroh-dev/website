@@ -1,11 +1,12 @@
 # internal redirects
 /resume /user-manual/resume
-/portfolio /user-manual/resume
+#/portfolio /user-manual/resume
+/dni /user-manual/dni
 
 # external redirects
 /blog https://ajhalili2006.substack.com
 /pkgs https://gcdn.todo.com
-/socials https://ajhalili2006.bio.link
+/socials https://ajhalili2006.start.page
 
 # user manual
 /manual /user-manual
@@ -16,7 +17,7 @@
 /privacy/coda /legal/privacy/coda
 /legal/privacy/coda https://coda.io/@ajhalili2006/readme/privacy-policy-for-coda-hosted-pages-4
 /coc https://coda.io/@ajhalili2006/readme/community-code-of-conduct-7
-/code-of/conduct https://coda.io/@ajhalili2006/readme/community-code-of-conduct-7
+/code-of-conduct https://coda.io/@ajhalili2006/readme/community-code-of-conduct-7
 
 # this is obvious, right?
 /favicon.ico /assets/images/favicon.png
