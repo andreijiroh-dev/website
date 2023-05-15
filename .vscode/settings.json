@@ -17,7 +17,8 @@
     "deps-dev",
     "docker",
     "scripts",
-    "github-actions"
+    "github-actions",
+    "dni"
   ],
   "conventionalCommits.autoCommit": false,
   "conventionalCommits.promptCI": true,
