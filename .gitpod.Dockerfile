@@ -1,5 +1,13 @@
 # syntax=docker/dockerfile:1
-FROM gitpod/workspace-full
+FROM gitpod/workspace-full:latest as workspace
+
+WORKDIR /tmp
+RUN mkdir /home/gitpod/.local -pv \
+    && git clone https://git.sr.ht/~sircmpwn/scdoc && cd scdoc \
+    && make && sudo cp scdoc /usr/local/bin/scdoc && cd .. \
+    && git clone https://git.sr.ht/~emersion/hut && cd hut \
+    && make PREFIX=/home/gitpod/.local && sudo cp ./hut /usr/local/bin/hut \
+    && rm -rfv /tmp
 
 # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/#linux
 RUN sudo install-packages \
@@ -14,4 +22,5 @@ RUN sudo install-packages \
 COPY --from=docker/buildx-bin:latest /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 
 # brew maintenance + install ShellCheck and Hadolint
+WORKDIR /home/gitpod
 RUN brew update && brew install hadolint shellcheck
