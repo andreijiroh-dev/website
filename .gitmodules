@@ -1,0 +1,6 @@
+[submodule "hut-cli"]
+	path = tools/hut-cli
+	url = https://git.sr.ht/~emersion/hut
+[submodule "scdoc"]
+	path = tools/scdoc
+	url = https://git.sr.ht/~sircmpwn/scdoc
