@@ -11,5 +11,7 @@ if [[ ! -d "$PWD/.venv" ]]; then
 fi
 $PWD/.venv/bin/pip3 install -r requirements.txt --upgrade
 $PWD/.venv/bin/mkdocs build -d $TARGET_DIR
+mkdir "$TARGET_DIR/api"
+git rev-parse HEAD > "$TARGET_DIR/api/commit"
 
 set +xe

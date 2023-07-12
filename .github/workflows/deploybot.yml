@@ -26,7 +26,7 @@ concurrency:
 
 jobs:
   gh-pages:
-    if: github.event_name == "push" || "workflow_dispatch"
+    if: contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name)
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -39,8 +39,6 @@ jobs:
         with:
           python-version: 3.10
           cache: pip
-      - name: Install dependencies
-        uses: brettcannon/pip-secure-install@v1.0.0
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build
@@ -48,18 +46,30 @@ jobs:
           sudo apt-get install \
             libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev \
             --yes
-          FF_ENABLE_COMMIT_DATA=true FF_GENERATE_SOCIAL_CARDS=true mkdocs build --use-directory-urls
+          FF_ENABLE_COMMIT_DATA=true FF_GENERATE_SOCIAL_CARDS=true bash ./build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: './public'
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: gh-pages
         uses: actions/deploy-pages@v2
+      - name: Deploy to pages.dev
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: cf0bd808c6a294fd8c4d8f6d2cdeca05
+          projectName: ajhalili2006
+          directory: public
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: Switch what branch you are publishing to.
+          # By default this will be the branch which triggered this workflow
+          branch: main
   repo-sync:
     name: Repository sync
     runs-on: ubuntu-latest
-    if: github.event_name == "push" || "workflow_dispatch"
+    if: contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name)
     steps:
       - name: Checkout repository with full history
         uses: actions/checkout@v3
