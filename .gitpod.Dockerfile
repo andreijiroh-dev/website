@@ -2,12 +2,11 @@
 FROM gitpod/workspace-full:latest as workspace
 
 WORKDIR /tmp
-RUN mkdir /home/gitpod/.local -pv \
-    && git clone https://git.sr.ht/~sircmpwn/scdoc && cd scdoc \
+RUN git clone https://git.sr.ht/~sircmpwn/scdoc && cd scdoc \
     && make && sudo cp scdoc /usr/local/bin/scdoc && cd .. \
     && git clone https://git.sr.ht/~emersion/hut && cd hut \
     && make PREFIX=/home/gitpod/.local && sudo cp ./hut /usr/local/bin/hut \
-    && rm -rfv /tmp
+    && sudo rm -rv /tmp/*
 
 # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/#linux
 RUN sudo install-packages \
