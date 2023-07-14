@@ -99,7 +99,7 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         run: |
           set +xe
-          for each ${{ steps.meta.outputs.tags }} in tag;
+          for each "${{ steps.meta.outputs.tags }}" in tag;
           do
             docker push $tag
           done
@@ -195,7 +195,7 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         run: |
           set +xe
-          for each ${{ steps.meta.outputs.tags }} in tag;
+          for each "${{ steps.meta.outputs.tags }}" in tag;
           do
             docker push $tag
           done

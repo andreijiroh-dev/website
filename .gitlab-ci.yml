@@ -1,5 +1,5 @@
 # The Docker image that will be used to build your app
-image: quay.io/ajhalili2006/mkdocs-material-build-ci
+image: quay.io/ajhalili2006/mkdocs-material-build-ci:nightly
 
 # Functions that should be executed before the build script is run
 before_script:
@@ -17,10 +17,13 @@ variables:
 pages:
   script:
     - bash ./build.sh
+    - doppler run -- ./bin/deploykit-pages.sh
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
       - public
+  variables:
+    CF_PAGES_PROJECT_NAME: ajhalili2006
   rules:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
