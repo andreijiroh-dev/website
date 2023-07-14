@@ -6,7 +6,7 @@ FF_OFFLINE_MKDOCS_PLUGIN=${FF_OFFLINE_MKDOCS_PLUGIN:-"false"}
 FF_ENABLE_COMMIT_DATA=${FF_ENABLE_COMMIT_DATA:-"true"}
 FF_GENERATE_SOCIAL_CARDS=${FF_GENERATE_SOCIAL_CARDS:-"true"}
 
-if [[ ! -d "$PWD/.venv" ]]; then
+if [[ ! -d "$PWD/.venv" && $SKIP_VENV_SETUP == "" ]]; then
   python3 -m venv $PWD/.venv
 fi
 $PWD/.venv/bin/pip3 install -r requirements.txt --upgrade
