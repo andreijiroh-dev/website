@@ -11,6 +11,13 @@ focusing on at this point. I’ll attempt to keep this updated, at least on bi-m
 
 _**Last updated (PHT)**: 2023-03-21_
 
+## What am I doing/done lately
+
+Recently JHS Completer at AFGBMTS on 2023-07-12, currently taking a bit of time-
+to recharge and to start working on towards [my capstone project for Coda Doctorate][capstone].
+
+[capstone]: https://todo.sr.ht/~ajhalili2006/ajhalili2006/7
+
 ## Where am I?
 
 Currently on our family’s house until at least I can find a job in the future and afford a house to at least rent to.
@@ -18,17 +25,13 @@ Currently observing Philippine Standard Time, which if you’re on Eastern Time,
 
 Please do not ask me for my home address if you want to send me some stuff instead of usual handwritten fan mail, I’ll ignore that due to privacy reasons.
 
-## What am I doing/done lately
-
-Still at AFGBMTS busy doing all things school related, while juggling between personal projects and stuff at [Recap Time Squad](https://recaptime.eu.org).
-
 ## TODOs, any ideas, anything else?
 
 For the personal backlog I can share publicly, please [see my todo.sr.ht tracker](https://todo.sr.ht/~ajhalili2006/ajhalili2006).
 
 ## Information for ~~employers~~ anyone contacting me
 
-Please see [this page in my personal user manual](https://andreijiroh.eu.org/user-manual/job-employment-availability) for details.
+Please see [this page in my personal user manual](/user-manual/job-employment-availability.md) for details.
 
 ## Archives
 
@@ -40,5 +43,5 @@ Please see [this page in my personal user manual](https://andreijiroh.eu.org/use
 
 > Please be reminded that content on WordPress.com will be archived as I moved blog content to Substack and anything else into this website.
 
-* [Latest content](https://ajhalili2006.wordpress.com/now/), also archived on [Archive.Today]()
+* [Last content update](https://ajhalili2006.wordpress.com/now/), also archived on [Archive.Today]()
 * [July 2022 update](https://web.archive.org/web/20221011021323/https://ajhalili2006.wordpress.com/now/) via Internet Archive Wayback Machine

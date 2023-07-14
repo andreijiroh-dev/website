@@ -183,7 +183,7 @@ jobs:
         uses: docker/build-push-action@v4.1.1
         with:
           context: .
-          #file: Dockerfile
+          file: .gitpod.Dockerfile
           # workaround: https://github.com/moby/buildkit/issues/2713#issuecomment-1068540101
           push: false
           load: true
