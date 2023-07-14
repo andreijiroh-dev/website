@@ -26,16 +26,17 @@ and/or key IDs against [this list]($keys-i-use) to ensure its the right key.
 ```bash
 # one-liner import from my website (or via ajhalili2006.vern.cc and ctrl-c.club/~ajhalili2006)
 # For my eu.org domain, use either the regular suffix or uk.eu.org one.
-gpg --fetch-keys "https://andreijiroh(.uk).eu.org/keys/pgp.asc"
-# sourcehut, but it is advised to import latest keys and signatures from keyservers, listed below
+gpg --fetch-keys "https://andreijiroh.eu.org/keys/pgp.asc"
+# sourcehut/gitlab, but it is advised to import latest keys and signatures from keyservers, listed below
 gpg --fetch-keys "https://meta.sr.ht/~ajhalili2006.pgp"
+gpg --fetch-keys "https://mau.dev/ajhalili2006.gpg"
 ```
 
 If you prefer to load it from a keyserver (let say you're an Ubuntu/Debian developer snooping around my
 [Launchpad.net profile](https://launchpad.net/~ajhalili2006)), you can do so with these command below:
 
 ```bash
-# Other keyservers: pgp.mit.edu, keys.openpgp.org
+# Other keyservers: pgp.mit.edu, keys.openpgp.org, keys.mailvelope.com
 gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys \
   4D5E631758CB9CC45941B1CE67BFC91B3DA12BE8 \
   0527234A430387EA5695D824A30EBE40AD856D88 \
@@ -54,11 +55,10 @@ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys \
 
 ## SSH Keys
 
-You can also get all the keys in one file (and its signers file) ath the following URLs:
+You can also get all the keys in one file (and its signers file) at the following URLs:
 
-* Website: <https://ajhalili2006.vern.cc/keys/ssh-trustfile.txt> or <https://andreijiroh.eu.org/keys/ssh-trustfile.txt> (alternative:
-<https://andreijiroh.uk.eu.org/keys/ssh-trustfile.txt> or via CF Pages <https://ajhalili2006.pages.dev/keys/ssh-trustfile.txt>
-* Live Dev Builds (as generated through `mkdocs serve`, DO NOT EXPECT UPTIME): <https://preview-ajhalili2006.vern.cc/keys/ssh-trustfile.txt>
+* Website as its deployed via CI: <https://andreijiroh.eu.org/keys/ssh-trustfile.txt>
+* As pushed via Git: <https://mau.dev/ajhalili2006/tildeverse-web/-/blob/main/markdown/keys/ssh-trustfile.txt>
 
 These SSH keys are used for signing Git commits and tags occassionally, as well for signing checksums file and identity verification on
 account recovery for sr.ht and Miraheze.
