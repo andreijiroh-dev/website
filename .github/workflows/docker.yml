@@ -19,7 +19,7 @@ env:
 
 jobs:
   build-ci:
-    name: Build development environment
+    name: Build environment for GitLab CI/CD
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -72,7 +72,7 @@ jobs:
             quay.io/ajhalili2006/mkdocs-material-build-ci
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
-            type=sha,enable=true,priority=100,prefix=commit-,suffix=,format=short
+            type=sha,enable=true,priority=100,prefix=commit-,suffix=,format=long
             type=schedule,pattern=nightly
 
       - uses: actions/checkout@v3
@@ -88,12 +88,20 @@ jobs:
         with:
           context: docker
           #file: Dockerfile
-          push: ${{ github.event_name != 'pull_request' }}
+          # workaround: https://github.com/moby/buildkit/issues/2713#issuecomment-1068540101
+          push: false
+          load: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
+      - name: Workaround pushbot for misbehaving reverse proxies
+        if: ${{ github.event_name != 'pull_request' }}
+        run: |
+          for each ${{ steps.meta.outputs.tags }} in tag;
+          do
+            docker push $tag
+          done
 
       # Sign the resulting Docker image digest except on PRs.
       # This will only write to the public Rekor transparency log when the Docker
@@ -107,3 +115,5 @@ jobs:
         # This step uses the identity token to provision an ephemeral certificate
         # against the sigstore community Fulcio instance.
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }}
+  devenv:
+    name: Generate Gitpod workspace image snapshot
