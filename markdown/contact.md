@@ -10,7 +10,7 @@ _Last updated: 2023-07-16_
 
 TL;DR: [Don't be a dick.](https://www.psychologytoday.com/us/blog/the-author-speaks/201909/don-t-be-dick)[^1] The rest
 
-- Check my user manual and FAQs before contacting via DMs.
+- Check [my user manual](/user-manual/index.md) and FAQs before contacting via DMs.
 - For sensitive manners (like reporting security related issues), use Keybase, Session or Matrix (make sure to enable EE2E when initiating an one-to-one chat with me). If you want to connect through Session, I’ll provide my public ID when needed.
 - No crypto nonsense (even I use mirror.xyz and some other dapps), self promo hellscape, doxxing, death/swatting threats or calls to violence towards me or anybody.
 - Don’t dare even send me NSFW/CACP.
@@ -19,7 +19,7 @@ TL;DR: [Don't be a dick.](https://www.psychologytoday.com/us/blog/the-author-spe
 unless you're either know me IRL or for official business at school and work and your org policies does only allow
 communications on Facebook Messenger/WhatsApp.
 
-[^1]: Explainer from admins and mods at `hachyderm.io`: https://community.hachyderm.io/docs/rule-explainer/#dont-be-a-dick
+[^1]: Explainer from admins and mods at `hachyderm.io`: <https://community.hachyderm.io/docs/rule-explainer/#dont-be-a-dick>
 
 ## via email
 
