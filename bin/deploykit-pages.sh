@@ -7,7 +7,9 @@ fi
 ## source vars from .env first ##
 _root_directory_git=$(git rev-parse --show-toplevel)
 # shellcheck file=/dev/null
-source "$_root_directory_git/.env"
+if [[ -f "$_root_directory_git/.env" ]]; then
+  source "$_root_directory_git/.env"
+fi
 
 _branch_name_git=$(git rev-parse --abbrev-ref HEAD)
 _commit_sha=$(git rev-parse HEAD)
