@@ -15,7 +15,6 @@ default:
     - pip3 install -r requirements.txt
     - npm ci
     - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
-    - (curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh || wget -t 3 -qO- https://cli.doppler.com/install.sh) | sh
 # Global builds and stuff
 variables:
   DEBUG: "1"
@@ -26,7 +25,6 @@ variables:
 pages:
   stage: build
   script:
-    - bash ./build.sh
     - doppler run -- ./bin/deploykit-pages.sh
   artifacts:
     paths:

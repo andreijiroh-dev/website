@@ -36,7 +36,10 @@ RUN apk add --no-cache \
      git \
      git-fast-import \
      openssh \
-  && pip3 install --no-cache-dir \
+     gnupg \
+  && (curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh || wget -t 3 -qO- https://cli.doppler.com/install.sh) \
+    | sh
+RUN pip3 install --no-cache-dir \
       mkdocs-material \ 
       mkdocs-redirects \
       mkdocs-git-revision-date-localized-plugin \
@@ -51,6 +54,7 @@ RUN git config --global --add safe.directory /docs &&\
 # Expose MkDocs development server port
 EXPOSE 8000
 
-COPY entrypoint.sh /usr/local/bin/entrypoint
-ENTRYPOINT [ "/usr/local/bin/entrypoint" ]
-CMD [ "serve", "--dev-addr=0.0.0.0:8000" ]
+WORKDIR /docs
+
+#COPY entrypoint.sh /usr/local/bin/entrypoint
+CMD [ "mkdocs", "serve", "--dev-addr=0.0.0.0:8000" ]
