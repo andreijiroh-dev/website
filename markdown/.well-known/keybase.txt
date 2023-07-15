@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ajhalili2006
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ajhalili2006.srht.site
+  * I am ajhalili2006 (https://keybase.io/ajhalili2006) on keybase.
+  * I have a public key ASAXwAZqEGgXyiBghN9xDUMKKJmUVBYpsx6YwfotdVcn4Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012071060ed2b9d510bc8b5fcf284ebb80c53c8e4263eabc0640076de606f8dbc1a20a",
+      "host": "keybase.io",
+      "kid": "012017c0066a106817ca206084df710d430a289994541629b31e98c1fa2d755727e10a",
+      "uid": "98a290bf324f69de20392da6fc112919",
+      "username": "ajhalili2006"
+    },
+    "merkle_root": {
+      "ctime": 1689439635,
+      "hash": "2787c1b0133ba9f21cfb2c46bbe7fefd57fb7b98167add9555b96f4187058824b36234fe765014d3a9af9a9a60c8a450b8953d256f34d8fcb0718227c71e965f",
+      "hash_meta": "76dd78db03a4cb8eda87f288cd8b7679ebf9879f2e3140a50c32b048c332da95",
+      "seqno": 24689444
+    },
+    "service": {
+      "entropy": "w0bsIz3zsaYLfPNA0HYqD4ox",
+      "hostname": "ajhalili2006.srht.site",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1689439690,
+  "expire_in": 504576000,
+  "prev": "7222977cc55ae9d25452d2db7c2fae4ab6eed3b1b78b79408998c05a8fa87c6c",
+  "seqno": 76,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgF8AGahBoF8ogYITfcQ1DCiiZlFQWKbMemMH6LXVXJ+EKp3BheWxvYWTESpcCTMQgciKXfMVa6dJUUtLbfC+uSrbu07G3i3lAiZjAWo+ofGzEICHxFxV4MwyrLAP1uZNYwor5X74veAAlbu4nFHQJWA54AgHCo3NpZ8RAZm1nY8PiJiFLONeRJsXRHKtuKr1DREkztXS+W78+gUNL1j1SBn2LWZ+FGvBdMOqIVaqSheFJ9n/wfi0oaWsXDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICRbYicFrjdOp5SVqW1FurZC73GMaTM83m/5FHk7vACZo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ajhalili2006
+
+==================================================================

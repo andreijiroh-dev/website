@@ -1,0 +1,27 @@
+# Well hello there!
+
+=> gemini://gemini.andreijiroh.eu.org Viewing from mirror?
+
+I'm ~ajhalili2006 (he/they, with emphasis on they/them) and this is my Gemini capsule, hosted on sourcehut pages
+(also mirrored to tildes I'm currently in with Gemini support).
+
+Just in case you're wondering, you're viewing the Gemini version of my website, so things might be a bit different.
+
+## In the hub
+
+=> /resume.gmi - my resume for prospective employers
+=> /user-manual/index.gmi
+=> https://poly.me/ajhalili2006 - my portfolio on Polywork
+
+## Where to find me elsewhere
+
+* => https://tilde.zone/@ajhalili2006 Fediverse (I mostly active there)
+* => https://ajhalili2006.substack.com/
+* => https://ajhalili2006.start.page All of my socials in one place
+
+----------
+
+Made with love by Andrei Jiroh Halili (@ajhalili2006)
+=> https://creativecommons.org/licenses/by-sa/4.0/ Copyright 2023. Some rights reserved under CC BY-SA 4.0.
+
+=> https://mau.dev/ajhalili2006/tildeverse-web/-/blob/main/gmi View sources on GitLab

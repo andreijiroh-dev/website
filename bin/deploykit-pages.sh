@@ -48,6 +48,13 @@ else
   ${DEPLOY_COMMAND:-"$_command_prefix"}
 fi
 
+if [[ $_branch_name_git == "main" ]]; then
+  tar -C public -cvz . -f site-build.tar.gz
+  curl --oauth2-bearer "$SOURCEHUT_PAGES_TOKEN" \
+    -Fcontent=@site-build.tar.gz \
+    "https://pages.sr.ht/publish/ajhalili2006.srht.site"
+fi
+
 if [[ $DEBUG != "" ]]; then
   set +x
 fi

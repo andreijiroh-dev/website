@@ -1,0 +1,32 @@
+# ~ajhalili2006's personal user manual
+
+=> https://andreijiroh.eu.org/user-manual Clearnet version
+=> View in Coda https://coda.io/@ajhalili2006/readme/personal-user-manual-8
+
+Hello there, and welcome to my personal user manual. This is where I document
+about myself for others in terms of communications and teamwork. While the
+contents of this mini wiki will be always a work in progress, I’ll expand
+them as I add missing information and update outdated details behind
+the scenes.
+
+## About me
+
+I'm Andrei Jiroh, a Filipino 16-year-old junior high school student at day and Node.js and Deno backend developer at Recap Time Squad (https://recaptime.eu.org) (technically not a legally-recognized company (see footnote 1) yet where I host most of my projects) and Linux + family IT sysadmin, resident Bash script kiddie on personal projects at home. I'm also happens to be a middle child while being neurodivergent, specifically I'm [#ActuallyAutistic](https://autism-advocacy.fandom.com/wiki/ActuallyAutistic) (see footnote 2).
+
+## Footnotes
+
+1. Or a legal entity for holding funds, any legal assets (including copyright and trademark) and signing in contracts.
+My planned setup would be start as a small business in Philippines, securing things like
+
+2. There are many great resources from the autistic community (and also the
+wider neurodiversity and disability rights community), especially from Neuroclastic
+(https://neuroclastic.com/autism-101-resources-from-the-autistic-community/),
+if you want to be an ally or simply want to help make inclusivity across
+intersections mainstream.
+
+----------
+
+Made with love by Andrei Jiroh Halili (@ajhalili2006)
+=> https://creativecommons.org/licenses/by-sa/4.0/ Copyright 2023. Some rights reserved under CC BY-SA 4.0.
+
+=> https://mau.dev/ajhalili2006/tildeverse-web/-/blob/main/gmi View sources on GitLab
