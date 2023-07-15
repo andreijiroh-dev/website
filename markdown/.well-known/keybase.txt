@@ -54,3 +54,60 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/ajhalili2006
 
 ==================================================================
+
+==================================================================
+https://keybase.io/ajhalili2006
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://andreijiroh.eu.org
+  * I am ajhalili2006 (https://keybase.io/ajhalili2006) on keybase.
+  * I have a public key ASAXwAZqEGgXyiBghN9xDUMKKJmUVBYpsx6YwfotdVcn4Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012071060ed2b9d510bc8b5fcf284ebb80c53c8e4263eabc0640076de606f8dbc1a20a",
+      "host": "keybase.io",
+      "kid": "012017c0066a106817ca206084df710d430a289994541629b31e98c1fa2d755727e10a",
+      "uid": "98a290bf324f69de20392da6fc112919",
+      "username": "ajhalili2006"
+    },
+    "merkle_root": {
+      "ctime": 1689440121,
+      "hash": "fd4cbd5e39a174a0bd54a5c2ba214b77d2f8b5778df7a3a52f73040cdf83bb48cf31d7e5e9477122fc53aefac99b1d26ef0776e66a1bce42f99156e4f824d5c6",
+      "hash_meta": "f9e713ddb07a2c234b4db2c91e0d3937753e20dfa7129b4b3c1f8fad91138ce4",
+      "seqno": 24689514
+    },
+    "service": {
+      "entropy": "3J2T3gGr9zEpXrrtxaCtgH1H",
+      "hostname": "andreijiroh.eu.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1689440219,
+  "expire_in": 504576000,
+  "prev": "885b39b52f932cc9f97d02489b6cb1733fe5894ea8ce985efac3858af824308e",
+  "seqno": 77,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgF8AGahBoF8ogYITfcQ1DCiiZlFQWKbMemMH6LXVXJ+EKp3BheWxvYWTESpcCTcQgiFs5tS+TLMn5fQJIm2yxcz/liU6ozphe+sOFivgkMI7EIJm12a4HFX8HR0q4Z6VQXvhlR/7QS/PWwOrfQ0Edokd0AgHCo3NpZ8RAVzHi/lLgak+LZLQmKCBO9S+cdUNq2agXGno3ef498kFAcC5Okji3TkYet+8lTQkkW3PMlrxSPIZDO+glm8rlBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMdnjuCH3km7bST7PYeG14zjfBN1ayIMJ4yRRVwCOK4+o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ajhalili2006
+
+==================================================================
