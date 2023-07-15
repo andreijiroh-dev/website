@@ -97,12 +97,7 @@ jobs:
           cache-to: type=gha,mode=max
       - name: Workaround pushbot for misbehaving reverse proxies
         if: ${{ github.event_name != 'pull_request' }}
-        run: |
-          set +xe
-          for each "${{ steps.meta.outputs.tags }}" in tag;
-          do
-            docker push $tag
-          done
+        run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} docker push {}
 
       # Sign the resulting Docker image digest except on PRs.
       # This will only write to the public Rekor transparency log when the Docker
@@ -193,12 +188,7 @@ jobs:
           cache-to: type=gha,mode=max
       - name: Workaround pushbot for misbehaving reverse proxies
         if: ${{ github.event_name != 'pull_request' }}
-        run: |
-          set +xe
-          for each "${{ steps.meta.outputs.tags }}" in tag;
-          do
-            docker push $tag
-          done
+        run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} docker push {}
 
       # Sign the resulting Docker image digest except on PRs.
       # This will only write to the public Rekor transparency log when the Docker
