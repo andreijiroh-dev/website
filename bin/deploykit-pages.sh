@@ -40,6 +40,7 @@ fi
 
 if [[ ! -d "$_root_directory_git/public" ]]; then
   bash "$_root_directory_git/bin/build.sh"
+  cp markdown/.well-known public/ -rv
 fi
 
 if [[ $FF_DIRTY_DEPLOY == "true" ]]; then

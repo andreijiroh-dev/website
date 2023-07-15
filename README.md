@@ -7,13 +7,20 @@ This is my sources for both [`andreijiroh.(eu.org|dev)`](https://andreijiroh.eu.
 built with Mkdocs + [Material theme](https://go.andreijiroh.eu.org/mkdocs-material) by [~squidfunk](https://go.andreijiroh.eu.org/squidfunk).
 (Sources for Gemini version of the website is available at `gmi` directory.)
 
+## Mirrors
+
+Canonically developed at [mau.dev](https://mau.dev/ajhalili2006/tildeverse-web.git) where the deployments happen, with the following mirrors being maintained:
+
+* GitHub: <https://github.com/ajhalili2006/ajhalili2006.github.io.git>, where Docker image builds happen
+* Jetbrains Space (personal): <https://ajhalili2006.jetbrains.space/p/web/repositories/andreijiroh.dev/files/README.md>
+
 ## Development
 
 ```bash
 # clone the repo
 # pick one on the clone URLs
 glab repo clone https://mau.dev/ajhalili2006/tildeverse-web
-gh repo clone ajhalili2006/tildeverse-web
+gh repo clone ajhalili2006/ajhalili2006.github.com
 git clone git@git.sr.ht:~ajhalili2006/tildeweb
 
 # maybe do this on a feature branch
@@ -32,12 +39,13 @@ nano markdown/path-to-file.md
 git stage . && git commit --signoff
 
 # send patches via GitLab or GitHub through the CLI
+glab auth login --host "https://mau.dev" # authenticate CLI
 glab -R https://mau.dev/ajhalili2006/tildeverse-web mr create --allow-collaboration -b main
 gh -R ajhalili2006/tildeverse-web pr create # might automatically closes PR due to mirror status
 
 # or via my public inbox on sourcehut
 # see https://git-send-email.io for setup and guide
-git config sendemail.to "~ajhalili2006/public-inbox@lists.sr.ht"
+git config sendemail.to "~ajhalili2006/public-inbox@lists.sr.ht" # NOT my personal email
 git config format.subjectPrefix "PATCH tildeweb" # identification in archives + builds.sr.ht
 git config --global sendemail.annotate yes
 git config --global format.signOff true # needed for compliance with Linux DCO
