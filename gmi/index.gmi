@@ -5,23 +5,28 @@
 I'm ~ajhalili2006 (he/they, with emphasis on they/them) and this is my Gemini capsule, hosted on sourcehut pages
 (also mirrored to tildes I'm currently in with Gemini support).
 
-Just in case you're wondering, you're viewing the Gemini version of my website, so things might be a bit different.
+Just in case you're wondering, you're viewing the Gemini version of my website, so things might be a bit different
+or even incomplete.
 
 ## In the hub
 
-=> /resume.gmi - my resume for prospective employers
-=> /user-manual/index.gmi
-=> https://poly.me/ajhalili2006 - my portfolio on Polywork
+=> /resume.gmi my resume for prospective employers
+=> /user-manual/index.gmi personal user manual
+=> /contact.gmi contact details
+=> https://poly.me/ajhalili2006 my portfolio on Polywork
 
 ## Where to find me elsewhere
 
-* => https://tilde.zone/@ajhalili2006 Fediverse (I mostly active there)
-* => https://ajhalili2006.substack.com/
-* => https://ajhalili2006.start.page All of my socials in one place
+=> https://tilde.zone/@ajhalili2006 Fediverse (I mostly active there)
+=> https://verified.coop/@ajhalili2006 Backup account, in case things go wrong on main homeserver
+=> https://the.usualsuspects.lol/@JirohsMind Deep dives into my autistic life/mind, sometimes more personal posts, often less politically unhinged content
+=> https://ajhalili2006.substack.com/ My blog over at substack...
+=> https://blog.andreijiroh.eu.org ...or at Hashnode
+=> https://ajhalili2006.start.page All of my socials in one place
 
 ----------
 
 Made with love by Andrei Jiroh Halili (@ajhalili2006)
 => https://creativecommons.org/licenses/by-sa/4.0/ Copyright 2023. Some rights reserved under CC BY-SA 4.0.
 
-=> https://mau.dev/ajhalili2006/tildeverse-web/-/blob/main/gmi View sources on GitLab
+=> https://mau.dev/ajhalili2006/tildeverse-web/-/blob/main/gmi/index.gmi View sources on GitLab

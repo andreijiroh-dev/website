@@ -2,7 +2,7 @@
 image: 
   name: quay.io/ajhalili2006/mkdocs-material-build-ci:nightly
   entrypoint:
-   - sh
+   - /bin/sh
 
 stages:
   - build

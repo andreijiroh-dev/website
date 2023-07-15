@@ -9,6 +9,8 @@ if [[ $SOURCEHUT_PAGES_TOKEN == "" ]]; then
   exit 1
 fi
 
+mkdir "gmi/api"
+git rev-parse HEAD > "gmi/api/commit"
 tar -C gmi -cvz . -f site.tar.gz
 
 curl --oauth2-bearer "$SOURCEHUT_PAGES_TOKEN" \

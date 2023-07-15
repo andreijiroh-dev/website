@@ -6,9 +6,10 @@ There are so many ways you can contact Andrei Jiroh, but please respect his boun
 
 _Last updated: 2023-07-16_
 
-> This is a copy of <https://t.me/ajhalili2006_bio/4>, along with some changes since then. I'll revamp this pretty soon.
+=> https://t.me/ajhalili2006_bio/4 Originally at @ajhalili2006_bio on Telegram, along with some changes since then. I'll revamp this pretty soon.
 
-TL;DR: [Don't be a dick.](https://www.psychologytoday.com/us/blog/the-author-speaks/201909/don-t-be-dick)[^1] The rest
+=> https://www.psychologytoday.com/us/blog/the-author-speaks/201909/don-t-be-dick TL;DR: Don't be a dick. The rest are to cover "whataboutism" from every edge case I could cover.
+=> <https://community.hachyderm.io/docs/rule-explainer/#dont-be-a-dick> See also explainer from the Hachyderm team
 
 - Check my user manual and FAQs before contacting via DMs.
 - For sensitive manners (like reporting security related issues), use Keybase, Session or Matrix (make sure to enable EE2E when initiating an one-to-one chat with me). If you want to connect through Session, I’ll provide my public ID when needed.
@@ -19,14 +20,9 @@ TL;DR: [Don't be a dick.](https://www.psychologytoday.com/us/blog/the-author-spe
 unless you're either know me IRL or for official business at school and work and your org policies does only allow
 communications on Facebook Messenger/WhatsApp.
 
-[^1]: Explainer from admins and mods at `hachyderm.io`: https://community.hachyderm.io/docs/rule-explainer/#dont-be-a-dick
+----------
 
-## via email
+Made with love by Andrei Jiroh Halili (@ajhalili2006)
+=> https://creativecommons.org/licenses/by-sa/4.0/ Copyright 2023. Some rights reserved under CC BY-SA 4.0.
 
-Visit also <https://wiki.andreijiroh.eu.org/wiki/Email> for list of email addresses.
-
-## via socials
-
-Some of my socials are mentioned at my homepage and on my start.page page, but I'll also list them here:
-
-TBD
+=> https://mau.dev/ajhalili2006/tildeverse-web/-/blob/main/gmi/contact.gmi View sources on GitLab
