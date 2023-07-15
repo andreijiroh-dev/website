@@ -1,13 +1,19 @@
 # The Docker image that will be used to build your app
 image: quay.io/ajhalili2006/mkdocs-material-build-ci:nightly
 
-# Functions that should be executed before the build script is run
-before_script:
-  - pip3 install -r requirements.txt
-  - npm ci
-  - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
-  - (curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh || wget -t 3 -qO- https://cli.doppler.com/install.sh) | sh
+stages:
+  - build
 
+default:
+  tags:
+    - amd64 # currently, we only the image in amd64 right now.
+  # Functions that should be executed before the build script is run
+  before_script:
+    - pip3 install -r requirements.txt
+    - npm ci
+    - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+    - (curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh || wget -t 3 -qO- https://cli.doppler.com/install.sh) | sh
+# Global builds and stuff
 variables:
   DEBUG: "1"
   FF_ENABLE_COMMIT_DATA: "true"
@@ -15,6 +21,7 @@ variables:
   SECURE_FILES_DOWNLOAD_PATH: /run/secrets
 
 pages:
+  stage: build
   script:
     - bash ./build.sh
     - doppler run -- ./bin/deploykit-pages.sh
@@ -27,4 +34,13 @@ pages:
   rules:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+pages:srht:
+  stage: build
+  needs:
+    - pages
+  script:
+    - tar -C gmi -cvz . -f site.tar.gz
+    - doppler run -- ./bin/deploykit-srht.site.sh
+  rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

@@ -27,40 +27,14 @@ tasks:
   # in case of triggered from hottub
   - repo-sync: |
       cd tildeweb
-      env # for debugging purposes only
-
-      git remote add hub https://github.com/ajhalili2006/tildeverse-web && git pull hub main
-      git remote add lab https://mau.dev/ajhalili2006/tildeverse-web && git pull lab main
-
-      if [ "$BUILD_REASON" != "patchset" ] && [ "$BUILD_SUBMITTER" != "hub.sr.ht" ]; then
-        git remote set-url origin ssh://git@git.sr.ht/~ajhalili2006/tildeweb
-      fi
   - build: |
       cd tildeweb && pip3 install -r requirements.txt --user
       export PATH="$PATH:$HOME/.local/bin"
-
-      mkdocs build -d public -f mkdocs.yml
+      bash ./build.sh
   - generate-archive: |
       cd tildeweb
-      tar cvzf tildeweb-prod-build.tar.gz public
+      tar -C public -cvz . -f tildeweb-prod-build.tar.gz
   - deploy: |
-      if [ "$BUILD_REASON" == "patchset" ] && [ "$BUILD_SUBMITTER" == "hub.sr.ht" ]; then
-        complete-build
-        exit 0
-      elif [ ! -f "$HOME/.ssh/passowrdless-auth-sshfs" ]; then
-        complete-build
-        exit 0
-      fi
-  
-      cd tildeweb
-      echo "StrictHostKeyChecking=no" >> ~/.ssh/config
-      eval $(ssh-agent) && ssh-add ~/.ssh/passwordless-auth-sshfs
-      rsync -rP public ajhalili2006@vern.cc:/home/ajhalili2006/public_html/ || true
-      rsync -rP public ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html/ || true
-      #rsync -rP gmi ajhalili2006@vern.cc:/home/ajhalili2006/public_gemini/
-      #rsync -rP gmi ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_gemini/
-  
-      git push origin -o skip-ci
-      git remote set-url lab ssh://git@mau.dev/ajhalili2006/tildeverse-web && git push lab main
+      echo done
 artifacts:
   - tildeweb/tildeweb-prod-build.tar.gz

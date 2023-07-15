@@ -7,3 +7,4 @@ venv
 .cache
 node_modules
 .env
+*.tar.gz

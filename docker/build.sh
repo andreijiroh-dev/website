@@ -11,3 +11,7 @@ DOCKER_BUILDKIT=${DOCKER_BUILDKIT:-"0"} \
   -t $TAG \
   -f "$DOCKERFILE" \
   "$CONTEXT"
+
+if [[ $DEPLOY != "" ]]; then
+  docker push "$TAG"
+fi

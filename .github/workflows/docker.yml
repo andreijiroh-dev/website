@@ -32,17 +32,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Install the cosign tool except on PR
-      # https://github.com/sigstore/cosign-installer
-      - name: Install cosign
-        if: github.event_name != 'pull_request'
-        uses: sigstore/cosign-installer@f3c664df7af409cb4873aa5068053ba9d61a57b6 #v2.6.0
-        with:
-          cosign-release: 'v1.13.1'
-
       # Workaround: https://github.com/docker/build-push-action/issues/461
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@v2
+        with:
+          buildkitd-flags: --debug
 
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
@@ -74,7 +68,7 @@ jobs:
             type=raw,value=latest,enable={{is_default_branch}}
             type=sha,enable=true,priority=100,prefix=commit-,suffix=,format=long
             type=schedule,pattern=nightly
-
+            type=raw,prefix=branch-,value={{branch}}
       - uses: actions/checkout@v3
       - uses: hadolint/hadolint-action@v3.1.0
         with:
@@ -93,24 +87,14 @@ jobs:
           load: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          cache-from: |
+            type=registry,ref=quay.io/ajhalili2006/mkdocs-material-build-ci:buildkit-cache-web
+            type=registry,ref=quay.io/ajhalili2006/mkdocs-material-build-ci:branch-main
+            type=registry,ref=quay.io/ajhalili2006/mkdocs-material-build-ci:latest
+          cache-to: type=registry,ref=quay.io/ajhalili2006/mkdocs-material-build-ci:buildkit-cache-web
       - name: Workaround pushbot for misbehaving reverse proxies
         if: ${{ github.event_name != 'pull_request' }}
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} docker push {}
-
-      # Sign the resulting Docker image digest except on PRs.
-      # This will only write to the public Rekor transparency log when the Docker
-      # repository is public to avoid leaking data.  If you would like to publish
-      # transparency data even for private images, pass --force to cosign below.
-      # https://github.com/sigstore/cosign
-      - name: Sign the published Docker image
-        if: ${{ github.event_name != 'pull_request' }}
-        env:
-          COSIGN_EXPERIMENTAL: "true"
-        # This step uses the identity token to provision an ephemeral certificate
-        # against the sigstore community Fulcio instance.
-        run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }}
   devenv:
     name: Generate Gitpod workspace image snapshot
     runs-on: ubuntu-latest
@@ -124,17 +108,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Install the cosign tool except on PR
-      # https://github.com/sigstore/cosign-installer
-      - name: Install cosign
-        if: github.event_name != 'pull_request'
-        uses: sigstore/cosign-installer@f3c664df7af409cb4873aa5068053ba9d61a57b6 #v2.6.0
-        with:
-          cosign-release: 'v1.13.1'
-
       # Workaround: https://github.com/docker/build-push-action/issues/461
       - name: Setup Docker buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@
+        with:
+          buildkitd-flags: --debug
 
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
@@ -165,11 +143,12 @@ jobs:
             type=raw,value=latest,enable={{is_default_branch}}
             type=sha,enable=true,priority=100,prefix=commit-,suffix=,format=long
             type=schedule,pattern=nightly
+            type=raw,prefix=branch-,value={{branch}}
 
       - uses: actions/checkout@v3
       - uses: hadolint/hadolint-action@v3.1.0
         with:
-          dockerfile: docker/Dockerfile
+          dockerfile: .gitpod.Dockerfile
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
@@ -184,21 +163,11 @@ jobs:
           load: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          cache-from: |
+            type=registry,ref=quay.io/ajhalili2006/gitpod-workspace:buildkit-cache-web
+            type=registry,ref=ghcr.io/ajhalili2006/ajhalili2006.github.io/devenv:nightly
+            type=registry,ref=cr.io/ajhalili2006/ajhalili2006.github.io/devenv:branch-main
+          cache-to: type=registry,ref=quay.io/ajhalili2006/gitpod-workspace:buildkit-cache-web
       - name: Workaround pushbot for misbehaving reverse proxies
         if: ${{ github.event_name != 'pull_request' }}
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} docker push {}
-
-      # Sign the resulting Docker image digest except on PRs.
-      # This will only write to the public Rekor transparency log when the Docker
-      # repository is public to avoid leaking data.  If you would like to publish
-      # transparency data even for private images, pass --force to cosign below.
-      # https://github.com/sigstore/cosign
-      - name: Sign the published Docker image
-        if: ${{ github.event_name != 'pull_request' }}
-        env:
-          COSIGN_EXPERIMENTAL: "true"
-        # This step uses the identity token to provision an ephemeral certificate
-        # against the sigstore community Fulcio instance.
-        run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }}
