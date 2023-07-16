@@ -6,8 +6,7 @@
 
 checkoutLocation: tildeweb-ajhalili2006
 
-image:
-  file: .gitpod.Dockerfile
+image: ghcr.io/ajhalili2006/ajhalili2006.github.io/devenv:commit-8e8a1e4d9dea4af2ffcbe874f44617b7b425788d
 
 tasks:
   - init: |
