@@ -174,3 +174,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/ajhalili2006
       name: ~ajhalili2006 on linkedin for employers
+  analytics:
+    provider: plausible
+    property: andreijiroh.eu.org
+    url: "https://analytics.projectsegfau.lt"
