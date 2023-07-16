@@ -19,6 +19,7 @@ variables:
   FF_ENABLE_COMMIT_DATA: "true"
   FF_GENERATE_SOCIAL_CARDS: "true"
   SECURE_FILES_DOWNLOAD_PATH: /run/secrets
+  GIT_DEPTH: "0"
 
 pages:
   stage: build
