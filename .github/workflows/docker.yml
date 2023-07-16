@@ -92,7 +92,7 @@ jobs:
             type=registry,ref=quay.io/ajhalili2006/mkdocs-material-build-ci:buildkit-cache-web
             type=registry,ref=quay.io/ajhalili2006/mkdocs-material-build-ci:branch-main
             type=registry,ref=quay.io/ajhalili2006/mkdocs-material-build-ci:latest
-          cache-to: type=registry,ref=quay.io/ajhalili2006/mkdocs-material-build-ci:buildkit-cache-web
+          #cache-to: type=registry,ref=quay.io/ajhalili2006/mkdocs-material-build-ci:buildkit-cache-web
       - name: Workaround pushbot for misbehaving reverse proxies
         if: ${{ github.event_name != 'pull_request' }}
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} docker push {}
@@ -167,8 +167,8 @@ jobs:
           cache-from: |
             type=registry,ref=quay.io/ajhalili2006/gitpod-workspace:buildkit-cache-web
             type=registry,ref=ghcr.io/ajhalili2006/ajhalili2006.github.io/devenv:nightly
-            type=registry,ref=cr.io/ajhalili2006/ajhalili2006.github.io/devenv:branch-main
-          cache-to: type=registry,ref=quay.io/ajhalili2006/gitpod-workspace:buildkit-cache-web
+            type=registry,ref=ghcr.io/ajhalili2006/ajhalili2006.github.io/devenv:branch-main
+          #cache-to: type=registry,ref=quay.io/ajhalili2006/gitpod-workspace:buildkit-cache-web
       - name: Workaround pushbot for misbehaving reverse proxies
         if: ${{ github.event_name != 'pull_request' }}
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} docker push {}
