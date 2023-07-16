@@ -69,7 +69,7 @@ jobs:
             type=sha,enable=true,priority=100,prefix=commit-,suffix=,format=long
             type=schedule,pattern=nightly
             type=raw,prefix=branch-,value={{branch}}
-      - uses: actions/checkout@v3
+
       - uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: docker/Dockerfile
@@ -81,6 +81,7 @@ jobs:
         uses: docker/build-push-action@v4.1.1
         with:
           context: docker
+          platforms: linux/amd64
           #file: Dockerfile
           # workaround: https://github.com/moby/buildkit/issues/2713#issuecomment-1068540101
           push: false
@@ -145,7 +146,6 @@ jobs:
             type=schedule,pattern=nightly
             type=raw,prefix=branch-,value={{branch}}
 
-      - uses: actions/checkout@v3
       - uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: .gitpod.Dockerfile
@@ -158,6 +158,7 @@ jobs:
         with:
           context: .
           file: .gitpod.Dockerfile
+          platforms: linux/amd64
           # workaround: https://github.com/moby/buildkit/issues/2713#issuecomment-1068540101
           push: false
           load: true
