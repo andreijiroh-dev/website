@@ -23,6 +23,7 @@ contact me over encrypted lines of communications and other stuff.
 * [`storj://ajhalili2006-files/archive/things`](https://static.rtdevcdn.net.eu.org/ajhalili2006/things) - usually screenshots and personal snippet hosting stuff
 * [Resume](./resume) - links to my CV ([here's for my portfolio](./portfolio.md))
 * [Projects](./projects) - information about different projects I currently doing and in the past
+* [Gemini version of site](gemini://gemini.andreijiroh.eu.org) ([view via proxy](https://gp.p.psf.lt/gemini/gemini.andreijiroh.eu.org)) - plaintext edition of website
 * [`gcdn.vern.cc:~ajhalili2006/pkgs`](https://gcdn.vern.cc/users/ajhalili2006/pkgs)[^2] - personal Linux package repositories, usually as redirect targets from
 `cdn.andreijiroh.eu.org`
 (uptime: [![redirect service](https://img.shields.io/website?down_color=red&down_message=Not%20reachable&label=cdn.andreijiroh.eu.org&style=for-the-badge&up_color=light%20green&up_message=Reachable&url=https%3A%2F%2Fajhalili2006-cdnserve.builtwithdark.com)](https://cdn.andreijiroh.eu.org) [![Website](https://img.shields.io/website?label=gcdn.vern.cc&style=for-the-badge&url=https%3A%2F%2Fgcdn.vern.cc%2Fusers%2Fajhalili2006)](https://gcdn.vern.cc/users/ajhalili2006))

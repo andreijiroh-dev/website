@@ -1,0 +1,12 @@
+# Frequently Asked Questions
+
+=> gemini://gemini.andreijiroh.eu.org/faq.gmi Viewing from mirror?
+
+Working on this soon.
+
+----------
+
+Made with love by Andrei Jiroh Halili (@ajhalili2006)
+=> https://creativecommons.org/licenses/by-sa/4.0/ Copyright 2023. Some rights reserved under CC BY-SA 4.0.
+
+=> https://mau.dev/ajhalili2006/tildeverse-web/-/blob/main/gmi/contact.gmi View sources on GitLab

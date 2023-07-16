@@ -1,5 +1,6 @@
 # ~ajhalili2006's now page
 
+=> gemini://gemini.andreijiroh.eu.org/now.gmi Viewing from mirror?
 => https://andreijiroh.eu.org/now View in Clearnet
 
 To be ported soon.

@@ -1,5 +1,7 @@
 # Contacting ~ajhalili2006
 
+=> gemini://gemini.andreijiroh.eu.org/contact.gmi Viewing from mirror?
+
 There are so many ways you can contact Andrei Jiroh, but please respect his boundaries, time and mental health.
 
 ## Rules of communication
@@ -12,6 +14,8 @@ _Last updated: 2023-07-16_
 => <https://community.hachyderm.io/docs/rule-explainer/#dont-be-a-dick> See also explainer from the Hachyderm team
 
 - Check my user manual and FAQs before contacting via DMs.
+=> /user-manual/index.gmi See personal user manual
+=> /faq.gmi See FAQs about me
 - For sensitive manners (like reporting security related issues), use Keybase, Session or Matrix (make sure to enable EE2E when initiating an one-to-one chat with me). If you want to connect through Session, I’ll provide my public ID when needed.
 - No crypto nonsense (even I use mirror.xyz and some other dapps), self promo hellscape, doxxing, death/swatting threats or calls to violence towards me or anybody.
 - Don’t dare even send me NSFW/CACP.

@@ -4,11 +4,11 @@ There are so many ways you can contact Andrei Jiroh, but please respect his boun
 
 ## Rules of communication
 
-_Last updated: 2023-07-16_
+_Last updated: 2023-07-17_
 
 > This is a copy of <https://t.me/ajhalili2006_bio/4>, along with some changes since then. I'll revamp this pretty soon.
 
-TL;DR: [Don't be a dick.](https://www.psychologytoday.com/us/blog/the-author-speaks/201909/don-t-be-dick)[^1] The rest
+TL;DR: [Don't be a dick.](https://www.psychologytoday.com/us/blog/the-author-speaks/201909/don-t-be-dick)[^1] The rest are to cover "whataboutism" from every edge case I could cover.
 
 - Check [my user manual](/user-manual/index.md) and FAQs before contacting via DMs.
 - For sensitive manners (like reporting security related issues), use Keybase, Session or Matrix (make sure to enable EE2E when initiating an one-to-one chat with me). If you want to connect through Session, I’ll provide my public ID when needed.
