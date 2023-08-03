@@ -21,6 +21,6 @@
   },
   "homepage": "https://git.sr.ht/~ajhalili2006/tildeweb#readme",
   "devDependencies": {
-    "wrangler": "^2.13.0"
+    "wrangler": "^3.1.1"
   }
 }
