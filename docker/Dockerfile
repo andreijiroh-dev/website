@@ -38,7 +38,7 @@ RUN apk add --no-cache \
      openssh \
      gnupg \
      curl \
-  && (curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh || wget -t 3 -qO- https://cli.doppler.com/install.sh) \
+  && curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh \
     | sh
 # The "--break-system-packages" is added so I don't need to do requirements.txt workaround,
 # although I also consider using pipx if we wanted to.
