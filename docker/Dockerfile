@@ -5,7 +5,7 @@ FROM ghcr.io/hadolint/hadolint:latest-alpine AS hadolint-binary
 # that anything might go wrong.
 FROM alpine:edge AS buildkit
 
-# Since hadolint isn't in the package repos for Alpineyet, we'll copying from the offical
+# Since hadolint isn't in the package repos for Alpine yet, we'll copying from the offical
 # Docker image instead.
 COPY --from=hadolint-binary /bin/hadolint /usr/bin/hadolint
 
@@ -40,7 +40,10 @@ RUN apk add --no-cache \
      curl \
   && (curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh || wget -t 3 -qO- https://cli.doppler.com/install.sh) \
     | sh
+# The "--break-system-packages" is added so I don't need to do requirements.txt workaround,
+# although I also consider using pipx if we wanted to.
 RUN pip3 install --no-cache-dir \
+      --break-system-packages \
       mkdocs-material \ 
       mkdocs-redirects \
       mkdocs-git-revision-date-localized-plugin \
