@@ -95,7 +95,9 @@ jobs:
           #cache-to: type=registry,ref=quay.io/ajhalili2006/mkdocs-material-build-ci:buildkit-cache-web
       - name: Workaround pushbot for misbehaving reverse proxies
         if: ${{ github.event_name != 'pull_request' }}
-        run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} docker push {}
+        run: |
+          set -x
+          echo "${{ steps.meta.outputs.tags }}" | xargs --verbose -I {} docker push {}
   devenv:
     name: Generate Gitpod workspace image snapshot
     runs-on: ubuntu-latest
@@ -171,4 +173,6 @@ jobs:
           #cache-to: type=registry,ref=quay.io/ajhalili2006/gitpod-workspace:buildkit-cache-web
       - name: Workaround pushbot for misbehaving reverse proxies
         if: ${{ github.event_name != 'pull_request' }}
-        run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} docker push {}
+        run: |
+          set -x
+          echo "${{ steps.meta.outputs.tags }}" | xargs --verbose -I {} docker push {}
