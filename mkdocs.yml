@@ -20,7 +20,7 @@ repo_name: source code
 # navbar
 nav:
   - Main Hub: 
-    - Homepage: index.md
+    - index.md
     - nowpage: now.md
     - Contact: contact.md
     - "All my links": "https://ajhalili2006.start.page"
@@ -32,10 +32,10 @@ nav:
     - Keys: keys/index.md
     - Anything else: https://coda.io/@ajhalili2006/readme
   - Portfolio: 
-    - Summary: portfolio.md
-    - Projects: projects.md
-    - Communities: communities.md
-    - Tildes: tildes.md
+    - portfolio/index.md
+    - Projects: portfolio/projects.md
+    - Communities: portfolio/communities.md
+    - Tildes: portfolio/tildes.md
   - Blog: "https://blog.andreijiroh.eu.org" # todo: point to substack
 
 # theme settings
@@ -109,11 +109,14 @@ plugins:
   - search
   - redirects:
       redirect_maps:
-        "user-manual/portfolio.md": "portfolio.md"
+        "user-manual/portfolio.md": "portfolio/index.md"
         "dni.md": "user-manual/dni.md"
         "resume.md": "user-manual/resume.md"
         "blog.md": "https://ajhalili2006.substack.com"
         "socials.md": "https://ajhalili2006.start.page"
+        "communities.md": "portfolio/communities.md"
+        "tildes.md": "portfolio/tildes.md"
+        "projects.md": "portfolio/projects.md"
   # debugging/bug reporting purposes only, proceed with caution
   #- info
   - git-revision-date-localized:
@@ -157,7 +160,7 @@ extra:
       link: https://tilde.zone/@ajhalili2006
       name: ~ajhalili2006 on tildeverse
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/Kuys_Potpot
+      link: https://twitter.com/ajhalili2006
       name: ~ajhalili2006 on twitter, under his old username
     - icon: fontawesome/brands/github
       link: https://github.com/ajhalili2006

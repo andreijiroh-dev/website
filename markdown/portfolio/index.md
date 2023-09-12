@@ -1,3 +1,5 @@
+title: Portfolio
+---
 # ~ajhalili2006's portfolio
 
 *Last updated: 2023-03-21* ([Looking for my resume?](./user-manual/resume.md))

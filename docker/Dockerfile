@@ -10,7 +10,9 @@ FROM alpine:edge AS buildkit
 COPY --from=hadolint-binary /bin/hadolint /usr/bin/hadolint
 
 ENV PACKAGES=/usr/local/lib/python3.11/site-packages
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin
 ENV PYTHONDONTWRITEBYTECODE=1
+COPY --from=hadolint-binary /bin/hadolint /usr/bin/hadolint
 
 # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/#linux but for Alpine
 # hadolint ignore=DL3018,DL3013
@@ -25,6 +27,7 @@ RUN apk add --no-cache \
      coreutils \
      python3 \
      py3-pip \
+     pipx \
      py3-wheel \
      shellcheck \
      gcc \
@@ -42,8 +45,8 @@ RUN apk add --no-cache \
     | sh
 # The "--break-system-packages" is added so I don't need to do requirements.txt workaround,
 # although I also consider using pipx if we wanted to.
-RUN pip3 install --no-cache-dir \
-      --break-system-packages \
+RUN pipx install pipenv \
+  && pipenv install --system --no-cache \
       mkdocs-material \ 
       mkdocs-redirects \
       mkdocs-git-revision-date-localized-plugin \
