@@ -10,6 +10,9 @@ build:
   tools:
     python: "3.11"
     #nodejs: 18
+  jobs:
+    post_build:
+      - cp -rv markdown/.well-known $READTHEDOCS_OUTPUT/_html/.well-known
 
 mkdocs:
   configuration: mkdocs.yml
