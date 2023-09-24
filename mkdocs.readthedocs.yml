@@ -1,0 +1,4 @@
+INHERIT: mkdocs.yml
+site_name: ~ajhalili2006 (staging website)
+extra:
+  deployment: staging # for the announcement banner

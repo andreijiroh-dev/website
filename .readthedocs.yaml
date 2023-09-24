@@ -23,7 +23,7 @@ build:
     - pngquant
 
 mkdocs:
-  configuration: mkdocs.yml
+  configuration: mkdocs.readthedocs.yml
 
 # Optionally declare the Python requirements required to build your docs
 python:

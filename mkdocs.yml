@@ -152,6 +152,7 @@ markdown_extensions:
 
 # extras
 extra:
+  #deployment: staging
   # my socials
   social:
     - icon: simple/substack
