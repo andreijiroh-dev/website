@@ -10,14 +10,9 @@ image: ghcr.io/ajhalili2006/ajhalili2006.github.io/devenv:commit-8e8a1e4d9dea4af
 
 tasks:
   - init: |
-      python3 -m venv .venv
-      source .venv/bin/activate
-      pip3 install -r requirements.txt
+      pipenv install
     command: |
-      source .venv/bin/activate
-      
-      # since it might not be carried on venv shell, we did this instead
-      FF_ENABLE_COMMIT_DATA=true mkdocs serve
+      FF_ENABLE_COMMIT_DATA=true pipenv run -- mkdocs serve --watch overrides --watch-theme --livereload
     name: site-localdev
     env:
       FF_ENABLE_COMMIT_DATA: "true" # Required to use git-revision-date-localized, like in prod.
