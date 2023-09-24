@@ -1,8 +1,8 @@
 # ~ajhalili2006's website
 
 [![Hosted on pages.dev](https://img.shields.io/badge/hosted%20on-pages.dev-orange?style=flat-square&logo=cloudflare)](https://pages.dev)
-[![GitLab last commit](https://img.shields.io/gitlab/last-commit/ajhalili2006/tildeverse-web?gitlab_url=https%3A%2F%2Fmau.dev&style=flat-square)](https://mau.dev/ajhalili2006/tildeverse-web/commits)
-[![RTFD.io](https://readthedocs.org/projects/ajhalili2006/badge/?version=latest&style=flat-square)](https://readthedocs.org/projects/ajhalili2006/)
+[![GitLab last commit](https://img.shields.io/gitlab/last-commit/andreijiroh.dev/website?gitlab_url=https%3A%2F%2Fmau.dev&style=flat-square)](https://mau.dev/ajhalili2006/tildeverse-web/commits)
+[![Staging builds on Read The Docs Community](https://readthedocs.org/projects/ajhalili2006/badge/?version=latest&style=flat-square)](https://readthedocs.org/projects/ajhalili2006/)
 
 This is my sources for both [`andreijiroh.(eu.org|dev)`](https://andreijiroh.eu.org) and tilde userpages in Ctrl-C Club and ~vern,
 built with Mkdocs + [Material theme](https://go.andreijiroh.eu.org/mkdocs-material) by [~squidfunk](https://go.andreijiroh.eu.org/squidfunk).
@@ -62,6 +62,7 @@ the patches for any reasons, including mental health breaks.
 
 ## License
 
-Unless otherwise noted, 
+Unless otherwise noted, source code is licensed under the MPl-2.0 while website content (text-only)
+is under CC BY-SA 4.0
 
 The only thing that's not covered by this is [the favicon version](markdown/assets/images/favicon.png) of my profile picture.
