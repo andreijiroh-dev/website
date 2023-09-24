@@ -12,7 +12,15 @@ build:
     #nodejs: 18
   jobs:
     post_build:
-      - cp -rv markdown/.well-known $READTHEDOCS_OUTPUT/_html/.well-known
+      - cp -rv markdown/.well-known $READTHEDOCS_OUTPUT/html/.well-known
+  apt_packages:
+    - libcairo2-dev
+    - libfreetype6-dev
+    - libffi-dev
+    - libjpeg-dev
+    - libpng-dev
+    - libz-dev
+    - pngquant
 
 mkdocs:
   configuration: mkdocs.yml
