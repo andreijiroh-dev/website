@@ -1,7 +1,8 @@
 # ~ajhalili2006's website
 
-[![Hosted on pages.dev](https://img.shields.io/badge/hosted%20on-pages.dev-orange?style=for-the-badge&logo=cloudflare)](https://pages.dev)
-[![GitLab last commit](https://img.shields.io/gitlab/last-commit/ajhalili2006/tildeverse-web?gitlab_url=https%3A%2F%2Fmau.dev&style=for-the-badge)](https://mau.dev/ajhalili2006/tildeverse-web/commits)
+[![Hosted on pages.dev](https://img.shields.io/badge/hosted%20on-pages.dev-orange?style=flat-square&logo=cloudflare)](https://pages.dev)
+[![GitLab last commit](https://img.shields.io/gitlab/last-commit/ajhalili2006/tildeverse-web?gitlab_url=https%3A%2F%2Fmau.dev&style=flat-square)](https://mau.dev/ajhalili2006/tildeverse-web/commits)
+[![RTFD.io](https://readthedocs.org/projects/ajhalili2006/badge/?version=latest&style=flat-square)](https://readthedocs.org/projects/ajhalili2006/)
 
 This is my sources for both [`andreijiroh.(eu.org|dev)`](https://andreijiroh.eu.org) and tilde userpages in Ctrl-C Club and ~vern,
 built with Mkdocs + [Material theme](https://go.andreijiroh.eu.org/mkdocs-material) by [~squidfunk](https://go.andreijiroh.eu.org/squidfunk).
