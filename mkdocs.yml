@@ -27,10 +27,11 @@ nav:
   - Personal user manual:
     - Manual Homepage: user-manual/index.md
     - Resume: user-manual/resume.md
+    - DNI List: user-manual/dni.md
     - Boundaries: user-manual/boundaries.md
     - Communications: user-manual/communications.md
     - Keys: keys/index.md
-    - Anything else: https://coda.io/@ajhalili2006/readme
+    - Encrypted communications and keys: keys/index.md
   - Portfolio: 
     - portfolio/index.md
     - Projects: portfolio/projects.md

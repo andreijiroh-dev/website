@@ -1,15 +1,12 @@
 # Personal and Professional Boundaries
 
-!!! info "Visit the Coda version of this page for up-to-date content"
-    [:octicons-link-external-16: Open in Coda](https://coda.io/@ajhalili2006/readme/personal-and-professional-boundaries-9){ .md-button }
-    [:octicons-report-16: Report inconsistencies between versions](https://go.andreijiroh.eu.org/website-feedback/coda){ .md-button }
 
----
 
 ## General
 
 * Don’t leak nor spill beans on what shouldn’t be discussed, especially confidential and personal stuff.
-* Read my personal user manual in full before you ask.
+This also includes anything discussed off-the-record.
+* Read my personal user manual in full before you contact me.
 * For fandom-related stuff and other things, consider [reading my DNI](./dni.md)
 
 ## Personal
@@ -26,3 +23,6 @@ Hopefully tantrums, meltdowns and shutdowns don’t happen in front of your own 
 In most cases, I might be frustated
 
 ## What about your DNI (Do Not Interact) list?
+
+The [DNI list](./dni.md) is mostly apply to online communications, especially among different (multi)fandom (sometimes RP) accounts.
+You can also treat them as extension (or addendum) to this.

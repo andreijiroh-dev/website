@@ -2,6 +2,8 @@ title: Portfolio
 ---
 # ~ajhalili2006's portfolio
 
+!!! info "Looking for the chronological version of this?"
+
 *Last updated: 2023-03-21* ([Looking for my resume?](./user-manual/resume.md))
 
 ## work
@@ -17,4 +19,4 @@ title: Portfolio
 ## community
 
 * honorable mention in Gitpod's [credits to security researchers](https://www.gitpod.io/security/thanks) page per [`gh:gitpod-io/workspace-images#540`](https://github.com/gitpod-io/workspace-images/pull/540)
-* Made the [GitLab Community Discord](https://discord.gg/gitlab), now officially managed by the GitLab team
+* Made the [GitLab Community Discord](https://discord.gg/gitlab), now officially managed by the GitLab team and currently as community admin behind-the-scenes
