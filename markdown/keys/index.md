@@ -8,7 +8,7 @@ an government-issued ID.
 ## Key-signing ceremories
 
 If you would like to build your web of trust with me (and probably with your friends), let me know
-(via [my meeting booking form](https://coda.io/form/Schedule-a-meeting-with-ajhalili2006_deaLq2my-OX),
+(via [my meeting booking form](https://calendar.app.google/P8dvgAsvrtqi8mPR9) ([alternative link](https://coda.io/form/Schedule-a-meeting-with-ajhalili2006_deaLq2my-OX)),
 or via regular chat venues).
 Due to my current schedule as a high school student, I'm only accept asynchorous key-signing ceremories
 for the moment.

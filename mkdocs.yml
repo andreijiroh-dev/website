@@ -30,7 +30,6 @@ nav:
     - DNI List: user-manual/dni.md
     - Boundaries: user-manual/boundaries.md
     - Communications: user-manual/communications.md
-    - Keys: keys/index.md
     - Encrypted communications and keys: keys/index.md
   - Portfolio: 
     - portfolio/index.md

@@ -7,32 +7,44 @@ description: |
 
 # Well hello there!
 
-I'm ~ajhalili2006 (he/they[^1]) and this is my personal website, statically hosted on [~vern][tilde-vern]
-(with [an mirror on ctrl-c.club][tilde-ctrlc] and [tilde-agonistic one] via [CF Pages]). This also serves as an mini personal wiki, although I run
-[a wiki over at Miraheze](https://ajhalili2006.miraheze.org) with more content like my user manual, how to
-contact me over encrypted lines of communications and other stuff.
+![](https://github.com/ajhalili2006/ajhalili2006/raw/83d1552339fec8d91eadcab0289d43b6a9ef775c/static/readme-banner-2022.png)
 
-[tilde-vern]: https://ajhalili2006.vern.cc
-[tilde-ctrlc]: https://ctrl-c.club/~ajhalili2006
-[tilde-agonistic one]: https://andreijiroh.eu.org
-[CF Pages]: https://pages.dev
-[^1]: Technically `he/him/they/them`, although I mostly prefer `they/them`. See [communications section of my user manual](./user-manual/communications.md)
+I'm Andrei Jiroh Halili, an future web dev from the Philippines, currently an high school student at day and self-assigned BDFL
+and lead open-source maintainer at [Recap Time Squad](https://recaptime.eu.org)[^1]
+and writer for my personal blog and The Bloody Hell PH,
+sometimes I'm contributing to open-source projects.
 
-## In this hub
+It might be not obvious for most of you, but behind the scenes I'm neurodivegent,
+specifically [#ActuallyAutistic](https://anagora.org/actuallyautistic)[^2] [^3], so I'm mostly in limited availability,
+not only for my mental health.
 
-* [`storj://ajhalili2006-files/archive/things`](https://static.rtdevcdn.net.eu.org/ajhalili2006/things) - usually screenshots and personal snippet hosting stuff
-* [Resume](./resume) - links to my CV ([here's for my portfolio](./portfolio.md))
-* [Projects](./projects) - information about different projects I currently doing and in the past
-* [Gemini version of site](gemini://gemini.andreijiroh.eu.org) ([view via proxy](https://gp.p.psf.lt/gemini/gemini.andreijiroh.eu.org)) - plaintext edition of website
-* [`gcdn.vern.cc:~ajhalili2006/pkgs`](https://gcdn.vern.cc/users/ajhalili2006/pkgs)[^2] - personal Linux package repositories, usually as redirect targets from
-`cdn.andreijiroh.eu.org`
-(uptime: [![redirect service](https://img.shields.io/website?down_color=red&down_message=Not%20reachable&label=cdn.andreijiroh.eu.org&style=for-the-badge&up_color=light%20green&up_message=Reachable&url=https%3A%2F%2Fajhalili2006-cdnserve.builtwithdark.com)](https://cdn.andreijiroh.eu.org) [![Website](https://img.shields.io/website?label=gcdn.vern.cc&style=for-the-badge&url=https%3A%2F%2Fgcdn.vern.cc%2Fusers%2Fajhalili2006)](https://gcdn.vern.cc/users/ajhalili2006))
-* [`/keys`](./keys) - PGP and OpenSSH public keys for identity verification and encryption
+## Learn more about me
 
-[^2]: ~vern is currently experiencing technical diffculties lately, so I might point to Storj DCS in the future.
+* [**Resume**](./user-manual/resume.md) and [**portfolio**](./portfolio/index.md) for those who want to hire me in the future
+* [**Personal user manual**](./user-manual/index.md) - Go deeper into the source and
+learn more about me than a good ol' profile README.
+* [**nowpage**](./now.md) - What's cooking lately IRL and in my own corner of the internet?
 
-## Where to find me elsewhere
+## Where to ~~stalk~~ find me (online)?
 
-See also [his start.page][startpage-buffer] for all the socials where I'm active and contact details. The footer contains links to most used social accounts.
+!!! info "This list is nonexhaustive"
+    Consider visiting [my "all-the-links" page](https://ajhalili2006.start.page) for the full list.
 
-[startpage-buffer]: https://ajhalili2006.start.page
+* **Code forges**: [![GitLab SaaS](https://img.shields.io/badge/%40ajhalili2006%40gitlab.com-6E49CB?&style=flat-square&logo=gitlab)](https://gitlab.com/ajhalili2006)
+[![mau.dev](https://img.shields.io/badge/%40ajhalili2006%40mau.dev-6E49CB?&style=flat-square&logo=gitlab)](https://mau.dev/ajhalili2006)
+[![GitHub](https://img.shields.io/github/followers/ajhalili2006?label=%40ajhalili2006%40github.com&logo=github&style=flat-square)](https://github.com/ajhalili2006)
+[![sr.ht](https://img.shields.io/badge/sr.ht-~ajhalili2006-black?style=flat-square)](https://sr.ht/~ajhalili2006)
+* **Twitter/X**: [![Twitter](https://img.shields.io/twitter/follow/ajhalili2006?color=blue&label=%40ajhalili2006%40twitter.com&logo=twitter&style=flat-square)](https://twitter.com/ajhalili2006)
+* **Reddit**: [![Reddit](https://img.shields.io/reddit/user-karma/combined/andreihalili?label=andreihalili&logo=reddit&style=flat-square)](https://reddit.com/user/andreihalili)
+* **Fediverse**: [![Mastodon Follow](https://img.shields.io/mastodon/follow/108807402634952369?color=blue&domain=https%3A%2F%2Ftilde.zone&label=%40ajhalili2006%40tilde.zone&logo=mastodon&style=flat-square)](https://tilde.zone/@ajhalili2006)
+* **Substack**: [![Substack](https://img.shields.io/badge/%40ajhalili2006%20on%20substack-FF6719?style=flat-square&logo=substack&logoColor=white)](https://substack.com/@ajhalili2006)
+* **Chat**: [![Matrix](https://img.shields.io/badge/%40ajhalili2006:envs.net-black?&style=flat-square&logo=matrix&logoColor=white)](https://matrix.to/#/@ajhalili2006:envs.net)
+[![chat with ~ajhalili2006 on Recap Time Squad's Zulip server](https://img.shields.io/badge/zulip%20chat-%23ajhalili2006%3Arecaptime--dev.zulipchat.com-blue?style=flat-square&logo=zulip)](https://recaptime-dev.zulipchat.com/#narrow/stream/405458-ajhalili2006)
+[![Keybase](https://img.shields.io/badge/ajhalili2006-grey?&style=flat-square&logo=keybase&logoColor=white)](https://keybase.io/ajhalili2006)
+[![Discord](https://img.shields.io/badge/Discord%20server-5539cc?&style=flat-square&logo=discord&logoColor=white)](https://discord.gg/kf5nz4X)
+[![Telegram](https://img.shields.io/badge/Telegram-grey?&style=flat-square&logo=telegram&logoColor=white)](https://telegram.dog/ajhalili2006)
+
+[^1]: Not an company, as mentioned in my GitHub and GitLab profiles
+[^2]: There are many great resources from the autistic community (and also the wider neurodiversity and disability rights community), especially from [Neuroclastic](https://neuroclastic.com/autism-101-resources-from-the-autistic-community/), if you want to be an ally or simply want to help make inclusivity across intersections mainstream.
+[^3]: Originally disclosed as [an comment in a r/PH post](https://www.reddit.com/r/Philippines/comments/1117266/comment/j8dgv95/?context=3), although
+it's still a work in progress for me to recover from autistic burnout and to unmask.

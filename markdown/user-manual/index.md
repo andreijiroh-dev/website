@@ -17,7 +17,7 @@ them as I add missing information and update outdated details behind the scenes.
 
 ## About me
 
-I'm Andrei Jiroh, a Filipino 16-year-old junior high school student at day and Node.js and Deno backend developer at [Recap Time Squad](https://recaptime.eu.org) (technically not a legally-recognized company[^1] yet where I host most of my projects) and Linux + family IT sysadmin, resident Bash script kiddie on personal projects at home. I'm also happens to be a middle child while being neurodivergent, specifically I'm [#ActuallyAutistic](https://autism-advocacy.fandom.com/wiki/ActuallyAutistic)[^2].
+[_Go back to the homepage for the introduction_](../index.md)
 
 ## Contents
 
@@ -34,7 +34,3 @@ Although they originally editied in Coda, I slowly moving some of them here.
 
 * [Resume](./resume.md)
 * [Legalese and policies](https://coda.io/@ajhalili2006/readme/legalese-and-policies-5)
-
-[^1]: Or a legal entity for holding funds, any legal assets (including copyright and trademark) and signing in contracts.
-My planned setup would be start as a small business in Philippines, securing things like
-[^2]: There are many great resources from the autistic community (and also the wider neurodiversity and disability rights community), especially from [Neuroclastic](https://neuroclastic.com/autism-101-resources-from-the-autistic-community/), if you want to be an ally or simply want to help make inclusivity across intersections mainstream.

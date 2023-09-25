@@ -7,9 +7,9 @@ curious on what kind of work I'm doing in the past and present and then some not
 
 ## The basics
 
-The resume itself is hosted on [Coda](https://coda.io/@ajhalili2006/readme/resume-2), but I'm working on making PDF versions of them behind the scenes. You can also stalk
+The resume itself is hosted on [my Coda profile doc-as-page](https://coda.io/@ajhalili2006/readme/resume-2), but I'm working on making PDF versions of them behind the scenes. You can also stalk
 me on [LinkedIn](https://linkedin.com/in/ajhalili2006) if you do.
 
 ## Need customized ones?
 
-Contact ~ajhalili2006 over chat or email, especially if you need his phone number and home address.
+[Contact ~ajhalili2006](../contact.md) over chat or email, especially if you need his phone number and home address.
