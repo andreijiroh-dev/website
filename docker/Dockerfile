@@ -45,13 +45,18 @@ RUN apk add --no-cache \
     | sh
 # The "--break-system-packages" is added so I don't need to do requirements.txt workaround,
 # although I also consider using pipx if we wanted to.
-RUN pipx install pipenv \
-  && pipenv install --system --no-cache \
-      mkdocs-material \ 
-      mkdocs-redirects \
+# See also https://www.jeffgeerling.com/blog/2023/how-solve-error-externally-managed-environment-when-installing-pip3
+RUN rm -rv /usr/lib/python3*/EXTERNALLY-MANAGED \
+  && pip install --no-cache \
+      mkdocs-material \
+      mkdocs-git-committers-plugin-2 \
       mkdocs-git-revision-date-localized-plugin \
+      mkdocs-minify-plugin \
+      mkdocs-redirects \
+      mkdocs-rss-plugin \
       pillow \
-      cairosvg
+      cairosvg \
+      pipenv
 
 # Trust directory, required for git >= 2.35.2
 # Follows the docs for the Docker-based site build setup
