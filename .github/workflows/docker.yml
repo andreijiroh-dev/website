@@ -85,7 +85,7 @@ jobs:
           #file: Dockerfile
           # workaround: https://github.com/moby/buildkit/issues/2713#issuecomment-1068540101
           push: true
-          load: true
+          #load: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: |
@@ -158,7 +158,7 @@ jobs:
           platforms: linux/amd64
           # workaround: https://github.com/moby/buildkit/issues/2713#issuecomment-1068540101
           push: true
-          load: true
+          #load: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: |
