@@ -1,8 +1,10 @@
 # ~ajhalili2006's website
 
 [![Hosted on pages.dev](https://img.shields.io/badge/hosted%20on-pages.dev-orange?style=flat-square&logo=cloudflare)](https://pages.dev)
-[![GitLab last commit](https://img.shields.io/gitlab/last-commit/andreijiroh.dev/website?gitlab_url=https%3A%2F%2Fmau.dev&style=flat-square)](https://mau.dev/ajhalili2006/tildeverse-web/commits)
+[![GitLab last commit](https://img.shields.io/gitlab/last-commit/andreijiroh.dev/website?gitlab_url=https%3A%2F%2Fmau.dev&style=flat-square)](https://mau.dev/andreijiroh.dev/website/commits)
 [![Staging builds on Read The Docs Community](https://readthedocs.org/projects/ajhalili2006/badge/?version=latest&style=flat-square)](https://readthedocs.org/projects/ajhalili2006/)
+[![Docker CI](https://github.com/ajhalili2006/ajhalili2006.github.io/actions/workflows/docker.yml/badge.svg?event=schedule&style=flat-badge)](https://github.com/ajhalili2006/ajhalili2006.github.io/actions/workflows/docker.yml?query=event%3Aschedule)
+[![pipeline status](https://mau.dev/andreijiroh.dev/website/badges/main/pipeline.svg?style=flat-square)](https://mau.dev/andreijiroh.dev/website/-/pipelines)
 
 This is my sources for both [`andreijiroh.(eu.org|dev)`](https://andreijiroh.eu.org) and tilde userpages in Ctrl-C Club and ~vern,
 built with Mkdocs + [Material theme](https://go.andreijiroh.eu.org/mkdocs-material) by [~squidfunk](https://go.andreijiroh.eu.org/squidfunk).
@@ -10,10 +12,11 @@ built with Mkdocs + [Material theme](https://go.andreijiroh.eu.org/mkdocs-materi
 
 ## Mirrors
 
-Canonically developed at [mau.dev](https://mau.dev/ajhalili2006/tildeverse-web.git) where the deployments happen, with the following mirrors being maintained:
+Canonically developed at [mau.dev](https://mau.dev/andreijiroh.dev/website.git) where the deployments happen, with the following mirrors being maintained:
 
 * GitHub: <https://github.com/ajhalili2006/ajhalili2006.github.io.git>, where Docker image builds happen
 * Jetbrains Space (personal): <https://ajhalili2006.jetbrains.space/p/web/repositories/andreijiroh.dev/files/README.md>
+* Sourcehut: <https://git.sr.ht/~ajhalili2006/tildeweb>
 
 ## Development
 
