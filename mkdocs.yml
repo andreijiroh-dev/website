@@ -13,7 +13,7 @@ docs_dir: markdown
 use_directory_urls: true
 
 # repos
-repo_url: https://mau.dev/ajhalili2006/tildeverse-web
+repo_url: https://mau.dev/andreijiroh.dev/website
 edit_uri: edit/main/markdown
 repo_name: source code
 

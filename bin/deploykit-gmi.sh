@@ -1,4 +1,4 @@
-#!/bin/env 
+#!/bin/env bash
 set -xe
 
 SOURCEHUT_USERNAME=${SOURCEHUT_PAGES_SUBDOMAIN:-"ajhalili2006"}

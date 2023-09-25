@@ -27,7 +27,7 @@ info() {
   echo "info: $*"
 }
 
-if [[ $_branch_name_git == "main" ]]; then
+if [[ $_branch_name_git == "main" ]] || [[ $_branch_name_git == "HEAD" ]]; then
   DEPLOY_COMMAND="npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch ${_branch_name_git} --commit-hash ${_commit_sha} --env production"
 elif [[ $CI_PIPELINE_SOURCE == "merge_request" ]]; then
   DEPLOY_COMMAND="npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch ${_branch_name_git} --commit-hash ${_commit_sha} --env pr-$CI_MERGE_REQUEST_ID"
@@ -47,10 +47,11 @@ fi
 if [[ $FF_DIRTY_DEPLOY == "true" ]]; then
   $DEPLOY_COMMAND --commit-dirty
 else
-  ${DEPLOY_COMMAND}
+  DEFAULT_COMMAND="npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch main --env production"
+  ${DEPLOY_COMMAND:-$DEFAULT_COMMAND}
 fi
 
-if [[ $_branch_name_git == "main" ]]; then
+if [[ $_branch_name_git == "main" ]] || [[ $_branch_name_git == "HEAD" ]]; then
   tar -C public -cvz . -f site-build.tar.gz
   curl --oauth2-bearer "$SOURCEHUT_PAGES_TOKEN" \
     -Fcontent=@site-build.tar.gz \
