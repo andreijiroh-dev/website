@@ -1,0 +1,23 @@
+{#-
+    SPDX-License-Identifier: MIT
+    
+    Generally copied from upstream sources: https://github.com/squidfunk/mkdocs-material/blob/79515879d159ee807db61687c7d83aa63a8e9905/material/templates/partials/copyright.html
+  -#}
+  <div class="md-copyright">
+    {% if config.copyright %}
+      <div class="md-copyright__highlight">
+        {{ config.copyright }}
+      </div>
+    {% endif %}
+    {% if not config.extra.generator == false %}
+      Made with
+      <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+        Material for MkDocs
+      </a>
+    {% endif %}
+    <br>
+    Archived versions of this page might be available at
+      <a href="https://web.archive.org/*/{{ page.canonical_url|url }}">Internet Archive</a>
+      or at <a href="https://archive.md/{{ page.canonical_url|url }}">archive.today</a>,
+      updated manually after an successful build.
+  </div>
