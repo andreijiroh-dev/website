@@ -7,7 +7,7 @@ description: |
 
 # Well hello there!
 
-![](https://github.com/ajhalili2006/ajhalili2006/raw/83d1552339fec8d91eadcab0289d43b6a9ef775c/static/readme-banner-2022.png)
+![GitHub readme banner](https://github.com/ajhalili2006/ajhalili2006/raw/83d1552339fec8d91eadcab0289d43b6a9ef775c/static/readme-banner-2022.png)
 
 I'm Andrei Jiroh Halili, an future web dev from the Philippines, currently an high school student at day and self-assigned BDFL
 and lead open-source maintainer at [Recap Time Squad](https://recaptime.eu.org)[^1]
@@ -24,6 +24,8 @@ not only for my mental health.
 * [**Personal user manual**](./user-manual/index.md) - Go deeper into the source and
 learn more about me than a good ol' profile README.
 * [**nowpage**](./now.md) - What's cooking lately IRL and in my own corner of the internet?
+* [**Blog**](https://blog.andreijiroh.eu.org) - Personal musings, all things web dev and Linux and more.
+    * Subscribe via [Substack](https://ajhalili2006.substack.com/subscribe), Hashnode (by following the blog) or even [Medium](https://ajhalili2006.medium.com/subscribe) to get new posts straight to inbox.
 
 ## Where to ~~stalk~~ find me (online)?
 
@@ -37,12 +39,21 @@ learn more about me than a good ol' profile README.
 * **Twitter/X**: [![Twitter](https://img.shields.io/twitter/follow/ajhalili2006?color=blue&label=%40ajhalili2006%40twitter.com&logo=twitter&style=flat-square)](https://twitter.com/ajhalili2006)
 * **Reddit**: [![Reddit](https://img.shields.io/reddit/user-karma/combined/andreihalili?label=andreihalili&logo=reddit&style=flat-square)](https://reddit.com/user/andreihalili)
 * **Fediverse**: [![Mastodon Follow](https://img.shields.io/mastodon/follow/108807402634952369?color=blue&domain=https%3A%2F%2Ftilde.zone&label=%40ajhalili2006%40tilde.zone&logo=mastodon&style=flat-square)](https://tilde.zone/@ajhalili2006)
+[![Static Badge](https://img.shields.io/badge/%40JirohsMind%40the.usualsuspects.lol-blue?style=flat-square&logo=fediverse)](https://the.usualsuspects.lol/@JirohsMind)
 * **Substack**: [![Substack](https://img.shields.io/badge/%40ajhalili2006%20on%20substack-FF6719?style=flat-square&logo=substack&logoColor=white)](https://substack.com/@ajhalili2006)
 * **Chat**: [![Matrix](https://img.shields.io/badge/%40ajhalili2006:envs.net-black?&style=flat-square&logo=matrix&logoColor=white)](https://matrix.to/#/@ajhalili2006:envs.net)
 [![chat with ~ajhalili2006 on Recap Time Squad's Zulip server](https://img.shields.io/badge/zulip%20chat-%23ajhalili2006%3Arecaptime--dev.zulipchat.com-blue?style=flat-square&logo=zulip)](https://recaptime-dev.zulipchat.com/#narrow/stream/405458-ajhalili2006)
 [![Keybase](https://img.shields.io/badge/ajhalili2006-grey?&style=flat-square&logo=keybase&logoColor=white)](https://keybase.io/ajhalili2006)
 [![Discord](https://img.shields.io/badge/Discord%20server-5539cc?&style=flat-square&logo=discord&logoColor=white)](https://discord.gg/kf5nz4X)
 [![Telegram](https://img.shields.io/badge/Telegram-grey?&style=flat-square&logo=telegram&logoColor=white)](https://telegram.dog/ajhalili2006)
+
+---
+
+## More on this website (and beyond)
+
+* [`storj://ajhalili2006-files/archive`](https://static.rtdevcdn.net.eu.org/ajhalili2006/) - usually screenshots and personal snippet hosting stuff
+* [**Digital garden**](https://anagora.org/@ajhalili2006) - usually written with Obsidian.md app or Foam VS Code extension
+* [**Gemini version of site**](gemini://gemini.andreijiroh.eu.org) ([view via proxy](https://gp.p.psf.lt/gemini/gemini.andreijiroh.eu.org)) - plaintext edition of website
 
 [^1]: Not an company, as mentioned in my GitHub and GitLab profiles
 [^2]: There are many great resources from the autistic community (and also the wider neurodiversity and disability rights community), especially from [Neuroclastic](https://neuroclastic.com/autism-101-resources-from-the-autistic-community/), if you want to be an ally or simply want to help make inclusivity across intersections mainstream.
