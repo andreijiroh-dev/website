@@ -1,6 +1,6 @@
 # The Docker image that will be used to build your app
 image: 
-  name: quay.io/ajhalili2006/mkdocs-material-build-ci:nightly
+  name: quay.io/ajhalili2006/mkdocs-material-build-ci:commit-b9683f870d90ffe1a6c2d4d22c69fb8e99322e17
 
 stages:
   - build
