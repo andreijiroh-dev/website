@@ -14,7 +14,7 @@ fi
 _branch_name_git=$(git rev-parse --abbrev-ref HEAD)
 _commit_sha=$(git rev-parse HEAD)
 _commit_sha_short=$(git rev-parse --short HEAD)
-_command_prefix="npx wrangler pages publish $_root_directory_git/public --project-name $CF_PAGES_PROJECT_NAME --branch $_branch_name_git --commit-hash $_commit_sha"
+_command_prefix="npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch ${_branch_name_git} --commit-hash ${_commit_sha}"
 
 warn() {
     echo "warning: $*"
@@ -31,7 +31,7 @@ info() {
 if [[ $_branch_name_git == "main" ]]; then
   DEPLOY_COMMAND="$_command_prefix --env production"
 elif [[ $CI_PIPELINE_SOURCE == "merge_request" ]]; then
-  DEPLOY_COMMAND="$_command_prefix --env pr-#CI_MERGE_REQUEST_ID"
+  DEPLOY_COMMAND="$_command_prefix --env pr-$CI_MERGE_REQUEST_ID"
 fi
 
 if ! git diff-index --quiet HEAD -- && [[ $FF_DIRTY_DEPLOY != "true" ]]; then
@@ -46,9 +46,9 @@ if [[ ! -d "$_root_directory_git/public" ]]; then
 fi
 
 if [[ $FF_DIRTY_DEPLOY == "true" ]]; then
-  $DEPLOY_COMMAND --commit-dirty
+  bash $DEPLOY_COMMAND --commit-dirty
 else
-  ${DEPLOY_COMMAND:-"$_command_prefix"}
+  bash ${DEPLOY_COMMAND:-"$_command_prefix"}
 fi
 
 if [[ $_branch_name_git == "main" ]]; then
