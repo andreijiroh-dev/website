@@ -28,9 +28,9 @@ info() {
 }
 
 if [[ $_branch_name_git == "main" ]] || [[ $_branch_name_git == "HEAD" ]]; then
-  DEPLOY_COMMAND="npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch ${_branch_name_git} --commit-hash ${_commit_sha} --env production"
+  export DEPLOY_COMMAND="npx wrangler pages deploy ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch main --commit-hash ${_commit_sha} --env production"
 elif [[ $CI_PIPELINE_SOURCE == "merge_request" ]]; then
-  DEPLOY_COMMAND="npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch ${_branch_name_git} --commit-hash ${_commit_sha} --env pr-$CI_MERGE_REQUEST_ID"
+  export DEPLOY_COMMAND="npx wrangler pages deploy ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch ${_branch_name_git} --commit-hash ${_commit_sha} --env pr-$CI_MERGE_REQUEST_ID"
 fi
 
 if ! git diff-index --quiet HEAD -- && [[ $FF_DIRTY_DEPLOY != "true" ]]; then
@@ -45,11 +45,12 @@ if [[ ! -d "$_root_directory_git/public" ]]; then
 fi
 
 if [[ $FF_DIRTY_DEPLOY == "true" ]]; then
-  $DEPLOY_COMMAND --commit-dirty
+  $DEPLOY_COMMAND --commit-dirty=true
 else
   DEFAULT_COMMAND="npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch main --env production"
   ${DEPLOY_COMMAND:-$DEFAULT_COMMAND}
 fi
+unset DEPLOY_COMMAND
 
 if [[ $_branch_name_git == "main" ]] || [[ $_branch_name_git == "HEAD" ]]; then
   tar -C public -cvz . -f site-build.tar.gz
