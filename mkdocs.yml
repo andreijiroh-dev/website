@@ -24,6 +24,8 @@ nav:
     - nowpage: now.md
     - Contact: contact.md
     - "All my links": "https://ajhalili2006.start.page"
+    - Legal:
+      - Security policy: security.md
   - Personal user manual:
     - Manual Homepage: user-manual/index.md
     - Resume: user-manual/resume.md
