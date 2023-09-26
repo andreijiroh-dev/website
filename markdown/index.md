@@ -2,7 +2,7 @@
 title: Home
 description: |
   Welcome to Andrei Jiroh's website! #ActuallyAutistic Filipino web dev,
-  open-source maintainer, sometimes writer.
+  open-source maintainer, sometimes writer, always multifandom.
 ---
 
 # Well hello there!
@@ -32,10 +32,12 @@ learn more about me than a good ol' profile README.
 !!! info "This list is nonexhaustive"
     Consider visiting [my "all-the-links" page](https://ajhalili2006.start.page) for the full list.
 
-* **Code forges**: [![GitLab SaaS](https://img.shields.io/badge/%40ajhalili2006%40gitlab.com-6E49CB?&style=flat-square&logo=gitlab)](https://gitlab.com/ajhalili2006)
-[![mau.dev](https://img.shields.io/badge/%40ajhalili2006%40mau.dev-6E49CB?&style=flat-square&logo=gitlab)](https://mau.dev/ajhalili2006)
-[![GitHub](https://img.shields.io/github/followers/ajhalili2006?label=%40ajhalili2006%40github.com&logo=github&style=flat-square)](https://github.com/ajhalili2006)
+* **Code forges**: [![mau.dev](https://img.shields.io/badge/%40ajhalili2006%40mau.dev-6E49CB?&style=flat-square&logo=gitlab)](https://mau.dev/ajhalili2006)
 [![sr.ht](https://img.shields.io/badge/sr.ht-~ajhalili2006-black?style=flat-square)](https://sr.ht/~ajhalili2006)
+[![GitLab SaaS](https://img.shields.io/badge/%40ajhalili2006%40gitlab.com-6E49CB?&style=flat-square&logo=gitlab)](https://gitlab.com/ajhalili2006)
+[![GitHub](https://img.shields.io/github/followers/ajhalili2006?label=%40ajhalili2006%40github.com&logo=github&style=flat-square)](https://github.com/ajhalili2006)
+[![codeberg](https://img.shields.io/badge/%40ajhalili2006%40codeberg.oeg-blue?style=flat-square&logo=codeberg&logoColor=white)](https://codeberg.org/ajhalili2006)
+[![tildegit](https://img.shields.io/badge/%40ajhalili2006%40tildegit.org-green?logo=gitea&logoColor=white)](https://tildegit.org/ajhalili2006)
 * **Twitter/X**: [![Twitter](https://img.shields.io/twitter/follow/ajhalili2006?color=blue&label=%40ajhalili2006%40twitter.com&logo=twitter&style=flat-square)](https://twitter.com/ajhalili2006)
 * **Reddit**: [![Reddit](https://img.shields.io/reddit/user-karma/combined/andreihalili?label=andreihalili&logo=reddit&style=flat-square)](https://reddit.com/user/andreihalili)
 * **Fediverse**: [![Mastodon Follow](https://img.shields.io/mastodon/follow/108807402634952369?color=blue&domain=https%3A%2F%2Ftilde.zone&label=%40ajhalili2006%40tilde.zone&logo=mastodon&style=flat-square)](https://tilde.zone/@ajhalili2006)
