@@ -164,13 +164,13 @@ extra:
       name: ~ajhalili2006 on tildeverse
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/ajhalili2006
-      name: ~ajhalili2006 on twitter, under his old username
+      name: ~ajhalili2006 on twitter
     - icon: fontawesome/brands/github
       link: https://github.com/ajhalili2006
       name: ~ajhalili2006 on github
     - icon: fontawesome/brands/gitlab
       link: https://mau.dev/ajhalili2006
-      name: ~ajhalili2006 on mauinum gitLab instance
+      name: ~ajhalili2006 on mauinum gitlab instance
     - icon: fontawesome/brands/git-alt
       link: https://sr.ht/~ajhalili2006
       name: ~ajhalili2006 on sr.ht
@@ -181,6 +181,6 @@ extra:
       link: https://linkedin.com/in/ajhalili2006
       name: ~ajhalili2006 on linkedin for employers
   analytics:
-    provider: plausible
-    property: andreijiroh.eu.org
-    url: "https://analytics.projectsegfau.lt"
+#    provider: plausible
+#    property: andreijiroh.eu.org
+#    url: "https://analytics.projectsegfau.lt"

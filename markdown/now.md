@@ -38,7 +38,7 @@ For the personal backlog I can share publicly, please [see my todo.sr.ht tracker
 ### Commits on sources + web archives
 
 * [2023-07-15](https://mau.dev/andreijiroh.dev/website/-/blob/2cb74ba9754509470469c03c898a9d3cc97eef80/markdown/now.md) - [web archive](https://web.archive.org/web/20230728021258/https://andreijiroh.eu.org/now/)
-* [2023-03-04](https://github.com/ajhalili2006/tildeverse-web/blob/c6693426cf44d99297c4b3409571b3482dfc463e/markdown/now.md) - [link to commit](https://github.com/ajhalili2006/tildeverse-web/commit/c6693426cf44d99297c4b3409571b3482dfc463e), [web archive](https://web.archive.org/web/20230320175751/https://andreijiroh.eu.org/now/) ([archive.today](https://archive.is/0xZ7V))
+* [2023-03-04](https://mau.dev/andreijiroh.dev/website/-/blob/c6693426cf44d99297c4b3409571b3482dfc463e/markdown/now.md) - [web archive](https://web.archive.org/web/20230320175751/https://andreijiroh.eu.org/now/) ([archive.today](https://archive.is/0xZ7V))
 
 ### Former content on WordPress.com
 
