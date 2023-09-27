@@ -31,7 +31,9 @@ nav:
     - Resume: user-manual/resume.md
     - DNI List: user-manual/dni.md
     - Boundaries: user-manual/boundaries.md
+    - Neurodivergence and Disability: user-manual/neurodivergence-and-disability.md
     - Communications: user-manual/communications.md
+    - Do Not Interact List: user-manual/dni.md
     - Encrypted communications and keys: keys/index.md
   - Portfolio: 
     - portfolio/index.md
