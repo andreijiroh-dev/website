@@ -1,20 +1,18 @@
 # syntax=docker/dockerfile:1
-FROM ghcr.io/hadolint/hadolint:latest-alpine AS hadolint-binary
-
 # Since we're building against edge at risk, it is important to note
 # that anything might go wrong.
 FROM alpine:edge AS buildkit
 
 # Since hadolint isn't in the package repos for Alpine yet, we'll copying from the offical
 # Docker image instead.
-COPY --from=hadolint-binary /bin/hadolint /usr/bin/hadolint
+COPY --from=ghcr.io/hadolint/hadolint:latest-alpine /bin/hadolint /usr/bin/hadolint
 
 ENV PACKAGES=/usr/local/lib/python3.11/site-packages
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin
 ENV PYTHONDONTWRITEBYTECODE=1
-COPY --from=hadolint-binary /bin/hadolint /usr/bin/hadolint
 
 # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/#linux but for Alpine
+# Also installs Doppler CLI for accessing secrets securely within CI
 # hadolint ignore=DL3018,DL3013
 RUN apk add --no-cache \
      cairo-dev \
@@ -37,15 +35,17 @@ RUN apk add --no-cache \
      npm \
      yarn \
      git \
+     git-email \
+     git-lfs \
      git-fast-import \
      openssh \
      gnupg \
      curl \
   && curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh \
     | sh
-# The "--break-system-packages" is added so I don't need to do requirements.txt workaround,
-# although I also consider using pipx if we wanted to.
-# See also https://www.jeffgeerling.com/blog/2023/how-solve-error-externally-managed-environment-when-installing-pip3
+
+# See https://www.jeffgeerling.com/blog/2023/how-solve-error-externally-managed-environment-when-installing-pip3
+# for context behind removing the EXTERNALLY-MANAGED file
 RUN rm -rv /usr/lib/python3*/EXTERNALLY-MANAGED \
   && pip install --no-cache \
       mkdocs-material \
