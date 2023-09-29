@@ -10,23 +10,28 @@ SPDX-License-Identifier: MIT
 {% endblock %}
 <!-- Staging build -->
 {% block announce %}
-    {% if config.extra.deployment == "staging" %}
-      You're previewig the staging build of @ajhalili2006's website on <a href="https://readthedocs.org">RTD Community</a>. <strong><a href="https://andreijiroh.eu.org">Go back to production</a></strong>
-    {% else %}
-        For updates follow <strong>@ajhalili2006</strong> on
-            <a rel="me" href="https://tilde.zone/@ajhalili2006">
-                <span class="twemoji mastodon">
-                    {% include ".icons/fontawesome/brands/mastodon.svg" %}
-                </span>
-            <strong>the tildeverse</strong>
-            </a>
-        and
-            <a href="https://substack.com/@ajhalili2006">
-                    <span class="twemoji substack">
-                        {% include ".icons/simple/substack.svg" %}
-                    </span>
-                <strong>Substack</strong>
-            </a>
-    {% endif %}
+For updates follow <strong>@ajhalili2006</strong> on
+<a rel="me" href="https://tilde.zone/@ajhalili2006">
+    <span class="twemoji mastodon">
+        {% include ".icons/fontawesome/brands/mastodon.svg" %}
+    </span>
+<strong>the tildeverse</strong>
+</a>
+and
+<a href="https://substack.com/@ajhalili2006">
+        <span class="twemoji substack">
+            {% include ".icons/simple/substack.svg" %}
+        </span>
+    <strong>Substack</strong>
+</a>
 {% endblock %}
+{% block container %}
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                {% block content %}
+                  {% include "partials/content.html" %}
+                {% endblock %}
+              </article>
+            </div>
+          {% endblock %}
 
