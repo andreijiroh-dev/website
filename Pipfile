@@ -12,8 +12,9 @@ pillow = "*"
 cairosvg = "*"
 mkdocs-rss-plugin = "*"
 mkdocs-git-committers-plugin-2 = "*"
+mkdocs-autolinks-plugin = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.11"
+python_version = "3.10"
