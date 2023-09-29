@@ -1,0 +1,6 @@
+INHERIT: mkdocs.yml
+site_name: ~ajhalili2006 on tildeverse
+docs_dir: markdown
+site_dir: public_html
+extra:
+  deployment: tilde # for the announcement banner

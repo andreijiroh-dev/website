@@ -11,8 +11,13 @@ build:
     python: "3.11"
     #nodejs: 18
   jobs:
+    post_checkout:
+      # Needed for some plugins/extensions to work
+      - git fetch --unshallow || true
     post_build:
+      - git rev-parse HEAD > $READTHEDOCS_OUTPUT/api/commit
       - cp -rv markdown/.well-known $READTHEDOCS_OUTPUT/html/.well-known
+      - cp $READTHEDOCS_OUTPUT/html/assets/images/favicon.png $READTHEDOCS_OUTPUT/favicon.ico
   apt_packages:
     - libcairo2-dev
     - libfreetype6-dev
@@ -24,6 +29,7 @@ build:
 
 mkdocs:
   configuration: mkdocs.readthedocs.yml
+  fail_on_warning: false
 
 # Optionally declare the Python requirements required to build your docs
 python:
