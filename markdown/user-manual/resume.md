@@ -3,7 +3,7 @@
 This page contains the link to my resume for future employers and those who are
 curious on what kind of work I'm doing in the past and present and then some notes from yours truly on how to use them.
 
-[*(Looking for my portfolio? Hop in here.)*](../portfolio.md)
+[*(Looking for my portfolio? Hop in here.)*](../portfolio/index.md)
 
 ## The basics
 

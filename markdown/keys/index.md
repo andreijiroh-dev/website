@@ -5,23 +5,15 @@ This page contains all the cryptographic public keys I use for different purpose
 encryption and decryption to signing Git commits and even identity verification without requiring
 an government-issued ID.
 
-## Key-signing ceremories
+## Keysigning ceremories
 
-If you would like to build your web of trust with me (and probably with your friends), let me know
-(via [my meeting booking form](https://calendar.app.google/P8dvgAsvrtqi8mPR9) ([alternative link](https://coda.io/form/Schedule-a-meeting-with-ajhalili2006_deaLq2my-OX)),
-or via regular chat venues).
-Due to my current schedule as a high school student, I'm only accept asynchorous key-signing ceremories
-for the moment.
-
-For asynchorous ceremories, I recommend doing it publicly through [this repo](https://go.recaptime.eu.org/keysigning-ceremory)
-and [`#keysigning-ceremories.recaptime.dev:envs.net`](https://matrix.to/#/#keysigning-ceremories.recaptime.dev:envs.net). In case
-of in-person ceremories, taking a picture with yours truly (with your own list of PGP fingerprints on a piece of paper) is enough.
+_This is moved to [Encrypted communications](../user-manual/encrypted-communications.md#key-signing-ceremories)._
 
 ## GPG Keys
 
 You can get all the GPG keys I use publicly, including the 2021 key (as shown on Keybase) and
 ProtonMail-specific encryption key in one file [here](./pgp.asc). Make sure to check the fingerpints
-and/or key IDs against [this list]($keys-i-use) to ensure its the right key.
+and/or key IDs against [this list](#keys-i-use) to ensure its the right key.
 
 ```bash
 # one-liner import from my website (or via ajhalili2006.vern.cc and ctrl-c.club/~ajhalili2006)
@@ -50,7 +42,9 @@ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys \
 (primary email: `ajhalili2006@gmail.com`)
 * `0527234A430387EA5695D824A30EBE40AD856D88` - the Feburary 2021 PGP key, as shown on my Keybase profile
 (primary email: `andreijiroheugeniohalili24680@gmail.com`)
-* `EA957E7086E934F8DB9CAD21940047813E9D641C` - spare signing key for software release, especially on my own Debian package repos/Launchpad PPAs.
+* `A715100E58CF60500EE159652F384539C700B263` - Recap Time Squad specific key
+* `EA957E7086E934F8DB9CAD21940047813E9D641C` - spare signing key for software release, especially on my own
+Debian package repos/Launchpad PPAs.
 * `5D69E717C5BC95731C2AD8BD120C218ED2291996` - ProtonMail specific encryption key (`ajhalili2006@proton.me`)
 
 ## SSH Keys
