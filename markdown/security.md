@@ -49,7 +49,7 @@ In participating in our vulnerability disclosure program in good faith, we ask t
 
 ## Official Channels
 
-Please report security issues via `security@andreijiroh.eu.org` or <https://andreijiroh.eu.org/contact/security>, providing all relevant information. The more details you provide, the easier it will be for us to triage and fix the issue.
+Please report security issues via `ajhalili2006@andreijiroh.eu.org` or <https://andreijiroh.eu.org/contact/security>, providing all relevant information. The more details you provide, the easier it will be for us to triage and fix the issue.
 
 ## Safe Harbor
 
