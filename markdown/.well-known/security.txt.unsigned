@@ -1,0 +1,19 @@
+# Canonical URI
+Canonical: https://andreijiroh.eu.org/.well-known/security.txt
+
+# Contact details
+Contact: mailto:ajhalili2006@andreijiroh.eu.org
+Contact: https://andreijiroh.eu.org/contact/security
+Contact: https://keybase.io/ajhalili2006
+
+Preferred-Languages: en
+
+# Use my PGP keys on the website or at Keybase
+Encryption: https://keybase.io/ajhalili2006/pgp_keys.asc
+Encryption: https://andreijiroh.eu.org/keys/pgp.asc
+
+# Security Policy and acknowledgments
+Policy: https://andreijiroh.eu.org/security
+Acknowledgments: https://andreijiroh.eu.org/security/#thanks
+
+Expires: 2024-09-26T15:59:00.000Z

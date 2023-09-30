@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 # Canonical URI
 Canonical: https://andreijiroh.eu.org/.well-known/security.txt
 
@@ -17,3 +20,19 @@ Policy: https://andreijiroh.eu.org/security
 Acknowledgments: https://andreijiroh.eu.org/security/#thanks
 
 Expires: 2024-09-26T15:59:00.000Z
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEETV5jF1jLnMRZQbHOZ7/JGz2hK+gFAmUYYfQACgkQZ7/JGz2h
+K+iMzxAA61jw4SFVKroBHkO/uGThq1wWLPNRDchc1Fx6vQh6Z9TKCYNMgZ3T/Btn
+ILZLg/R1lsgylOJdJihesYKFrVTMO3nxdptTSwh9I5avxCEHf8zn3LEHOSMdhO8O
+u3cPHIvFw/EVTgdkYAj6UvzI9K9I+L7DaqEb5fOUuBXeQS/DQuvEs9nceCFEkQcq
+pjAWjlLHO/ZrKgNRMgVZ+t8a/nxWXRBa7Y17hii9WxkgrMcnmFpius/U0yjn2ax0
+gbYic/VesjVq67i4DaxmQNgGmZvvuIXyjyVJvVyUlSmBNj68gRd5vOx0XiEwtaIt
+R/6YWSmVRGo3HuXwqX6LIjdyOEc9gv0TxozKIO3KzRYg44drhtt8PDK24+/KBXMn
+xmE0InhF9Y5DCZDEfZ3g1IIlHxcfXnNKpbD7QAVv+J89rgn79jcsVPyVvGigkijH
+LogCG6a9yvvOp6aK+EwioCh0F/f5ABTqZOzA6ZmVjO4xdrKmiQPbw/gSSzoT6SVL
+fbGj7+n9KI+Fv+9nfeRTnL+lbwAh4cwSuIt8rdHMvQhFCvGCSUwqRRIEiKUD+X21
+dKGt1Z52ySC8nuNfstg+MtspTv6X+Rz1XI1a26UMjYzBZIty+ZblM8YJkv7Cm34N
+C/2qcB4pxMJsaEcrvpkUnhQZe30cLw0yjRQj6C0uggfLQMru1PI=
+=xIeM
+-----END PGP SIGNATURE-----
