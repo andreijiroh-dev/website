@@ -6,11 +6,11 @@
 
 checkoutLocation: tildeweb-ajhalili2006
 
-image: ghcr.io/ajhalili2006/ajhalili2006.github.io/devenv:commit-b9683f870d90ffe1a6c2d4d22c69fb8e99322e17
+image: ghcr.io/ajhalili2006/ajhalili2006.github.io/devenv:commit-34a2eb5ce41701454dfede862a6284cc92bfe175
 
 tasks:
   - init: |
-      pipenv install
+      pipenv sync --verbose
     command: |
       FF_ENABLE_COMMIT_DATA=true pipenv run -- mkdocs serve --watch overrides --watch-theme --livereload
     name: site-localdev
