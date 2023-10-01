@@ -11,7 +11,7 @@ fi
 
 mkdir "gmi/api"
 git rev-parse HEAD > "gmi/api/commit"
-tar -C gmi -cvz . -f site.tar.gz
+tar -C gmi -cvz . -f gemini-site.tar.gz
 
 curl --oauth2-bearer "$SOURCEHUT_PAGES_TOKEN" \
     -Fcontent=@site.tar.gz \

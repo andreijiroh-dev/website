@@ -18,3 +18,9 @@ mkdocs-autolinks-plugin = "*"
 
 [requires]
 python_version = "3.11"
+
+[scripts]
+dev = "mkdocs serve --watch overrides --watch-theme --livereload"
+build = "mkdocs build"
+build-staging = "mkdocs build -f mkdocs.readthedocs.yml"
+build-tilde = "mkdocs build -f mkdocs.tilde.yml"
