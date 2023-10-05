@@ -11,7 +11,7 @@ default:
     - amd64 # currently, we only the image in amd64 right now.
   # Functions that should be executed before the build script is run
   before_script:
-    - pipenv sync --verbose
+    - pip3 install -r requirements.txt
     - npm ci
     - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
 
@@ -22,7 +22,6 @@ variables:
   FF_GENERATE_SOCIAL_CARDS: "true"
   SECURE_FILES_DOWNLOAD_PATH: /run/secrets
   GIT_DEPTH: "0"
-  PIPENV_SYSTEM: "true" # do system pip management since we're inside containers
 
 pages:
   stage: build
