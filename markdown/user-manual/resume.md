@@ -12,4 +12,4 @@ me on [LinkedIn](https://linkedin.com/in/ajhalili2006) if you do.
 
 ## Need customized ones?
 
-[Contact ~ajhalili2006](../contact.md) over chat or email, especially if you need his phone number and home address.
+[Contact ~ajhalili2006](../contact/index.md) over chat or email, especially if you need his phone number and home address.
