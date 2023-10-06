@@ -15,7 +15,7 @@ packages:
   - libpng-dev
   - zlib-dev
 sources:
-  - https://git.sr.ht/~ajhalili2006/tildeweb
+  - https://git.sr.ht/~ajhalili2006/web
 secrets:
   - b4ffc5fb-bc8c-4e89-b38a-48b56155a443
 triggers:
@@ -28,6 +28,7 @@ tasks:
   - repo-sync: |
       cd tildeweb
   - build: |
+      sudo rm /usr/lib/python3*/EXTERNALLY_MANAGED -rfv || true
       cd tildeweb && pip3 install -r requirements.txt --user
       export PATH="$PATH:$HOME/.local/bin"
       bash ./build.sh
@@ -35,6 +36,9 @@ tasks:
       cd tildeweb
       tar -C public -cvz . -f tildeweb-prod-build.tar.gz
   - deploy: |
-      echo done
+      cd tildeweb
+      echo "StrictHostKeyChecking=no" >> ~/.ssh/config
+      rsync -rP -e 'ssh -i ~/.ssh/passwordless-auth-sshfs' public/ ajhalili2006@p.projectsegfau.lt:/home/ajhalili2006/public_html
+      rsync -rP -e 'ssh -i ~/.ssh/passwordless-auth-sshfs' public/ ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html
 artifacts:
   - tildeweb/tildeweb-prod-build.tar.gz
