@@ -12,7 +12,7 @@ if [[ ! -d "$TARGET_DIR" ]]; then
 fi
 
 if [[ $SKIP_VENV_SETUP == "" ]] || [[ $CI == "" ]]; then
-  pipenv install -r requirements.txt
+  pipenv install --ignore-pipfile --deploy --verbose
   pipenv run -- mkdocs build -d "$TARGET_DIR" -f ${TARGET_BUILD_CONFIG}
 else
   pip3 install -r requirements.txt --upgrade --user

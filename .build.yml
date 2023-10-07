@@ -39,9 +39,9 @@ tasks:
       # our build script handles both the install and build stuff itself
       export PATH="$PATH:$HOME/.local/bin"
       pipenv install --ignore-pipfile --deploy
-      pipenv run build-tilde-ctrlc
-      pipenv run build-tilde-psflt
-      pipenv run build-tilde-dimensions
+      TILDE_PUBLIC_HTML_BASE=https://ctrl-c.club/~ajhalili2006/ TARGET_DIR=build/ctrl-c.club ./bin/build.sh mkdocs.tilde.yml
+      TILDE_PUBLIC_HTML_BASE=https://ajhalili2006.p.psf.lt TARGET_DIR=build/p.psf.lt ./bin/build.sh mkdocs.tilde.yml
+      TILDE_PUBLIC_HTML_BASE=https://ajhalili2006.dimension.sh TARGET_DIR=build/dimension.sh ./bin/build.sh mkdocs.tilde.yml
   - generate-archive: |
       cd web
       tar -C build -cvz . -f tildeweb-prod-build.tar.gz
