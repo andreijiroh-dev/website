@@ -38,14 +38,18 @@ tasks:
 
       # our build script handles both the install and build stuff itself
       export PATH="$PATH:$HOME/.local/bin"
-      bash ./build.sh
+      pipenv install --ignore-pipfile --deploy
+      pipenv run build-tilde-ctrlc
+      pipenv run build-tilde-psflt
+      pipenv run build-tilde-dimensions
   - generate-archive: |
       cd web
-      tar -C public -cvz . -f tildeweb-prod-build.tar.gz
+      tar -C build -cvz . -f tildeweb-prod-build.tar.gz
   - deploy: |
       cd web
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
-      rsync -rP -e 'ssh -i ~/.ssh/passwordless-auth-sshfs' public/ ajhalili2006@p.projectsegfau.lt:/home/ajhalili2006/public_html
-      rsync -rP -e 'ssh -i ~/.ssh/passwordless-auth-sshfs' public/ ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html
+      rsync -rP -e 'ssh -i ~/.ssh/passwordless-auth-sshfs' build/p.psf.lt ajhalili2006@p.projectsegfau.lt:/home/ajhalili2006/public_html
+      rsync -rP -e 'ssh -i ~/.ssh/passwordless-auth-sshfs' build/ctrl-c.club ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html
+      rsync -rP -e 'ssh -i ~/.ssh/passwordless-auth-sshfs' build/dimension.sh ajhalili2006@s1.dimension.sh:/home/ajhalili2006/public_html
 artifacts:
   - web/tildeweb-prod-build.tar.gz

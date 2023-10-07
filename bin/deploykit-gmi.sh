@@ -14,10 +14,10 @@ git rev-parse HEAD > "gmi/api/commit"
 tar -C gmi -cvz . -f gemini-site.tar.gz
 
 curl --oauth2-bearer "$SOURCEHUT_PAGES_TOKEN" \
-    -Fcontent=@site.tar.gz \
+    -Fcontent=@gemini-site.tar.gz \
     -Fprotocol=GEMINI \
     "https://pages.sr.ht/publish/${SOURCEHUT_USERNAME}.srht.site"
 curl --oauth2-bearer "$SOURCEHUT_PAGES_TOKEN" \
-    -Fcontent=@site.tar.gz \
+    -Fcontent=@gemini-site.tar.gz \
     -Fprotocol=GEMINI \
     "https://pages.sr.ht/publish/${GEMINI_CUSTOM_DOMAIN}"

@@ -5,13 +5,18 @@ TARGET_DIR=${TARGET_DIR:-"$PWD/public"}
 FF_OFFLINE_MKDOCS_PLUGIN=${FF_OFFLINE_MKDOCS_PLUGIN:-"false"}
 FF_ENABLE_COMMIT_DATA=${FF_ENABLE_COMMIT_DATA:-"true"}
 FF_GENERATE_SOCIAL_CARDS=${FF_GENERATE_SOCIAL_CARDS:-"true"}
+TARGET_BUILD_CONFIG=${1:-"mkdocs.yml"}
+
+if [[ ! -d "$TARGET_DIR" ]]; then
+  mkdir "$TARGET_DIR" -pv
+fi
 
 if [[ $SKIP_VENV_SETUP == "" ]] || [[ $CI == "" ]]; then
   pipenv install -r requirements.txt
-  pipenv run -- mkdocs build -d "$TARGET_DIR"
+  pipenv run -- mkdocs build -d "$TARGET_DIR" -f ${TARGET_BUILD_CONFIG}
 else
   pip3 install -r requirements.txt --upgrade --user
-  mkdocs build -d "$TARGET_DIR"
+  mkdocs build -d "$TARGET_DIR" -f ${TARGET_BUILD_CONFIG}
 fi
 
 mkdir "$TARGET_DIR/api"

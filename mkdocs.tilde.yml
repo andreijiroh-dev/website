@@ -1,5 +1,6 @@
 INHERIT: mkdocs.yml
 site_name: ~ajhalili2006 on tildeverse
+site_url: !ENV [TILDE_PUBLIC_HTML_BASE, "https://ctrl-c.club/~ajhalili2006/"]
 docs_dir: markdown
 site_dir: public_html
 extra:
