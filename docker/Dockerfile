@@ -41,7 +41,7 @@ RUN apk add --no-cache \
      openssh \
      gnupg \
      curl \
-     rsync
+     rsync \
   && curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh \
     | sh
 
