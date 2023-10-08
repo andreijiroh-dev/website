@@ -1,6 +1,5 @@
 # internal redirects
 /resume /user-manual/resume
-#/portfolio /user-manual/resume
 /dni /user-manual/dni
 
 # external redirects
@@ -21,3 +20,6 @@
 
 # this is obvious, right?
 /favicon.ico /assets/images/favicon.png
+
+# plaintext redirects
+/security.txt /.well-known/security.txt
