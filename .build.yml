@@ -3,7 +3,7 @@ environment:
   FF_ENABLE_COMMIT_DATA: "true"
   FF_GENERATE_SOCIAL_CARDS: "true"
   #SKIP_VENV_SETUP: "true"
-oauth: "meta.sr.ht/PROFILE pages.sr.ht/SITES:RW pages.sr.ht/PAGES:RW pages.sr.ht/PROFILE"
+oauth: "pages.sr.ht/SITES:RW pages.sr.ht/PAGES:RW pages.sr.ht/PROFILE"
 packages:
   - openssh-client
   - rsync
@@ -52,7 +52,7 @@ tasks:
       rsync -rP -e 'ssh -i ~/.ssh/passwordless-auth-sshfs' build/p.psf.lt/ ajhalili2006@p.projectsegfau.lt:/home/ajhalili2006/public_html/
       rsync -rP -e 'ssh -i ~/.ssh/passwordless-auth-sshfs' build/ctrl-c.club/ ajhalili2006@ctrl-c.club:/home/ajhalili2006/public_html/
       rsync -rP -e 'ssh -i ~/.ssh/passwordless-auth-sshfs' build/dimension.sh/ ajhalili2006@s1.dimension.sh:/home/ajhalili2006/public_html/
-  - deploy-gemini:
+  - deploy-gemini: |
       cd web
       set +x
       SOURCEHUT_PAGES_TOKEN=${OAUTH2_TOKEN} PRIVATE_SSH_KEY=~/.ssh/passwordless-auth-sshfs ./bin/deploy-gmi.sh
