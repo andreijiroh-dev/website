@@ -37,7 +37,7 @@ pages:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-pages:srht:
+.pages:srht:
   stage: build
   needs:
     - pages
