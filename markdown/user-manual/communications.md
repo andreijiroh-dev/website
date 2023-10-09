@@ -1,19 +1,14 @@
 # Communications
 
-!!! info "Visit the Coda version of this page for up-to-date content"
-    [:octicons-link-external-16: Open in Coda](https://coda.io/@ajhalili2006/readme/personal-and-professional-boundaries-9){ .md-button }
-    [:octicons-report-16: Report inconsistencies between versions](https://go.andreijiroh.eu.org/website-feedback/coda){ .md-button }
+This page contains documentation on how to communicate with people in the neurodiversity and the wider disability communities in mind and also on gender neutral communication.
 
----
-
-!!! info
-    This page contains documentation on how to communicate with people in the neurodiversity and the wider disability communities in mind and also on gender neutral communication.
-
-    Suggestions and feedback to improve this content are welcome and encouraged. Note that these docs might be not applicable to your case if you’re considering writing your own personal user manual and I don’t speak for anyone else.
+Suggestions and feedback to improve this content are welcome and encouraged.
+Note that these docs might be not applicable to your case if you’re considering writing your own
+personal user manual and I don’t speak for anyone else.
 
 ## TL;DR
 
-> Some of them were copied from <https://t.me/ajhalili2006_bio/4>.
+> Some of them were copied from <https://t.me/ajhalili2006_bio/4> in part for when sliding into DMs.
 
 1. [Don’t be a dick](https://www.psychologytoday.com/us/blog/the-author-speaks/201909/don-t-be-dick) (aka violent, discriminatory, disrespectful or even disturbing in any way).[^1]
 2. Respect my preferred pronouns and avoid PFL (person-first language) in most cases.
@@ -30,12 +25,10 @@ communications on Facebook Messenger/WhatsApp.
 
 ## Pronouns and Language
 
-!!!+ See also TBD
-
 My pronouns is `he/they` (technically `he/him/they/them` for long version), although `they/them` is much preferred even if I chose to be identified to my gender at birth.
 
-In terms of discussing about things relating to neurodiversity and disability, I prefer identity first
-, especially when discussing about my disability and things like neurodiversity, since I mostly frame ableism and other issues related to these under both social and human rights models of disability.
+In terms of discussing about things relating to neurodiversity and disability, I prefer identity first, especially when discussing about my disability and things like neurodiversity,
+since I mostly frame ableism and other issues related to these under both social and human rights models of disability.
 You might check the [note on disabled and disability](https://www.thesaurus.com/e/writing/person-first-vs-identity-first-language/#note-on-disabled-and-disability) at thesaurus.com,
 especially when discussing accessibility across the community. I don’t usually gatekeep language relating to disability, although I might do when discrimination and bullying happens or when clarification is needed.
 
@@ -65,7 +58,8 @@ Generally, I’m not a fan of sync meetings, especially if iot is scheduled outs
 * Work-related stuff should be discussed in Recap Time Squad’s chatrooms (either public or staff-only, although anything confidential/internal should be stay in staff-only chat).
 * Ping me when only needed. Also, DO NOT ping @everyone.
 * I don't usually read email, but if you sent me some important emails
-(via my `@crew.recaptime.eu.org` or personal addresses)
+(via my `@crew.recaptime.eu.org` or personal addresses),
+please proactively reach me out via other contact methods.
 
 ## Additional resources
 
