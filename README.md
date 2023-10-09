@@ -66,10 +66,15 @@ Please be reminded that while this is a personal open-source project, please exp
 times during pathc reviews and don't be disappointed when I disagree on stuff and chose not to merge
 the patches for any reasons, including mental health breaks.
 
-## License
+## Legalese
 
 Unless otherwise noted, source code is licensed under the MPL-2.0 while website content (text-only)
 is under CC BY-SA 4.0.
 
 The only thing that's not covered by this is [the favicon version](markdown/assets/images/favicon.png)
 of my (current) profile picture.
+
+### Third-party code
+
+* [OpenWeb Icons Set](https://iconduck.com/sets/openweb-icons-set) - SIL Open Font License 1.1
+* Upstream template code from Material for Mkdocs for overrides directory - MIT
