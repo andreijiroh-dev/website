@@ -33,7 +33,13 @@ learn more about me than a good ol' profile README.
 !!! info "This list is nonexhaustive"
     Consider visiting [my "all-the-links" page](https://ajhalili2006.start.page) for the full list.
 
-* **Code forges**: [![mau.dev](https://img.shields.io/badge/%40ajhalili2006%40mau.dev-6E49CB?&style=flat-square&logo=gitlab)](https://mau.dev/ajhalili2006)
+<!--
+
+TODO(ajhalili2006): rework on this similarly to https://aphyr.com/about
+
+-->
+
+* **Code forges** for my open-source, sometimes working-in-public personal projects: [![mau.dev](https://img.shields.io/badge/%40ajhalili2006%40mau.dev-6E49CB?&style=flat-square&logo=gitlab)](https://mau.dev/ajhalili2006)
 [![sr.ht](https://img.shields.io/badge/sr.ht-~ajhalili2006-black?style=flat-square)](https://sr.ht/~ajhalili2006)
 [![GitLab SaaS](https://img.shields.io/badge/%40ajhalili2006%40gitlab.com-6E49CB?&style=flat-square&logo=gitlab)](https://gitlab.com/ajhalili2006)
 [![GitHub](https://img.shields.io/github/followers/ajhalili2006?label=%40ajhalili2006%40github.com&logo=github&style=flat-square)](https://github.com/ajhalili2006)

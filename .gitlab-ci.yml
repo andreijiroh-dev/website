@@ -5,13 +5,14 @@ image:
 stages:
   - test
   - build
+  - sync-repo
 
 default:
   tags:
     - amd64 # currently, we only the image in amd64 right now.
   # Functions that should be executed before the build script is run
   before_script:
-    - pip3 install -r requirements.txt
+    - pipenv install --ignore-pipfile --deploy
     - npm ci
     - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
 
@@ -45,3 +46,15 @@ pages:
     - doppler run -- ./bin/deploykit-gmi.sh
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
+# TODO: Automate this over at mirrors/cronjobs soon.
+sync-branch:
+  stage: sync-repo
+  script:
+    - |
+      set -x
+      eval $(ssh-agent)
+      ssh-add /run/secrets/passwordless
+      git push "git@github.com:ajhalili2006/ajhalili2006.github.io" --mirror || true
+      git push "git@git.sr.ht:~ajhalili2006/web" --mirror || true
+      git push "git@codeberg.org:ajhalili2006/website" --mirror || true
