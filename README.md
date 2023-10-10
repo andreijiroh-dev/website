@@ -4,11 +4,36 @@
 [![GitLab last commit](https://img.shields.io/gitlab/last-commit/andreijiroh.dev/website?gitlab_url=https%3A%2F%2Fmau.dev&style=flat-square)](https://mau.dev/andreijiroh.dev/website/commits)
 [![Staging builds on Read The Docs Community](https://readthedocs.org/projects/ajhalili2006/badge/?version=latest&style=flat-square)](https://readthedocs.org/projects/ajhalili2006/)
 [![Docker CI](https://github.com/ajhalili2006/ajhalili2006.github.io/actions/workflows/docker.yml/badge.svg?event=schedule&style=flat-badge)](https://github.com/ajhalili2006/ajhalili2006.github.io/actions/workflows/docker.yml?query=event%3Aschedule)
-[![pipeline status](https://mau.dev/andreijiroh.dev/website/badges/main/pipeline.svg?style=flat-square)](https://mau.dev/andreijiroh.dev/website/-/pipelines)
+[![GitLab CI status](https://mau.dev/andreijiroh.dev/website/badges/main/pipeline.svg?style=flat-square)](https://mau.dev/andreijiroh.dev/website/-/pipelines)
 
-This is my sources for both [`andreijiroh.(eu.org|dev)`](https://andreijiroh.eu.org) and tilde userpages in Ctrl-C Club and ~vern,
-built with Mkdocs + [Material theme](https://go.andreijiroh.eu.org/mkdocs-material) by [~squidfunk](https://go.andreijiroh.eu.org/squidfunk).
-(Sources for Gemini version of the website is available at `gmi` directory.)
+This is my sources for both [`andreijiroh.(eu.org|dev)`](https://andreijiroh.eu.org) and tilde userpages,
+built with Mkdocs + [Material theme](https://go.andreijiroh.eu.org/mkdocs-material) by
+[~squidfunk](https://github.com/squidfunk). Sources for Gemini version of the website is
+available at `gmi` directory.
+
+## Information for people wishing to use this repository
+
+While this is fairly just static site (with CI configs and even Cloudflare Pages references)
+and not licensed under the Zlib license ([context from Xe/site repo][zlib-chaos]), please don't
+just fork this repo unless you know what you're REALLY doing.
+
+[zlib-chaos]: https://github.com/Xe/site/blob/HEAD/README.md#information-for-people-wishing-to-use-this-code
+
+If you're pretty serious, please keep several things in mind:
+
+- You must heavily edit the Markdown content of the website. Make your own personal user manual and portfolio,
+or heck even go nuts on the homepage.[^1]
+- Blog posts I written in Gemini version are licensed under CC-BY-SA-4.0,
+[as mentioned below](#legalese) unless specified otherwise.
+But [for the love of god], please use your own blog posts when writing for
+Gemini users instead.
+- For the favicon, use your own profile picture or pick/make another one.
+
+[for the love of god]: https://english.stackexchange.com/questions/351296/what-exactly-does-for-the-love-of-god-mean#351326
+[^1]: Please keep it SFW, since you don't want to get that censored by the MTRCB, right?
+
+**Looking for a template instead with same Mkdocs theme?** No problem! [I contributed one at lorebooks.wiki's GitHub org](https://github.com/lorebooks-wiki/mkdocs-material-template)
+with some fine defaults, alongside a blog section if you prefer.
 
 ## Mirrors
 
@@ -25,14 +50,14 @@ Use the clone links from either the canonical repository URL or its mirrors
 environment using these links:
 
 [![Open in Gitpod](https://img.shields.io/badge/open%20in-Gitpod-orange?style=flat-square&logo=gitpod)](https://gitpod.io/#https://mau.dev/andreijiroh.dev/website)
-[![Open in Codespaces](https://img.shields.io/badge/open%20in-Codespaces-black?style=flat-square&logo=github)](https://codespaces.dev/ajhalili2006/ajhalili2006.github.io)
+[![Open in Codespaces](https://img.shields.io/badge/open%20in-Codespaces-black?style=flat-square&logo=github)](https://codespaces.new/ajhalili2006/ajhalili2006.github.io)
 
 ### Building from source
 
 ```bash
 # install deps via pipenv...
 pipenv install
-# ...or via pip3 with --user flag (generated from "pipenv requirements" and sending its output
+# ...or via pip3 with --user -flag (generated from "pipenv requirements" and sending its output
 # to requirements.txt)
 pip install -r requirements.txt --user
 
