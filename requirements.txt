@@ -26,7 +26,7 @@ mkdocs==1.5.3; python_version >= '3.7' --hash=sha256:3b3a78e736b31158d64dbb2f8ba
 mkdocs-autolinks-plugin==0.7.1; python_version >= '3.4' --hash=sha256:445ddb9b417b7795856c30801bb430773186c1daf210bdeecf8305f55a47d151 --hash=sha256:5c6c17f6649b68e79a9ef0b2648d59f3072e18002b90ee1586a64c505f11ab12
 mkdocs-git-committers-plugin-2==1.2.0; python_version >= '3.8' and python_version < '4' --hash=sha256:0bb5d71cdd9d43fec0dec16e52a9aad2784256b0fa6ef9bb0cceffc36c081ab3 --hash=sha256:921da26b3f4393e6c170279ac34089151dfc22cd29ec4fbce3506218541685c8
 mkdocs-git-revision-date-localized-plugin==1.2.0; python_version >= '3.6' --hash=sha256:540b9c930d8d48630c090b72ac2c3900ac2ed0799b23738a33b88e31f5198fe7 --hash=sha256:7752edd7c4dcaa9383e9a5b6a4f729831a62d604b0c43b319331127720c6a2bf
-mkdocs-material==9.4.4; python_version >= '3.8' --hash=sha256:86fe79253afccc7f085f89a2d8e9e3300f82c4813d9b910d9081ce57a7e68380 --hash=sha256:ab84a7cfaf009c47cd2926cdd7e6040b8cc12c3806cc533e8b16d57bd16d9c47
+mkdocs-material==9.4.6; python_version >= '3.8' --hash=sha256:09665e60df7ee9e5ff3a54af173f6d45be718b1ee7dd962bcff3102b81fb0c14 --hash=sha256:78802035d5768a78139c84ad7dce0c6493e8f7dc4861727d36ed91d1520a54da
 mkdocs-material-extensions==1.2; python_version >= '3.7' --hash=sha256:27e2d1ed2d031426a6e10d5ea06989d67e90bb02acd588bc5673106b5ee5eedf --hash=sha256:c767bd6d6305f6420a50f0b541b0c9966d52068839af97029be14443849fb8a1
 mkdocs-minify-plugin==0.7.1; python_version >= '3.7' --hash=sha256:29bd6a1aa5b0217a55b08333194e20cf1ff83b63fb6a22a33f10f8fa9745c28a --hash=sha256:6abf8f5a0fddb476bddd38faba28390fd8c41ab63b0d7202e3ce3deeb9ab98cb
 mkdocs-redirects==1.2.1; python_version >= '3.6' --hash=sha256:9420066d70e2a6bb357adf86e67023dcdca1857f97f07c7fe450f8f1fb42f861
