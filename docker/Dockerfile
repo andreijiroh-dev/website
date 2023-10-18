@@ -1,15 +1,14 @@
 # syntax=docker/dockerfile:1
-# Since we're building against edge at risk, it is important to note
-# that anything might go wrong.
-FROM alpine:edge AS buildkit
+# Instead of using Alpine base image and then installing Python from pkgs.al.o,
+# we'll go with the official images instead.
+FROM python:3.12-alpine AS buildkit
 
 # Since hadolint isn't in the package repos for Alpine yet, we'll copying from the offical
 # Docker image instead.
 COPY --from=ghcr.io/hadolint/hadolint:latest-alpine /bin/hadolint /usr/bin/hadolint
 
-ENV PACKAGES=/usr/local/lib/python3.11/site-packages
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin
-ENV PYTHONDONTWRITEBYTECODE=1
+ENV PACKAGES=/usr/local/lib/python3.11/site-packages PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin PYTHONDONTWRITEBYTECODE=1
+LABEL org.opencontainers.image.description="GitLab CI image for custom mkdocs-material Docker image, alongside tools @ajhalili2006 use."
 
 # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/#linux but for Alpine
 # Also installs Doppler CLI for accessing secrets securely within CI
@@ -23,10 +22,6 @@ RUN apk add --no-cache \
      zlib-dev \
      bash \
      coreutils \
-     python3 \
-     py3-pip \
-     pipx \
-     py3-wheel \
      shellcheck \
      gcc \
      libffi-dev \
@@ -46,9 +41,8 @@ RUN apk add --no-cache \
     | sh
 
 # See https://www.jeffgeerling.com/blog/2023/how-solve-error-externally-managed-environment-when-installing-pip3
-# for context behind removing the EXTERNALLY-MANAGED file
-RUN rm -rv /usr/lib/python3*/EXTERNALLY-MANAGED \
-  && pip install --no-cache \
+# for context behind removing the EXTERNALLY-MANAGED file on distribution-built CPython binary releases
+RUN pip install --no-cache \
       mkdocs-material \
       mkdocs-git-committers-plugin-2 \
       mkdocs-git-revision-date-localized-plugin \
@@ -57,7 +51,8 @@ RUN rm -rv /usr/lib/python3*/EXTERNALLY-MANAGED \
       mkdocs-rss-plugin \
       pillow \
       cairosvg \
-      pipenv
+      pipenv \
+      pipx
 
 # Trust directory, required for git >= 2.35.2
 # Follows the docs for the Docker-based site build setup
