@@ -31,7 +31,7 @@ nav:
     - Manual Homepage: user-manual/index.md
     - Personals:
         - FAQs about me: faq.md
-        - Flas and Quirks: user-manual/flaws-and-quirks.md
+        - Flaws and Quirks: user-manual/flaws-and-quirks.md
         - Neurodivergence and Disability: user-manual/neurodivergence-and-disability.md
     - Community:
         - DNI List: user-manual/dni.md
@@ -132,7 +132,7 @@ plugins:
   # debugging/bug reporting purposes only, proceed with caution
   #- info
   - git-revision-date-localized:
-      enabled: !ENV [FF_ENABLE_COMMIT_DATA, false]
+      enabled: true
       fallback_to_build_date: true
       enable_creation_date: true
   # TODO: Get Insiders for contributors and authors
