@@ -1,6 +1,6 @@
 # The Docker image that will be used to build your app
-image: 
-  name: quay.io/ajhalili2006/mkdocs-material-build-ci:nightly
+image:
+  name: quay.io/ajhalili2006/mkdocs-material-build-ci:latest
 
 stages:
   - test
