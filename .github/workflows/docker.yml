@@ -16,7 +16,6 @@ env:
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
 
-
 jobs:
   build-ci:
     name: Build environment for GitLab CI/CD
@@ -165,6 +164,4 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: |
             type=registry,ref=quay.io/ajhalili2006/gitpod-workspace:buildkit-cache-web
-            type=registry,ref=ghcr.io/ajhalili2006/ajhalili2006.github.io/devenv:nightly
-            type=registry,ref=ghcr.io/ajhalili2006/ajhalili2006.github.io/devenv:branch-main
-          #cache-to: type=registry,ref=quay.io/ajhalili2006/gitpod-workspace:buildkit-cache-web
+            type=registry,ref=ghcr.io/ajhalili2006/website/devenv:nightly
