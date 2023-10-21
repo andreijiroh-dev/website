@@ -6,7 +6,7 @@
 
 checkoutLocation: tildeweb-ajhalili2006
 
-image: ghcr.io/ajhalili2006/ajhalili2006.github.io/devenv:commit-34a2eb5ce41701454dfede862a6284cc92bfe175
+image: quay.io/ajhalili2006/mkdocs-material-build-ci:commit-f1a2adaa1d977fe66e4f1791436027539fe187b8
 
 tasks:
   - init: |
