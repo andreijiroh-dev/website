@@ -21,7 +21,7 @@ variables:
   DEBUG: "1" # MAY HORRIBLY LEAK SECRETS, PROCEED WITH CAUTION
   FF_ENABLE_COMMIT_DATA: "true"
   FF_GENERATE_SOCIAL_CARDS: "true"
-  SECURE_FILES_DOWNLOAD_PATH: /run/secrets
+  SECURE_FILES_DOWNLOAD_PATH: .secretskit
   GIT_DEPTH: "0"
 
 pages:
@@ -50,11 +50,12 @@ pages:
 # TODO: Automate this over at mirrors/cronjobs soon.
 sync-branch:
   stage: sync-repo
+  allow_failure: true
   script:
     - |
       set -x
       eval $(ssh-agent)
-      ssh-add /run/secrets/passwordless
+      ssh-add $PWD/.secretskit/passwordless
       git push "git@github.com:ajhalili2006/ajhalili2006.github.io" --mirror || true
       git push "git@git.sr.ht:~ajhalili2006/web" --mirror || true
       git push "git@codeberg.org:ajhalili2006/website" --mirror || true
