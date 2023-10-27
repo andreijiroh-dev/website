@@ -4,7 +4,7 @@
 
 ---
 
-!!! info "Thanks for getting in touch! Before you write, here's a few things to remind before emailing:"
+!!! info "Thanks for getting in touch! Before you write, here's a few things to remind before you go:"
     * Please [read my boundaries](../user-manual/boundaries.md), as well as [general communication policy](../user-manual/communications.md),
     [Do Not Interact list](../user-manual/dni.md) and [on neurodivergence and disability](../user-manual/neurodivergence-and-disability.md) before you scroll down.
     NOT following them will result in moderation actions, up to and including reporting as spam and blocks.
@@ -23,4 +23,8 @@ Recap Time Squad staff address at [:e-mail: **ajhalili2006@crew.recaptime.eu.org
 or on [:simple-zulip: our Zulip chat (or via DMs)](https://recaptime-dev.zulipchat.com/#streams/405458/ajhalili2006)
 * :information_source: If you want all the contact details, please see [this page](./details.md). Please don't use this to stalk or even spam me.
 
-Since I don't usually read emails, please reach me out over at Matrix/Zulip first so I can dig over spam folders (contact VK Support or Google for help if you got the bounce mail for spam)
+I do try to reply to messages if we can, but unfortunately workload and time limitations mean that it’s
+often not possible to send personal responses — I’m sorry about that. And since I do not read emails most
+of the time (apologies, my exective functioning issues cause me to scare my inbox a lot),
+please reach me out over at Matrix/Zulip first so I can dig over spam folders (contact VK Support
+or Google for help if you got the bounce mail for spam).
