@@ -58,3 +58,4 @@ tasks:
       SOURCEHUT_PAGES_TOKEN=${OAUTH2_TOKEN} PRIVATE_SSH_KEY=~/.ssh/passwordless-auth-sshfs ./bin/deploy-gmi.sh
 artifacts:
   - web/tildeweb-prod-build.tar.gz
+  - web/gemini-site.tar.gz
