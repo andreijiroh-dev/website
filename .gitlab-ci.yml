@@ -55,7 +55,7 @@ sync-branch:
     - |
       set -x
       eval $(ssh-agent)
-      ssh-add $PWD/.secretskit/passwordless
-      git push "git@github.com:ajhalili2006/ajhalili2006.github.io" --mirror || true
+      chmod 600 $PWD/.secretskit/passwordless && ssh-add $PWD/.secretskit/passwordless
+      git push "git@github.com:ajhalili2006/website" --mirror || true
       git push "git@git.sr.ht:~ajhalili2006/web" --mirror || true
       git push "git@codeberg.org:ajhalili2006/website" --mirror || true
