@@ -101,5 +101,5 @@ of my (current) profile picture.
 
 ### Third-party code
 
-* [OpenWeb Icons Set](https://iconduck.com/sets/openweb-icons-set) - SIL Open Font License 1.1
+* [OpenWeb Icons Set](https://iconduck.com/sets/openweb-icons-set) ([source code](https://github.com/pfefferle/openwebicons?ref=iconduck.com))- [SIL Open Font License 1.1](https://github.com/pfefferle/openwebicons/blob/main/License.txt)
 * Upstream template code from Material for Mkdocs for overrides directory - MIT
