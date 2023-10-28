@@ -37,18 +37,3 @@ pages:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-
-# TODO: Automate this over at mirrors/cronjobs soon.
-sync-repo:
-  stage: build
-  allow_failure: true
-  variables:
-    GIT_SSH_COMMAND: "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
-  script:
-    - |
-      set -x
-      eval $(ssh-agent)
-      chmod 600 $PWD/.secretskit/passwordless && ssh-add $PWD/.secretskit/passwordless
-      git push "git@github.com:ajhalili2006/website" --mirror || true
-      git push "git@git.sr.ht:~ajhalili2006/web" --mirror || true
-      git push "git@codeberg.org:ajhalili2006/website" --mirror || true
