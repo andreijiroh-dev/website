@@ -1,7 +1,8 @@
 # syntax=docker/dockerfile:1
 FROM gitpod/workspace-full:latest as workspace
 
-WORKDIR /tmp
+WORKDIR /
+# setup work for scdoc and hut cli
 RUN git clone https://git.sr.ht/~sircmpwn/scdoc && cd scdoc \
     && make && sudo cp scdoc /usr/local/bin/scdoc && cd .. \
     && git clone https://git.sr.ht/~emersion/hut && cd hut \
@@ -22,7 +23,7 @@ COPY --from=docker/buildx-bin:latest /buildx /usr/libexec/docker/cli-plugins/doc
 
 # brew maintenance + install ShellCheck and Hadolint
 WORKDIR /home/gitpod
-RUN brew update && brew install \
+RUN brew update && brew upgrade \
     && brew install hadolint shellcheck \
     && npm i -g wrangler \
     && git -C ~/.pyenv pull origin master
