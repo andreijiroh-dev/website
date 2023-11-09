@@ -22,5 +22,7 @@ COPY --from=docker/buildx-bin:latest /buildx /usr/libexec/docker/cli-plugins/doc
 
 # brew maintenance + install ShellCheck and Hadolint
 WORKDIR /home/gitpod
-RUN brew update && brew install hadolint shellcheck \
-    && npm i -g wrangler
+RUN brew update && brew install \
+    && brew install hadolint shellcheck \
+    && npm i -g wrangler \
+    && git -C ~/.pyenv pull origin master
