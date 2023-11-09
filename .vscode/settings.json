@@ -23,5 +23,14 @@
   "conventionalCommits.autoCommit": false,
   "conventionalCommits.promptCI": true,
   "git.alwaysSignOff": true,
-  "gitlens.remotes": [{ "domain": "mau.dev", "type": "GitLab" }]
+  "gitlens.remotes": [
+    {
+      "domain": "mau.dev",
+      "type": "GitLab"
+    }
+  ],
+  "foam.edit.linkReferenceDefinitions": "withExtensions",
+  "foam.files.ignore": [
+    ".github/**"
+  ]
 }
