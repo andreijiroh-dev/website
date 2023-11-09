@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM gitpod/workspace-full:latest as workspace
 
-WORKDIR /
+WORKDIR /tmp
 # setup work for scdoc and hut cli
 RUN git clone https://git.sr.ht/~sircmpwn/scdoc && cd scdoc \
     && make && sudo cp scdoc /usr/local/bin/scdoc && cd .. \
