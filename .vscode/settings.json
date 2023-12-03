@@ -18,7 +18,8 @@
     "docker",
     "scripts",
     "github-actions",
-    "dni"
+    "dni",
+    "gitpod"
   ],
   "conventionalCommits.autoCommit": false,
   "conventionalCommits.promptCI": true,
