@@ -3,7 +3,7 @@
 
 # basics
 site_name: ~ajhalili2006
-site_url: https://andreijiroh.eu.org/
+site_url: https://andreijiroh.xyz/
 site_dir: public
 site_author: Andrei Jiroh Halili
 copyright: >
@@ -13,7 +13,7 @@ docs_dir: markdown
 use_directory_urls: true
 
 # repos
-repo_url: https://mau.dev/andreijiroh.dev/website
+repo_url: https://mau.dev/andreijiroh-dev/website
 edit_uri: edit/main/markdown
 repo_name: source code
 
