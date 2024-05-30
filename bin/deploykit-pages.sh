@@ -28,9 +28,9 @@ info() {
 }
 
 if [[ $_branch_name_git == "main" ]] || [[ $_branch_name_git == "HEAD" ]]; then
-  export DEPLOY_COMMAND="npx wrangler pages deploy ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch main --commit-hash ${_commit_sha} --env production"
+  export DEPLOY_COMMAND="npx wrangler pages deploy ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch main --commit-hash ${_commit_sha}"
 elif [[ $CI_PIPELINE_SOURCE == "merge_request" ]]; then
-  export DEPLOY_COMMAND="npx wrangler pages deploy ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch ${_branch_name_git} --commit-hash ${_commit_sha} --env pr-$CI_MERGE_REQUEST_ID"
+  export DEPLOY_COMMAND="npx wrangler pages deploy ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch patch-$CI_MERGE_REQUEST_ID --commit-hash ${_commit_sha}"
 fi
 
 if ! git diff-index --quiet HEAD -- && [[ $FF_DIRTY_DEPLOY != "true" ]]; then
@@ -47,17 +47,18 @@ fi
 if [[ $FF_DIRTY_DEPLOY == "true" ]]; then
   $DEPLOY_COMMAND --commit-dirty=true
 else
-  DEFAULT_COMMAND="npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch main --env production"
+  DEFAULT_COMMAND="npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch main"
   ${DEPLOY_COMMAND:-$DEFAULT_COMMAND}
 fi
 unset DEPLOY_COMMAND
 
-if [[ $_branch_name_git == "main" ]] || [[ $_branch_name_git == "HEAD" ]]; then
-  tar -C public -cvz . -f site-build.tar.gz
-  curl --oauth2-bearer "$SOURCEHUT_PAGES_TOKEN" \
-    -Fcontent=@site-build.tar.gz \
-    "https://pages.sr.ht/publish/ajhalili2006.srht.site"
-fi
+# temporarily disabled
+#if [[ $_branch_name_git == "main" ]] || [[ $_branch_name_git == "HEAD" ]]; then
+#  tar -C public -cvz . -f site-build.tar.gz
+#  curl --oauth2-bearer "$SOURCEHUT_PAGES_TOKEN" \
+#    -Fcontent=@site-build.tar.gz \
+#    "https://pages.sr.ht/publish/ajhalili2006.srht.site"
+#fi
 
 if [[ $DEBUG != "" ]]; then
   set +x
