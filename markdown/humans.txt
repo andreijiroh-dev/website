@@ -1,0 +1,32 @@
+
+/* WHAT IS THIS? */
+    https://humanstxt.org
+
+/* AUTHOR */
+    Standard:     Andrei Jiroh Halili
+    Contact:      https://andreijiroh.xyz/contact
+    Fediverse:    https://tilde.zone/@ajhalili2006
+    From:         Marilao, Bulacan, PH
+
+/* SITE */
+    Last update:  2024-04-19
+    Version:      Currently unversioned
+    Language:     English
+    Doctype:      HTML5
+    IDE:          nano, insiders.vscode.dev
+    Technologies: pip3:mkdocs, pip3:mkdocs-material
+
+/* How is it deployed? */
+   I use GitLab CI on https://mau.dev by ~tulir (https://mau.fi)
+   and deployed on both Cloudflare Pages (production) and RTD Community
+   (as backup in case things go wrong and for previewing changes).
+
+   You can view the GitLab CI config used for deployments at
+   https://mau.dev/andreijiroh-dev/website/-/blob/main/.gitlab-ci.yml,
+   and the homemade scripts at https://mau.dev/andreijiroh-dev/website/-/tree/main/bin.
+   Deployments on RTD Community can be tracked separately
+   at https://readthedocs.org/projects/ajhalili2006/.
+
+/* Legalese */
+   Site source code: MPL-2.0 (excluding third-party code)
+   Website content:  CC-BY-SA-4.0 (excluding external content, media may be separately licensed)
