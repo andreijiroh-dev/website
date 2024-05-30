@@ -1,5 +1,5 @@
 {
-  "name": "@ajhalili2006/tildeverse-web",
+  "name": "@ajhalili2006/website",
   "version": "0.1.0",
   "description": "Personal website for my tildes + Gemini version of blog posts",
   "scripts": {
@@ -7,20 +7,20 @@
     "dev": "bash ./bin/localdev.sh",
     "build": "bash ./bin/build.sh",
     "deploy": "./bin/deploykit-pages.sh",
-    "docker:ci": "DOCKER_BUILDKIT=1 docker build -t dock.mau.dev/ajhalili2006/tildeverse-web/build-ci:localdev ./docker"
+    "docker:ci": "DOCKER_BUILDKIT=1 docker build -t dock.mau.dev/andreijiroh-dev/website/build-ci:localdev ./docker"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@git.sr.ht/~ajhalili2006/tildeweb.git"
+    "url": "git+ssh://git@mau.dev/andreijiroh-dev/website.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MPL-2.0",
   "bugs": {
-    "url": "https://todo.sr.ht/~ajhalili2006/tildeweb"
+    "url": "https://mau.dev/andreijiroh-dev/website/issues"
   },
-  "homepage": "https://git.sr.ht/~ajhalili2006/tildeweb#readme",
+  "homepage": "https://andreijiroh.xyz",
   "devDependencies": {
-    "wrangler": "^3.1.1"
+    "wrangler": "^3.57.2"
   }
 }
