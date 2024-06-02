@@ -52,7 +52,9 @@ RUN pip install --no-cache \
       pillow \
       cairosvg \
       pipenv \
-      pipx
+      pipx \
+    && npm install -g corepack \
+    && corepack enable 
 
 # Trust directory, required for git >= 2.35.2
 # Follows the docs for the Docker-based site build setup
