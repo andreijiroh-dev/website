@@ -11,7 +11,7 @@ COPY --from=ghcr.io/hadolint/hadolint:latest-alpine /bin/hadolint /usr/bin/hadol
 ENV YARN_VERSION 1.22.22
 COPY --from=node:20-alpine /opt/yarn-v$YARN_VERSION/bin/ /usr/local/bin/
 COPY --from=node:20-alpine /usr/local/bin/node /usr/local/bin/node
-COPY --from=node:20-alpine /usr/lib/node_modules/ /usr/lib/node_modules/
+COPY --from=node:20-alpine /usr/local/lib/node_modules/ /usr/local/lib/node_modules/
 
 ENV PACKAGES=/usr/local/lib/python3.11/site-packages PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin PYTHONDONTWRITEBYTECODE=1
 LABEL org.opencontainers.image.description="GitLab CI image for custom mkdocs-material Docker image, alongside tools @ajhalili2006 use."
@@ -56,8 +56,7 @@ RUN pip install --no-cache \
       cairosvg \
       pipenv \
       pipx \
-    && npm install -g corepack \
-    && corepack enable 
+    && corepack enable
 
 # Trust directory, required for git >= 2.35.2
 # Follows the docs for the Docker-based site build setup
