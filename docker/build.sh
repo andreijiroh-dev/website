@@ -6,7 +6,7 @@ CONTEXT=$ROOTDIR/docker
 DOCKERFILE=$CONTEXT/Dockerfile
 TAG=${IMAGE_TAG:-"quay.io/ajhalili2006/mkdocs-material-build-ci:localdev"}
 
-DOCKER_BUILDKIT=${DOCKER_BUILDKIT:-"0"} \
+DOCKER_BUILDKIT=${DOCKER_BUILDKIT:-"1"} \
   docker build \
   -t $TAG \
   -f "$DOCKERFILE" \
