@@ -3,18 +3,12 @@ FROM python:3.12-alpine AS buildkit
 # Instead of using Alpine base image and then installing Python from pkgs.al.o,
 # we'll go with the official images instead.
 
+ENV PACKAGES=/usr/local/lib/python3.11/site-packages PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin PYTHONDONTWRITEBYTECODE=1
+LABEL org.opencontainers.image.description="GitLab CI image for custom mkdocs-material Docker image, alongside tools @ajhalili2006 use."
+
 # Since hadolint isn't in the package repos for Alpine yet, we'll copying from the offical
 # Docker image instead.
 COPY --from=ghcr.io/hadolint/hadolint:latest-alpine /bin/hadolint /usr/bin/hadolint
-
-# Copy build artifacts from official node image into here
-ENV YARN_VERSION 1.22.22
-COPY --from=node:20-alpine /opt/yarn-v$YARN_VERSION/bin/ /usr/local/bin/
-COPY --from=node:20-alpine /usr/local/bin/node /usr/local/bin/node
-COPY --from=node:20-alpine /usr/local/lib/node_modules/ /usr/local/lib/node_modules/
-
-ENV PACKAGES=/usr/local/lib/python3.11/site-packages PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin PYTHONDONTWRITEBYTECODE=1
-LABEL org.opencontainers.image.description="GitLab CI image for custom mkdocs-material Docker image, alongside tools @ajhalili2006 use."
 
 # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/#linux but for Alpine
 # Also installs Doppler CLI for accessing secrets securely within CI
@@ -39,9 +33,24 @@ RUN apk add --no-cache \
      openssh \
      gnupg \
      curl \
+     wget \
      rsync \
+     libstdc++ \
   && curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh \
-    | sh
+    | sh -s --debug
+
+# Copy build artifacts from official node image into here
+ENV YARN_VERSION 1.22.22
+COPY --from=node:20-alpine /opt/yarn-v$YARN_VERSION /opt/yarn-v$YARN_VERSION
+COPY --from=node:20-alpine /usr/local/bin/node /usr/local/bin/node
+COPY --from=node:20-alpine /usr/local/lib/node_modules/ /usr/local/lib/node_modules/
+COPY --from=node:20-alpine /usr/local/include/node/ /usr/local/include/node/
+
+RUN ln -s /usr/local/bin/node /usr/local/bin/nodejs \
+    && ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
+    && ln -s /usr/local/lib/node_modules/corepack/dist/corepack.js /usr/local/bin/corepack \
+    && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn \
+    && corepack enable
 
 # See https://www.jeffgeerling.com/blog/2023/how-solve-error-externally-managed-environment-when-installing-pip3
 # for context behind removing the EXTERNALLY-MANAGED file on distribution-built CPython binary releases
@@ -55,8 +64,7 @@ RUN pip install --no-cache \
       pillow \
       cairosvg \
       pipenv \
-      pipx \
-    && corepack enable
+      pipx
 
 # Trust directory, required for git >= 2.35.2
 # Follows the docs for the Docker-based site build setup
