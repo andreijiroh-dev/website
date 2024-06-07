@@ -19,7 +19,7 @@ repo_name: source code
 
 # navbar
 nav:
-  - Home: 
+  - Home:
     - index.md
     - nowpage: now.md
     - Contact: contact/index.md
