@@ -4,7 +4,7 @@ FROM python:3.12-alpine AS buildkit
 # we'll go with the official images instead.
 
 ENV PACKAGES=/usr/local/lib/python3.11/site-packages PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin PYTHONDONTWRITEBYTECODE=1
-LABEL org.opencontainers.image.description="GitLab CI image for custom mkdocs-material Docker image, alongside tools @ajhalili2006 use."
+LABEL org.opencontainers.image.description="GitLab CI image for a custom mkdocs-material Docker image, alongside tools @ajhalili2006 use."
 
 # Since hadolint isn't in the package repos for Alpine yet, we'll copying from the offical
 # Docker image instead.
@@ -48,12 +48,14 @@ COPY --from=node:20-alpine /usr/local/include/node/ /usr/local/include/node/
 
 RUN ln -s /usr/local/bin/node /usr/local/bin/nodejs \
     && ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
+    && ln -s /usr/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx \
     && ln -s /usr/local/lib/node_modules/corepack/dist/corepack.js /usr/local/bin/corepack \
     && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn \
     && corepack enable
 
 # See https://www.jeffgeerling.com/blog/2023/how-solve-error-externally-managed-environment-when-installing-pip3
-# for context behind removing the EXTERNALLY-MANAGED file on distribution-built CPython binary releases
+# for context behind removing the EXTERNALLY-MANAGED file on distribution-built CPython binary releases.
+# Since we're using the official Python Docker image, we don't need to worry about that.
 RUN pip install --no-cache \
       mkdocs-material \
       mkdocs-git-committers-plugin-2 \
