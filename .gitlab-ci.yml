@@ -1,6 +1,7 @@
 # The Docker image that will be used to build your app
 image:
-  name: quay.io/ajhalili2006/mkdocs-material-build-ci:latest
+  name: dock.mau.dev/andreijiroh-dev/docker-images/mkdocs-material:latest
+  entrypoint: ["/bin/bash", "-l", "-c"] # https://gitlab.com/gitlab-org/gitlab-runner/-/issues/2109#note_47480476
 
 stages:
   - test
