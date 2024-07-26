@@ -13,18 +13,18 @@ abuse them (or else get blocked).
 !!! info "Please just use one email address when sending messages privately."
     Don't send your email to multiple addresses (even as BCC or CC), it might cause duplication.
 
-The most preferred address to use is either [:e-mail: **ajhalili2006@andreijiroh.eu.org**](mailto:ajhalili2006@andreijiroh.eu.org) or [:e-mail: **ajhalili2006@crew.recaptime.eu.org**](mailto:ajhalili2006@crew.recaptime.eu.org),
+The most preferred address to use is either [:e-mail: **ajhalili2006@andreijiroh.xyz**](mailto:ajhalili2006@andreijiroh.xyz) or [:e-mail: **ajhalili2006@crew.recaptime.dev**](mailto:ajhalili2006@crew.recaptime.dev),
 although if VK WorkMail has flagged your mail as spam and you don't want to fill up not-spam forms,
 [use this Tally form](https://tally.so/r/nrB4o2) as an alternative.
 
 * **Gmail user?** You could try sending mail to [:e-mail: ajhalili2006@gmail.com](mailto:ajhalili2006@gmail.com)
 (sharing docs and files over Google Drive are fun but please no spam).
 * If you're using Microsoft 365 (personally), you may also try sending (or sharing OneDrive files) to [:e-mail: ajhalili2006@outlook.ph](mailto:ajhalili2006@outlook.ph).
-For work-related file sharing, please use my `@crew.recaptime.eu.org` email address instead.
+For work-related file sharing, please use my `@crew.recaptime.dev` or `@andreijiroh.xyz` email address instead.
 
 ## Over at socials
 
-For the full list, see [:simple-buffer: my Buffer start.page](https://ajhalili2006.start.page).
+For the full list, see [this page](../links.md).
 You can obviously ping/tag me, but please be careful, especially when replying to others' posts.
 
 If you want to slide into DMs, only slide via my main account and not any of my alternate accounts (although
