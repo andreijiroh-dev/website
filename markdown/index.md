@@ -16,11 +16,15 @@ and [The Bloody Hell PH](https://fromthebshq.substack.com) based in Marilao, Bul
 software packaging, currently Alpine Linux package maintainer for GitHub CLI), DevSecOps, programming (not only in JavaScript,
 but I am also exploring Python, Go and other languages), politics (_cough Philippine politics in lens of foreigners while disabled with [Honest Government Ads] level of satire_) and internet health (things like fandom toxicity and cancel culture).
 
+I am pretty searchable at `@ajhalili2006` on [GitHub], [sourcehut], and [across the fediverse] (or via [Threads](https://threads.net/@ajhalili2006)). [Here's my contact details](./contact/index.md) if you need to contact me.
+
+## More about me
+
 Currently, I am participating in [Hack Club Arcade](https://hackclub.com/arcade) to work through
 my personal projects throughout the first month of my last school year in senior high school and get
 some stuff in return (once reviewed to prevent abuse), like those Yubikey 5C NFC with GitHub logo
 and stickers, and also keeping up with all things Hack Club and virtually meeting with
-the community of high school coders and communities fiscally hosted by them[^6] through their Slack workspace.
+the community of high school coders and communities fiscally hosted by them[^4] through their Slack workspace.
 
 Outside of being a Linux enthusiast and JS dev myself, I am mostly seen lurking and joining lore discussions over at [~mikedmoy's Discord server](https://go.andreijiroh.xyz/discord/gildedguy)[^5]. I am not only followed animators and furries (_please send help in the backrooms if I need to eyebleach on NSFW art_), but also (not just anime) roleplaying accounts, SubStack writers and even fellow devs and disabled people (not just autistics).
 
@@ -28,13 +32,13 @@ Outside of being a Linux enthusiast and JS dev myself, I am mostly seen lurking 
 
 My journey in coding started at [Glitch.com](https://glitch.com) in 2017-2018 to learn a bit of Node.js, while
 my Linux journey started few months after that using VirtualBox. Some suggest that it started off being a ~~internet addict~~
-(the strikethough words is a bit of a stigma in itself due to being one of my coping mechanisms while autistic myself)[^6] chronically online Autist myself.
+(the words in strikethrough is a bit of a stigma in itself due to being one of my coping mechanisms while autistic myself)[^6] chronically online Autist myself.
 
 I code, usually in JavaScript for backend stuff, especially building APIs and learning all things databases through Prisma,
-to learn how to build apps and tools. Although I am sort of semi-closeted disabled person
+to learn how to build apps and tools. Although I am sort of semi-closeted and introverted neurodivergent person
 
 I use Linux, since using Windows is always a nightmare for not only software development (yes, WSL exists but why not go bare metal?)
-but as a regular user from performance standpoint but to al
+but as a regular user from performance standpoint but to learn the pain of being a system administrator and DevOps engineer
 
 ## Tools I use and my setup
 
@@ -44,7 +48,7 @@ currently daily-driving Fedora Linux with KDE Plasma.[^3]
 * **Programming Languages**: [Node.js](https://nodejs.org) + [Deno](https://deno.land)
 * **Editors**: nano, [VS Code](https://go.andreijiroh.xyz/vscode) (switching between stable and Insiders), [Zed](https://go.andreijiroh.xyz/zed-editor)
 * **Cloud development environments as service**: [GitHub Codespaces](https://github.com/features/codespaces), [Gitpod](https://www.gitpod.io)
-* **Code forges**: [GitHub](https://github.com/ajhlili2006), [GitLab on ~tulir's instance](https://mau.dev/ajhalili2006)[^2], [sourcehut](https://sr.ht/~ajhalili2006)
+* **Code forges**: [GitHub], [GitLab on ~tulir's instance](https://mau.dev/ajhalili2006)[^2], [sourcehut]
 
 [^1]: Obviously not a US LLC company, but we're sorting out the fiscal hosting related chores behind the scenes.
 More news soon once we're ready.
@@ -56,3 +60,6 @@ More news soon once we're ready.
 [^7]: While I am fine with anyone using person-first language (`person with autism`)
 
 [Honest Government Ads]: https://go.andreijiroh.xyz/honest-govt-ads
+[GitHub]: https://github.com/ajhlili2006
+[sourcehut]: https://sr.ht/~ajhalili2006
+[across the fediverse]: https://tilde.zone/@ajhalili2006
