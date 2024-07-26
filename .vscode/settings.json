@@ -33,5 +33,11 @@
   "foam.edit.linkReferenceDefinitions": "withExtensions",
   "foam.files.ignore": [
     ".github/**"
+  ],
+  "cSpell.words": [
+    "Autist",
+    "BDFL",
+    "gatekeep",
+    "Yubikey"
   ]
 }

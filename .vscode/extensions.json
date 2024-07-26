@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "printfn.gemini-improved",
-        "DavidAnson.vscode-markdownlint"
+        "DavidAnson.vscode-markdownlint",
+        "streetsidesoftware.code-spell-checker"
     ]
 }
