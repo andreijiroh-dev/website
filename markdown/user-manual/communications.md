@@ -1,4 +1,4 @@
-# Communications
+# Communicating with Andrei Jiroh
 
 This page contains documentation on how to communicate with people in the neurodiversity and the wider disability communities in mind and also on gender neutral communication.
 
@@ -12,14 +12,13 @@ personal user manual and I don’t speak for anyone else.
 
 1. [Don’t be a dick](https://www.psychologytoday.com/us/blog/the-author-speaks/201909/don-t-be-dick) (aka violent, discriminatory, disrespectful or even disturbing in any way).[^1]
 2. Respect my preferred pronouns and avoid PFL (person-first language) in most cases.
-3. Don’t @ me during downtime, sleep and day-offs. In case of emergencies, call me over my personal phone number that I provided or through provided contact methods.
+3. Don’t ping me during downtime, sleep and day-offs. In case of emergencies, call me over my personal phone number that I provided or through provided contact methods.
 For sensitive manners (like reporting security related issues), use Keybase, Session or Matrix (make sure to enable EE2E when initiating an one-to-one chat with me). If you want to connect through Session, I’ll provide my public ID when needed.
-4. No crypto nonsense (even I use mirror.xyz and some other dapps), self promo hellscape, doxxing, death/swatting threats or calls to violence towards me or anybody.
-5. Don’t dare even send me NSFW/CACP.
-6. Future employers and recruiters: Please contact via email or LinkedIn only.
-7. I WILL NOT RESPOND FROM ANYBODY ON FACEBOOK MESSENGER. This applies to both my main and alternative personal profiles,
-unless you're either know me IRL or for official business at school and work and your org policies does only allow
-communications on Facebook Messenger/WhatsApp.
+4. No crypto nonsense (even I use mirror.xyz and some other dapps), NSFW or CSAM, self promo hellscape, doxxing, death/swatting threats or calls to violence towards me or anybody.
+5. Future employers and recruiters: Please contact via email or LinkedIn only.
+6. I only respond over Facebook Messenger on my main profile if:
+    * you know me IRL, including within the immediate family;
+    * or, you are either my class adviser/subject teacher/boss or workspace/academic/school colleague, either in the past or current.
 
 [^1]: Explainer from admins and mods at `hachyderm.io`: <https://community.hachyderm.io/docs/rule-explainer/#dont-be-a-dick>
 
