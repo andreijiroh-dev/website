@@ -65,7 +65,7 @@ More news soon once we're ready.
 [^4]: See <https://hackclub.com/fiscal-sponsorship> for all things 501c3 US nonprofit fiscal sponsorship, although consider <https://opencollective.com/opensource> for 501c6 option for your open-source project.
 [^5]: `~mikedmoy` (also `~gildedguy`): Michael Moy, also known in Hyun's Dojo Community as Gildedguy (the animator). See <https://gildedguy.com/website-reborn> for context behind his (old) domain.
 [^6]: Quick trip to Vox.com article on this: <https://www.vox.com/the-goods/2021/9/30/22696338/pathologizing-adhd-autism-anxiety-internet-tiktok-twitter>
-[^7]: While I am fine with anyone using person-first language (`person with autism`)
+[^7]: While I am fine with anyone using person-first language (`person with autism`), I prefer identity-first language since neurodivergence is always part of human life and genome. See also this page in [my user manual](./user-manual/neurodivergence-and-disability.md) for more in depth guidance on language and disability.
 
 [Honest Government Ads]: https://go.andreijiroh.xyz/honest-govt-ads
 [GitHub]: https://github.com/ajhlili2006
