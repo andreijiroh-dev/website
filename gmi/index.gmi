@@ -13,20 +13,21 @@ or even incomplete.
 => /resume.gmi my resume for prospective employers
 => /user-manual/index.gmi personal user manual
 => /contact.gmi contact details
-=> https://poly.me/ajhalili2006 my portfolio on Polywork
 
 ## Where to find me elsewhere
 
 => https://tilde.zone/@ajhalili2006 Fediverse (I mostly active there)
 => https://verified.coop/@ajhalili2006 Backup account, in case things go wrong on main homeserver
-=> https://the.usualsuspects.lol/@JirohsMind Deep dives into my autistic life/mind, sometimes more personal posts, often less politically unhinged content
+=> https://neurodifferent.me/@JirohsMind Deep dives into my autistic life/mind, sometimes more personal posts, often less politically unhinged content
 => https://ajhalili2006.substack.com/ My blog over at substack...
 => https://blog.andreijiroh.eu.org ...or at Hashnode
 => https://ajhalili2006.start.page All of my socials in one place
 
 ----------
 
-Made with love by Andrei Jiroh Halili (@ajhalili2006)
+Made with love by Andrei Jiroh Halili (@ajhalili2006) from the Philippines
+
 => https://creativecommons.org/licenses/by-sa/4.0/ Copyright 2023. Some rights reserved under CC BY-SA 4.0.
 
 => https://mau.dev/ajhalili2006/tildeverse-web/-/blob/main/gmi/index.gmi View sources on GitLab
+
