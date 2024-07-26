@@ -14,11 +14,11 @@ Andrei Jiroh Halili welcomes feedback from security researchers and the general 
 ## Systems in Scope
 
 This policy applies to any digital assets owned, operated, or maintained by Andrei Jiroh Halili.
-This includes any open-source projects licensed under OSI and FSF approved licenses.
+This includes any open-source projects licensed under OSI and FSF approved licenses and services he built.
 
 ## Out of Scope
 
-- Assets or other equipment not owned by parties participating in this policy.
+- Assets or other equipment not owned by parties participating in this policy. This includes anything under Recap Time Squad, which operates with its own security policy at <https://policies.recaptime.dev/security>
 - Any other assets or other equipment owned by Andrei Jiroh that are deemed out of scope
 at his discretion.
 
@@ -49,7 +49,7 @@ In participating in our vulnerability disclosure program in good faith, we ask t
 
 ## Official Channels
 
-Please report security issues via `ajhalili2006@andreijiroh.eu.org` or <https://andreijiroh.eu.org/contact/security>, providing all relevant information. The more details you provide, the easier it will be for us to triage and fix the issue.
+Please report security issues via `security@andreijiroh.xyz` or following the general instructions at <https://andreijiroh.xyz/contact/security>, providing all relevant information. The more details you provide, the easier it will be for us to triage and fix the issue.
 
 ## Safe Harbor
 
