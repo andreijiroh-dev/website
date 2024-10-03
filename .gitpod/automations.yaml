@@ -1,0 +1,5 @@
+tasks:
+  devserver:
+    name: Run dev server
+    command: pipenv install && pipenv run dev
+    triggeredBy: [manual,postDevcontainerStart]
