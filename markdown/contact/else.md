@@ -15,12 +15,12 @@
     and [community moderation](../community-management.md), although if you're a company, [consider hiring me full-time](./work.md) for maintaining your OSS projects (not open-core or anything under non-OSI approved ones like the BUSL).
 
 If your inquiry isn't answered anywhere in this site or not covered on the main contact page,
-I'm reachable at the following contact methods (also on [:simple-buffer: my Buffer start.page](https://ajhalili2006.start.page)):
+I'm reachable at the following contact methods (also on [all-the-links page](../links.md)):
 
-* :mailbox: personally via [:e-mail: **ajhalili2006@andreijiroh.eu.org**](mailto:ajhalili2006@andreijiroh.eu.org) or via my
-Recap Time Squad staff address at [:e-mail: **ajhalili2006@crew.recaptime.eu.org**](mailto:ajhalili2006@crew.recaptime.eu.org)
+* :mailbox: personally via [:e-mail: **ajhalili2006@andreijiroh.dev**](mailto:ajhalili2006@andreijiroh.dev) or via my
+Recap Time Squad staff address at [:e-mail: **ajhalili2006@crew.recaptime.dev**](mailto:ajhalili2006@crew.recaptimedev)
 * :speech_balloon: over at Matrix at [:simple-matrix: @ajhalili2006 on ~environments](https://matrix.to/#/@ajhalili2006:envs.net)
-or on [:simple-zulip: our Zulip chat (or via DMs)](https://recaptime-dev.zulipchat.com/#streams/405458/ajhalili2006)
+or on [:simple-zulip: our Zulip Cloud organization (or via DMs)](https://recaptime-dev.zulipchat.com/#streams/405458/ajhalili2006)
 * :information_source: If you want all the contact details, please see [this page](./details.md). Please don't use this to stalk or even spam me.
 
 I do try to reply to messages if we can, but unfortunately workload and time limitations mean that it’s

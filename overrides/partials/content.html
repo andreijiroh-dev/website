@@ -2,16 +2,18 @@
 <div class="admonition info">
     {% if config.extra.deployment == "staging" %}
         <p class="admonition-title">
-            You're previewing the staging build of @ajhalili2006's website on <a href="https://readthedocs.org/projects/ajhalili2006/builds">RTD Community</a>.
+            You're previewing the staging build of @ajhalili2006's website on
+            <a href="https://readthedocs.org/projects/ajhalili2006/builds">RTD Community</a>.
         </p>
         <p>
-            Deploys might be a bit faster there, but it may contain content not yet ready for production deployment or
-            we might skipped GitLab CI for the latest commit.
+            Deploys might be a bit faster there, but it may contain content not yet ready for
+            production deployment or we might skipped GitLab CI for the latest commit.
         </p>
     {% elif config.extra.deployment == "tilde" %}
         <p class="admonition-title">You're viewing ~ajhalili2006's website from the tildeverse.</p>
         <p>
-            This site build's content might be outdated due to failing CI, delayed synchorizations and local cache, among other reasons.
+            This site build's content might be outdated due to failing CI, delayed synchorizations and
+            local cache, among other reasons.
         </p>
     {% endif %}
     <a class="md-button" href="https://andreijiroh.xyz">Go back to production</a>
