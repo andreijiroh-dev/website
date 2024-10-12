@@ -1,12 +1,14 @@
 # ~ajhalili2006's website
 
-[![Hosted on pages.dev](https://img.shields.io/badge/hosted%20on-pages.dev-orange?style=flat-square&logo=cloudflare)](https://pages.dev)
-[![GitLab last commit](https://img.shields.io/gitlab/last-commit/andreijiroh.dev/website?gitlab_url=https%3A%2F%2Fmau.dev&style=flat-square)](https://mau.dev/andreijiroh.dev/website/commits)
+[![Hosted on pages.dev](https://img.shields.io/badge/hosted%20on-pages.dev-F48120?style=flat-square&logo=cloudflare)](https://pages.dev)
+[![Open in Gitpod](https://img.shields.io/badge/open%20in-Gitpod-yellow?style=flat-square&logo=gitpod)](https://gitpod.io/#https://mau.dev/andreijiroh-dev/website)
+[![Open in Codespaces](https://img.shields.io/badge/open%20in-Codespaces-black?style=flat-square&logo=github)](https://codespaces.new/andreijiroh-dev/website)
+[![GitLab last commit](https://img.shields.io/gitlab/last-commit/andreijiroh-dev/website?gitlab_url=https%3A%2F%2Fmau.dev&style=flat-square)](https://mau.dev/andreijiroh.dev/website/commits)
 [![Staging builds on Read The Docs Community](https://readthedocs.org/projects/ajhalili2006/badge/?version=latest&style=flat-square)](https://readthedocs.org/projects/ajhalili2006/)
 [![Docker Image Builds](https://github.com/andreijiroh-dev/docker-images/actions/workflows/docker-buildops.yml/badge.svg?event=schedule)](https://github.com/andreijiroh-dev/docker-images/actions/workflows/docker-buildops.yml)
-[![GitLab CI status](https://mau.dev/andreijiroh.dev/website/badges/main/pipeline.svg?style=flat-square)](https://mau.dev/andreijiroh.dev/website/-/pipelines)
+[![GitLab CI status](https://mau.dev/andreijiroh-dev/website/badges/main/pipeline.svg?style=flat-square)](https://mau.dev/andreijiroh-dev/website/-/pipelines)
 
-This is my sources for both [`andreijiroh.xyz`](https://andreijiroh.xyz) and tilde userpages,
+This is my sources for both [`andreijiroh.dev`](https://andreijiroh.dev) and tilde userpages,
 built with Mkdocs + [Material theme](https://go.andreijiroh.eu.org/mkdocs-material) by
 [~squidfunk](https://github.com/squidfunk). Sources for Gemini version of the website is
 available at `gmi` directory.
@@ -43,14 +45,16 @@ Canonically developed at [mau.dev](https://mau.dev/andreijiroh-dev/website.git) 
 * Jetbrains Space (personal): <https://ajhalili2006.jetbrains.space/p/web/repositories/andreijiroh.dev> (repository clone URL: `git.jetbrains.space/ajhalili2006/web/andreijiroh.dev.git`)
 * Sourcehut: <https://git.sr.ht/~ajhalili2006/web>
 
+## Structure
+
+* [`markdown`](./markdown/) - the source Markdown files for the website
+* [`overrides`] - theme customizations and Mkdocs build hooks in Python
+
 ## Site Development
 
 Use the clone links from either the canonical repository URL or its mirrors
 [as mentioned above](#mirrors) or open this repo in a cloud development
-environment using these links:
-
-[![Open in Gitpod](https://img.shields.io/badge/open%20in-Gitpod-orange?style=flat-square&logo=gitpod)](https://gitpod.io/#https://mau.dev/andreijiroh-dev/website)
-[![Open in Codespaces](https://img.shields.io/badge/open%20in-Codespaces-black?style=flat-square&logo=github)](https://codespaces.new/andreijiroh-dev/website)
+environment using the `open in` links above.
 
 ### Building from source
 

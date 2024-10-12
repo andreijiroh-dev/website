@@ -32,7 +32,7 @@ pages:
     - |
       source /tmp/.ssh-agent.env
       bash ./bin/build.sh
-      bash ./bin/deploy.sh
+      npm run deploy
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL

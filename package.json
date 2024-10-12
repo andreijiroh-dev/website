@@ -21,6 +21,9 @@
   },
   "homepage": "https://andreijiroh.xyz",
   "devDependencies": {
-    "wrangler": "^3.77.0"
+    "wrangler": "^3.80.4"
+  },
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.19.0"
   }
 }
