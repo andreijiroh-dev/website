@@ -4,16 +4,16 @@
 
 /* AUTHOR */
     Standard:     Andrei Jiroh Halili
-    Contact:      https://andreijiroh.xyz/contact
+    Contact:      https://andreijiroh.dev/contact
     Fediverse:    https://tilde.zone/@ajhalili2006
     From:         Marilao, Bulacan, PH
 
 /* SITE */
-    Last update:  2024-04-19
+    Last update:  2024-10-12
     Version:      Currently unversioned
     Language:     English
     Doctype:      HTML5
-    IDE:          nano, insiders.vscode.dev
+    IDE:          nano, (insiders.)vscode.dev
     Technologies: pip3:mkdocs, pip3:mkdocs-material
 
 /* How is it deployed? */

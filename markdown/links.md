@@ -1,6 +1,8 @@
 # Everything ~ajhalili2006 in one place
 
-It's like Buffer and friends, but right inside this website and part of version control.
+Hi there! I am Andrei Jiroh, autistic Filipino, open-source developer and SABDFL at RecapTime.dev, Linux user and backend dev in Node.js and Deno.
+
+_It's like Buffer and friends, but right inside this website and part of version control in Markdown._
 
 ## Meta
 
@@ -16,6 +18,8 @@ See them all in my portfolio and resume, both linked above in the previous secti
 * :compass: [Andrei Jiroh in the multiverse / multifandom hellscapes](https://linktr.ee/MFHellscapes) - Just me across fandoms.
 * :writing_hand: [The Bloody Hell PH](https://fromthebshq.carrd.co/) - Not just political writings and other things not in the main blog.
 * :tools: [Recap Time Squad / RecapTime.dev](https://recaptime.dev) - home of most open-source work I do
+* :computer: In The Tildeverse
+    * :simple-hackclub: - Spoilers?
 
 ## Code forges
 
@@ -23,6 +27,7 @@ See them all in my portfolio and resume, both linked above in the previous secti
     * [Extended namespace](https://github.com/andreijiroh-dev)
     * [Experimential projects](https://github.com/ajhalili2006-experiments)
 * :simple-gitlab: [GitLab profile](https://mau.dev/ajhalili2006) ([also on GitLab SaaS](https://gitlab.com/ajhalili2006))
+    * [Extended namespace](https://mau.dev/andreijiroh-dev)
 * :simple-codeberg: [Codeberg](https://codeberg.org/ajhalili2006)
 * :simple-sourcehut: [sourcehut](https://sr.ht/~ajhalili2006)
 * :simple-launchpad: [Launchpad.net](https://launchpad.net/~ajhalili2006)
