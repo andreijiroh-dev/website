@@ -31,8 +31,8 @@ pages:
   script:
     - |
       source /tmp/.ssh-agent.env
-      ./bin/build.sh
-      ./bin/deploy.sh
+      bash ./bin/build.sh
+      bash ./bin/deploy.sh
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL

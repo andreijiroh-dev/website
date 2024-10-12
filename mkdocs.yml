@@ -3,7 +3,7 @@
 
 # basics
 site_name: ~ajhalili2006
-site_url: https://andreijiroh.xyz/
+site_url: https://andreijiroh.dev/
 site_dir: public
 site_author: Andrei Jiroh Halili
 copyright: >
@@ -47,7 +47,7 @@ nav:
     - Communities: portfolio/communities.md
     - Tildes: portfolio/tildes.md
     - Resume: user-manual/resume.md
-  - Blog: "https://ajhalili2006.substack.com" # todo: point to substack
+  - Blog: "https://blog.andreijiroh.dev"
 
 # theme settings
 theme:
@@ -95,6 +95,13 @@ theme:
     - toc.follow
     # - toc.integrate
   palette:
+    - media: "(prefers-color-scheme)"
+      primary: green
+      accent: yellow
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -123,8 +130,8 @@ plugins:
         "user-manual/portfolio.md": "portfolio/index.md"
         "dni.md": "user-manual/dni.md"
         "resume.md": "user-manual/resume.md"
-        "blog.md": "https://ajhalili2006.substack.com"
-        "socials.md": "https://ajhalili2006.start.page"
+        "blog.md": "https://blog.andreijiroh.dev"
+        "socials.md": "links.md#socials"
         "communities.md": "portfolio/communities.md"
         "tildes.md": "portfolio/tildes.md"
         "projects.md": "portfolio/projects.md"
@@ -169,27 +176,39 @@ extra:
   #deployment: staging
   # my socials
   social:
-    - icon: simple/substack
-      link: https://ajhalili2006.substack.com
-      name: ~ajhalili2006's personal substack
+
+    # fediverse
     - icon: fontawesome/brands/mastodon
       link: https://tilde.zone/@ajhalili2006
       name: ~ajhalili2006 on tildeverse
+
+    # X/Twitter
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/ajhalili2006
       name: ~ajhalili2006 on twitter
+    
+    # substack
+    - icon: simple/substack
+      link: https://ajhalili2006.substack.com
+      name: ~ajhalili2006's personal substack
+
+    # git
     - icon: fontawesome/brands/github
       link: https://github.com/ajhalili2006
       name: ~ajhalili2006 on github
     - icon: fontawesome/brands/gitlab
       link: https://mau.dev/ajhalili2006
       name: ~ajhalili2006 on mauinum gitlab instance
-    - icon: fontawesome/brands/git-alt
+    - icon: simple/sourcehut
       link: https://sr.ht/~ajhalili2006
       name: ~ajhalili2006 on sr.ht
+
+    # facebook
     - icon: fontawesome/brands/facebook
       link: https://facebook.com/ajhalili2006
       name: ~ajhalili2006's personal (slash professional profile) facebook account
+    
+    # linkedin
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/ajhalili2006
       name: ~ajhalili2006 on linkedin for employers

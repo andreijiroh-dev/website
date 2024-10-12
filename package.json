@@ -6,7 +6,7 @@
     "start": "npm run dev",
     "dev": "bash ./bin/localdev.sh",
     "build": "bash ./bin/build.sh",
-    "deploy": "./bin/deploykit-pages.sh",
+    "deploy": "dotenvx run -f .env.ci -- bash ./bin/deploy.sh",
     "docker:ci": "DOCKER_BUILDKIT=1 docker build -t dock.mau.dev/andreijiroh-dev/website/build-ci:localdev ./docker"
   },
   "repository": {
@@ -21,6 +21,6 @@
   },
   "homepage": "https://andreijiroh.xyz",
   "devDependencies": {
-    "wrangler": "^3.57.2"
+    "wrangler": "^3.77.0"
   }
 }

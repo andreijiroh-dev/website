@@ -20,7 +20,6 @@ mkdocs-autolinks-plugin = "*"
 python_version = "3.12"
 
 [scripts]
-dev = "mkdocs serve --watch overrides --watch-theme --livereload --open"
-build = "bash bin/build.sh"
-build-staging = "bash bin/build.sh mkdocs.readthedocs.yml"
-build-tilde-ctrlc = "bash bin/build.sh mkdocs.tilde.yml"
+dev = "mkdocs serve --watch overrides --watch-theme --verbose"
+build = "mkdocs build -d public --verbose"
+build-staging = "pipenv run build -f mkdocs.readthedocs.yml"
