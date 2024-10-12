@@ -15,6 +15,7 @@ default:
     - pipenv install --ignore-pipfile --deploy
     - npm ci
     - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+    - ssh-agent > /tmp/.ssh-agent.env
 
 # Global builds and stuff
 variables:
@@ -23,11 +24,15 @@ variables:
   FF_GENERATE_SOCIAL_CARDS: "true"
   SECURE_FILES_DOWNLOAD_PATH: .secretskit
   GIT_DEPTH: "0"
+  DOTENV_PRIVATE_KEY: $DOTENV_PRIVATE_KEY_CI
 
 pages:
   stage: build
   script:
-    - doppler run -- ./bin/deploykit-pages.sh
+    - |
+      source /tmp/.ssh-agent.env
+      ./bin/build.sh
+      ./bin/deploy.sh
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
