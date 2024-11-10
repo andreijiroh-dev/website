@@ -19,6 +19,6 @@ info() {
 }
 
 if [[ $CI == "true" ]] && [[ $CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "web" ]] && [[ $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH ]]; then
-  npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME} --branch main
-  scp -rv public ajhalili@iapetus.uberspace.de:html
+  npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME:-"ajhalili2006"} --branch main
+  scp -i "$PWD/.secretskit/passwordless" -o "StrictHostKeyChecking=no" -rv public ajhalili@iapetus.uberspace.de:html
 fi

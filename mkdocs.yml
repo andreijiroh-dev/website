@@ -174,13 +174,17 @@ markdown_extensions:
 # extras
 extra:
   #deployment: staging
+  fediverse_creator_handle: "@ajhalili2006:tilde.zone"
   # my socials
   social:
-
     # fediverse
     - icon: fontawesome/brands/mastodon
       link: https://tilde.zone/@ajhalili2006
       name: ~ajhalili2006 on tildeverse
+
+    - icon: simple/bluesky
+      link: https://bsky.app/profile/andreijiroh.dev
+      name: ~ajhalili2006 on bsky.app
 
     # X/Twitter
     - icon: fontawesome/brands/twitter

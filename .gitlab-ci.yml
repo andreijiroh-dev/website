@@ -15,7 +15,6 @@ default:
     - pipenv install --ignore-pipfile --deploy
     - npm ci
     - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
-    - ssh-agent > /tmp/.ssh-agent.env
 
 # Global builds and stuff
 variables:

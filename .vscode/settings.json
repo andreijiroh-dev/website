@@ -39,5 +39,6 @@
     "BDFL",
     "gatekeep",
     "Yubikey"
-  ]
+  ],
+  "dotenv.enableAutocloaking": false
 }

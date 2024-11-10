@@ -24,6 +24,6 @@
     "wrangler": "^3.80.4"
   },
   "dependencies": {
-    "@dotenvx/dotenvx": "^1.19.0"
+    "@dotenvx/dotenvx": "^1.22.0"
   }
 }
