@@ -57,6 +57,21 @@ For the personal backlog I can share publicly, please [see my todo.sr.ht tracker
 !!! info "Coming soon!"
     I'll plan to utilize this space to quickly to move older entries here in the future.
 
+### 2024-08-10
+
+!!! note "Added from the backburners"
+    I mean after being `git pull` and `git stash apply` then fixing the merge conflicts.
+
+I am currently busy at the school for the next 9 months.
+
+Alongside being at school finishing my last senior high school year for graduation,
+I am currently building technical projects in the public ([see my scrapbook](https://scrapbook.hackclub.com/ajhalili2006)) while participating in
+[Hack Club Arcade](https://hackclub.com/arcade) and preparing for the next school year as well.
+
+Some of these include [coding a rewrite of my public `golinks` service](https://github.com/andreijiroh-dev/api-servers/tree/main/apps/golinks-v2)
+and even building a CLI tool for managing secrets in a gopass-styled monorepo with `dotenvx` and even a portfolio
+and progress tracker in one website.
+
 ## Web/Commit Archives
 
 * [2024-07-27](https://mau.dev/andreijiroh-dev/website/-/blob/ec1cdd817280f19e8225b55cf0820e810860803e/markdown/now.md) - [web archive](https://web.archive.org/web/20241110083528/https://andreijiroh.dev/now/)

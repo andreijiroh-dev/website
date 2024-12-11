@@ -4,17 +4,23 @@
 
 /* AUTHOR */
     Standard:     Andrei Jiroh Halili
+    Pronouns:     he/they
     Contact:      https://andreijiroh.dev/contact
-    Fediverse:    https://tilde.zone/@ajhalili2006
+    Socials:      https://links.andreijiroh.dev
+    PGP ID:       4D5E631758CB9CC45941B1CE67BFC91B3DA12BE8 (personal)
+                  0527234A430387EA5695D824A30EBE40AD856D88 (@crew.recaptime.dev)
     From:         Marilao, Bulacan, PH
 
 /* SITE */
-    Last update:  2024-10-12
+    Last update:  2024-11-30
+    Timezone:     PHT (GMT+8)
     Version:      Currently unversioned
     Language:     English
     Doctype:      HTML5
     IDE:          nano, (insiders.)vscode.dev
-    Technologies: pip3:mkdocs, pip3:mkdocs-material
+    Technologies: pip3:mkdocs, pip3:mkdocs-material, jsr:@hono/hono (for API)
+    Sources:      https://mau.dev/andreijiroh-dev/website
+                  https://github.com/andreijiroh-dev/api-servers/tree/main/apps/website-api
 
 /* How is it deployed? */
    I use GitLab CI on https://mau.dev by ~tulir (https://mau.fi)
@@ -22,11 +28,17 @@
    (as backup in case things go wrong and for previewing changes).
 
    You can view the GitLab CI config used for deployments at
-   https://mau.dev/andreijiroh-dev/website/-/blob/main/.gitlab-ci.yml,
-   and the homemade scripts at https://mau.dev/andreijiroh-dev/website/-/tree/main/bin.
+   https://mau.dev/andreijiroh-dev/website/-/blob/main/.gitlab-ci.yml.
    Deployments on RTD Community can be tracked separately
    at https://readthedocs.org/projects/ajhalili2006/.
 
 /* Legalese */
    Site source code: MPL-2.0 (excluding third-party code)
-   Website content:  CC-BY-SA-4.0 (excluding external content, media may be separately licensed)
+   Website content:  CC-BY-SA-4.0 (excluding external content, media may be
+                     separately licensed)
+
+/* SEE ALSO */
+   Recap Time Squad:    https://recaptime.dev
+   Hack Club:           https://hackclub.com
+   Prudue Hackers:      https://pruduehackers.xyz (TODO: check domain)
+   Material for Mkdocs: https://squidfunk.github.io/mkdocs-material

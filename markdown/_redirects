@@ -3,9 +3,9 @@
 /dni /user-manual/dni
 
 # external redirects
-/blog https://ajhalili2006.substack.com
-/pkgs https://gcdn.todo.com
-/socials https://ajhalili2006.start.page
+/blog https://blog.andreijiroh.dev
+/pkgs https://pkgs.andreijiroh.dev
+/socials /links
 
 # user manual
 /manual /user-manual

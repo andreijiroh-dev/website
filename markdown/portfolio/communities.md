@@ -1,22 +1,30 @@
 # ~ajhalili2006's communities
 
-_Last updated as of 2023-02-25_
 
 ## Actively participating on
 
-| Name | Type / Role | Description | Links |
-| --- | --- | --- | --- |
-| [Recap Time Squad](https://recaptime.eu.org) (also known as RecapTime.dev, formerly The Pins Team) | Org / Founding and lead squad member | My official home for most of my (not just) open source projects. | [mailing lists on sr.ht](https://lists.sr.ht/~recaptime-dev) ([googlegroups](https://wiki.recaptime.eu.org/wiki/Handbook:Mailing_lists/Google_Groups)), [fediverse](https://recaptime.eu.org/fedi), [substack](https://recaptime.substack.com), [elsewhere](https://recaptime.bio.link)
-| [Hermitcraft](https://hermitcraftcom) | Minecraft SMP / Community member | TODO | [subreddit](https://reddit.com/r/hermitcraft), wiki ([via fandom/wikia](https://hermitcraft.fandom.com) or [in subreddit](https://reddit.com/r/hermitcraft/wiki/index)), [HC Recap (unofficial)](https://go.recaptime.eu.org/TheHCRecap)
+* [Recap Time Squad](https://recaptime.dev)
+    * Open-source Developer/Maintainer and SABDFL (self-assigned benevolent dictator for life)
+    * Backend Node.js/Deno Developer
+* [Hack Club](https://hackclub.com)
+    * YSWS (You Ship, We Ship) Program Participant in [Arcade 2024](https://hackclub.com/arcade) and [High Seas 2024](https://highseas.hackclub.com)
+    * Designated as Primary Team Member/Project Liaison for [Recap Time Squad](https://hcb.hackclub.com/recaptime-dev) on its fiscal sponsorship agreement with [HCB](https://hackclub.com/fiscal-sponsorship) (see above on my role as SABDFL and more)
+    * Community member and future alumni
 
 ## On hitatus
 
-| Name | Type / Role | Description | Links | Reason
-| --- | --- | --- | --- | --- |
-| Alpine Linux | Package maintainer ([GitHub CLI](https://cli.github.com)) | Lightweight Linux distribution based on musl libc and BusyBox | TODO | Busy in school, mostly |
+* [Alpine Linux](https://alpinelinux.org)
+    * Package maintainer for [GitHub CLI](https://cli.github.com)
 
 ## Left
 
-| Name | Type / Role | Description | Links | Reason
-| --- | --- | --- | --- | --- |
-| TBD | | | | |
+TBD
+
+## Honorable mentions
+
+* honorable mention in Gitpod's [credits to security researchers](https://www.gitpod.io/security/thanks) page per [`gh:gitpod-io/workspace-images#540`](https://github.com/gitpod-io/workspace-images/pull/540)
+* Made the [GitLab Community Discord](https://discord.gg/gitlab), now officially managed by the GitLab team and currently as community admin behind-the-scenes
+
+## Looking for fandoms?
+
+Soon on the digital garden.
