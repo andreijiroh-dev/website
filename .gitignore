@@ -9,3 +9,5 @@ node_modules
 .env
 *.tar.gz
 gmi/api/commit
+.env.keys
+*.decrypted

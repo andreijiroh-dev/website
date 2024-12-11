@@ -142,7 +142,12 @@ plugins:
       enabled: true
       fallback_to_build_date: true
       enable_creation_date: true
-  # TODO: Get Insiders for contributors and authors
+  #- git-committers:
+  #    enabled: !ENV [FF_GIT_COMMITTERS_API, false]
+  #    repository: andreijiroh-dev/website
+  #    branch: main
+  #    token: !ENV ["MKDOCS_GIT_COMMITTERS_PLUGIN_TOKEN"]
+  - git-authors
 
 # makrdown extensions
 markdown_extensions:

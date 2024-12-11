@@ -18,20 +18,22 @@ default:
 
 # Global builds and stuff
 variables:
-  DEBUG: "1" # MAY HORRIBLY LEAK SECRETS, PROCEED WITH CAUTION
+  #DEBUG: "1" # MAY HORRIBLY LEAK SECRETS, PROCEED WITH CAUTION
+  # feature flags
   FF_ENABLE_COMMIT_DATA: "true"
   FF_GENERATE_SOCIAL_CARDS: "true"
+  #FF_GIT_COMMITTERS_API: "true"
   SECURE_FILES_DOWNLOAD_PATH: .secretskit
   GIT_DEPTH: "0"
+  # dotenvx stuff
   DOTENV_PRIVATE_KEY: $DOTENV_PRIVATE_KEY_CI
+  MKDOCS_GIT_COMMITTERS_PLUGIN_TOKEN: $CI_JOB_TOKEN
 
 pages:
   stage: build
   script:
-    - |
-      source /tmp/.ssh-agent.env
-      bash ./bin/build.sh
-      npm run deploy
+    - bash ./bin/build.sh
+    - npm run deploy
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL

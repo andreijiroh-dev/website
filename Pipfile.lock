@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f87d557d02966cbcde3572eae1a8d848cab1ba152503baeb1c06254ec2ecd511"
+            "sha256": "a053fb975cf504b2febb9d410545e54d02a9f78778292fb828eb79d76a78c726"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -447,6 +447,15 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==0.2.0"
+        },
+        "mkdocs-git-authors-plugin": {
+            "hashes": [
+                "sha256:77f97c321e08a8757beb866293eb257070b11cd5a080976bc6696b249cbade4f",
+                "sha256:f6cefc4dc832865d26f7f9f944c0a8c7dc852742d79320f3800e0d97814e2a84"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==0.9.2"
         },
         "mkdocs-git-committers-plugin-2": {
             "hashes": [

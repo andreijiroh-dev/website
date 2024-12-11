@@ -13,6 +13,7 @@ cairosvg = "*"
 mkdocs-rss-plugin = "*"
 mkdocs-git-committers-plugin-2 = "*"
 mkdocs-autolinks-plugin = "*"
+mkdocs-git-authors-plugin = "*"
 
 [dev-packages]
 
