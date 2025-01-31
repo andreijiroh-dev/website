@@ -2,7 +2,7 @@
 
 Helllo! **What would you like to talk about**?
 
-!!! warning ""
+!!! info ""
     This page is being revamped similarly to [Tom Scott's contact page](https://www.tomscott.com/contact),
     so some links may be broken while being written.
 

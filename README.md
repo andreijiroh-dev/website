@@ -23,8 +23,8 @@ just fork this repo unless you know what you're REALLY doing.
 
 If you're pretty serious, please keep several things in mind:
 
-- You must heavily edit the Markdown content of the website. Make your own personal user manual and portfolio,
-or heck even go nuts on the homepage.[^1]
+- You must heavily edit the Markdown content of the website. Make your own personal user manual
+and portfolio, or heck even go nuts on the homepage.[^1]
 - Blog posts I written in Gemini version are licensed under CC-BY-SA-4.0,
 [as mentioned below](#legalese) unless specified otherwise.
 But [for the love of god], please use your own blog posts when writing for
