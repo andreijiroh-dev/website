@@ -12,14 +12,15 @@
     From:         Marilao, Bulacan, PH
 
 /* SITE */
-    Last update:  2024-11-30
+    Last update:  2025-02-11
     Timezone:     PHT (GMT+8)
     Version:      Currently unversioned
     Language:     English
     Doctype:      HTML5
     IDE:          nano, (insiders.)vscode.dev
     Technologies: pip3:mkdocs, pip3:mkdocs-material, jsr:@hono/hono (for API)
-    Sources:      https://mau.dev/andreijiroh-dev/website
+    Sources:      https://gitlab.com/andreijiroh-dev/website (GitLab SaaS mirror)
+                  https://mau.dev/andreijiroh-dev/website (canonical)
                   https://github.com/andreijiroh-dev/api-servers/tree/main/apps/website-api
 
 /* How is it deployed? */
@@ -40,5 +41,6 @@
 /* SEE ALSO */
    Recap Time Squad:    https://recaptime.dev
    Hack Club:           https://hackclub.com
-   Prudue Hackers:      https://pruduehackers.xyz (TODO: check domain)
+   Prudue Hackers:      https://pruduehackers.xyz
    Material for Mkdocs: https://squidfunk.github.io/mkdocs-material
+   tildeverse:          https://tildeverse.org
