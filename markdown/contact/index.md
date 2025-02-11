@@ -15,6 +15,8 @@ Helllo! **What would you like to talk about**?
 * [⚙ DevSecOps and Infra](./devops.md)
 * [🛡 Security related](./security.md)
 * [💼 Hiring to your company / Contracting](./work.md)
+* [💸 Donations and Sponsorships](./donations.md)
+* [🧑‍💻 Anything Recap Time Squad](https://recaptime.dev/contact)
 
 ## Advertising and public relations
 
@@ -22,9 +24,10 @@ Helllo! **What would you like to talk about**?
 
 ## Collabs and business partnerships
 
-Currently not available yet for that, but come back soon if I may changed my mind.
+Currently not available yet for at the moment.
 
-**Developer or open-source maintainer?** See Open-source work section above.
+**Developer or open-source maintainer? Recruiter hiring right now?** See
+Open-source work and Recap Time Squad section above.
 
 ## Miscellaneous
 
