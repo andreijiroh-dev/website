@@ -1,6 +1,6 @@
 # The Docker image that will be used to build your app
 image:
-  name: dock.mau.dev/andreijiroh-dev/docker-images/mkdocs-material:latest
+  name: ghcr.io/andreijiroh-dev/docker-images/mkdocs-material:latest
   entrypoint: ["/bin/bash", "-l", "-c"] # https://gitlab.com/gitlab-org/gitlab-runner/-/issues/2109#note_47480476
 
 stages:
@@ -33,7 +33,7 @@ pages:
   stage: build
   script:
     - bash ./bin/build.sh
-    - npm run deploy
+    - doppler run -- npm run deploy
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
