@@ -40,6 +40,8 @@ pages:
       - public
   variables:
     CF_PAGES_PROJECT_NAME: ajhalili2006
+    # doppler
+    DOPPLER_TOKEN: $DOPPLER_TOKEN
   rules:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
