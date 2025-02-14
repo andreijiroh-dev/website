@@ -11,3 +11,13 @@ node_modules
 gmi/api/commit
 .env.keys
 *.decrypted
+
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
