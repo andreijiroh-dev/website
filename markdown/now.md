@@ -10,67 +10,37 @@ hit by (autistic) burnout.
 
 [nowpage-info]: https://nownownow.com/about
 
-_**Last updated (PHT)**: 2024-11-07 from our family home somewhere in Marilao, Bulacan, PH._
+_**Last updated (PHT)**: 2025-02-12 from Marilao, Bulacan, PH_
 
-## School and Work
+## February 2025
 
-Currently in senior high school right now, preparing some documentary requirements for
-college applications in the coming weeks.
+### Listening on Loop
 
-I am also not currently reading any LinkedIn messages from job recruiters and HR people at
-the moment, so apologies if I didn't even read your message.
+Here are the songs I listen on loop for the month of February 2025:
 
-## Hack Club
+* Royal Blood - Tell Me When It's Too Late
+* 
 
-I'm currently participating in [Hack Club High Seas] through doing updates to existing
-projects as well as cooking something new. More news coming soon [in the blog], but in the
-meanwhile you can sneak around [the tracking issue here] for spoilers.
+### Recap Time Squad and friends
 
-Alongside participating inHigh Seas, I am also maintaining [a companion Slack bot] for the
-`#hackclub-leeks` channel, monitoring the review queue for any possible unannounced stuff
-being posted publicly, hence the channel name.
+TBD
 
-[Hack Club High Seas]: https://highseas.hackclub.com
-[in the blog]: https://blog.andreijiroh.dev
-[the tracking issue here]: https://github.com/andreijiroh-dev/personal-launchpad/issues
-[a companion Slack bot]: https://github.com/andreijiroh-dev/leeksbot
+### Hack Club
 
-## RecapTime.dev
+Grinded TBD hours of coding (mostly backend dev and literally writing Markdown content)
+during [High Seas](https://highseas.hackclub.com), and here's what I ordered in the
+wind down periods (aka before the shop closes):
 
-Since I am officially signed the fiscal sponsorship agreement for [HCB], I am currently
-in the works to update the website for donation links as well as the mandatory fiscal
-sponsorship disclosure.
+* USD 280 on Porkbun + Cloudflare HCB credits
+* a lot of piles of stickers
+* Raspberry Pi 5 for dedicated homelab server setup at home
+* 
 
-In other news, I am also updating the doucmentation and other parts of the [Community Lorebooks]
-website before I officially work on the onboarding process for new subdomains as well as updating
-existing ones via GitHub Issues flow soon.
+### School
 
-[HCB]: https://hackclub.com/fiscal-sponsorship
-[Community Lorebooks]: https://lorebooks.wiki
-
-## TODOs, any ideas, anything else?
-
-For the personal backlog I can share publicly, please [see my todo.sr.ht tracker](https://todo.sr.ht/~ajhalili2006/ajhalili2006) and [also on GitLab](https://mau.dev/andreijiroh-dev/launchpad/issues) and [GitHub](https://github.com/andreijiroh-dev/personal-launchpad/issues).
-
-## Previous entries
-
-!!! info "Coming soon!"
-    I'll plan to utilize this space to quickly to move older entries here in the future.
-
-### 2024-08-10
-
-!!! note "Added from the backburners"
-    I mean after being `git pull` and `git stash apply` then fixing the merge conflicts.
-
-I am currently busy at the school for the next 9 months.
-
-Alongside being at school finishing my last senior high school year for graduation,
-I am currently building technical projects in the public ([see my scrapbook](https://scrapbook.hackclub.com/ajhalili2006)) while participating in
-[Hack Club Arcade](https://hackclub.com/arcade) and preparing for the next school year as well.
-
-Some of these include [coding a rewrite of my public `golinks` service](https://github.com/andreijiroh-dev/api-servers/tree/main/apps/golinks-v2)
-and even building a CLI tool for managing secrets in a gopass-styled monorepo with `dotenvx` and even a portfolio
-and progress tracker in one website.
+You know it as the leader of your research team at Pratical Research 2 (PR 2) / Inquiries, Investigations,
+and Immersion (3I / I.I.I) subject, you are always cooked between working on different aspects, keeping
+team morale and recordkeeping for documentation and grading purposes.
 
 ## Web/Commit Archives
 
@@ -80,7 +50,9 @@ and progress tracker in one website.
 
 ### Former content on WordPress.com
 
-> Please be reminded that content on WordPress.com will be archived as I moved blog content to Substack and anything else into this website.
+!!! warning "WordPress.com content may be deprecated"
+    Please be reminded that content on WordPress.com will be archived or in private mode as I moved blog
+    content to Ghost (previously Substack) and anything else into this website.
 
 * [Last content update](https://ajhalili2006.wordpress.com/now/), also archived on [Archive.Today](https://tbd.andreijiroh.dev)
 * [July 2022 update](https://web.archive.org/web/20221011021323/https://ajhalili2006.wordpress.com/now/) via Internet Archive Wayback Machine

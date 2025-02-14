@@ -48,7 +48,8 @@ See them all in my portfolio and resume, both linked above in the previous secti
 
 ## Contact methods
 
-* :e-mail: [My email addresses](./contact/details.md#email) or [public inbox](https://go.andreijiroh.xyz/public-inbox)
+* :e-mail: [My email addresses](./contact/details.md#email) or [public inbox](https://wiki.andreijiroh.dev/garden/tools/public-inbox)
+(see also <https://github.com/andreijiroh-dev/personal-launchpad>)
 * :simple-matrix: [@ajhalili2006@andreijiroh.dev](https://matrix.to/#/@ajhalili2006:andreijiroh.dev) or [@ajhalili2006@envs.net](https://matrix.to/#/@ajhalili2006:envs.net)
 * :simple-telegram: [ajahlili2006.t.me](https://ajhalili2006.t.me)
-* :simple-discord: [@ajhalili2006:discord.com](https://discord.com/users/)
+* :simple-discord: [@ajhalili2006:discord.com](https://discord.com/users/) (also [join my server too](https://discord.gg/TBD))

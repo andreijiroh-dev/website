@@ -39,16 +39,17 @@ with some fine defaults, alongside a blog section if you prefer.
 
 ## Mirrors
 
-Canonically developed at [mau.dev](https://mau.dev/andreijiroh-dev/website.git) where the deployments happen, with the following mirrors being maintained:
+Canonically developed at [GitLab SaaS](https://gitlab.com/andreijiroh-dev/website) (formerly on
+[mau.dev](https://mau.dev/andreijiroh-dev/website.git)) where the deployments happen, with the
+following mirrors being maintained:
 
-* GitHub: <https://github.com/andreijiroh-dev/website>, where Docker image builds happen
-* Jetbrains Space (personal): <https://ajhalili2006.jetbrains.space/p/web/repositories/andreijiroh.dev> (repository clone URL: `git.jetbrains.space/ajhalili2006/web/andreijiroh.dev.git`)
-* Sourcehut: <https://git.sr.ht/~ajhalili2006/web>
+- GitHub: <https://github.com/andreijiroh-dev/website>, where Docker image builds happen
+- Sourcehut: <https://git.sr.ht/~ajhalili2006/web>
 
 ## Structure
 
-* [`markdown`](./markdown/) - the source Markdown files for the website
-* [`overrides`] - theme customizations and Mkdocs build hooks in Python
+- [`markdown`](./markdown/) - the source Markdown files for the website
+- [`overrides`](./overrides) - theme customizations and Mkdocs build hooks in Python
 
 ## Site Development
 
@@ -66,18 +67,20 @@ pipenv install
 pip install -r requirements.txt --user
 
 # preview site and edit in another session
+# if you have pipenv installed, just prefix them with pipenv run
 mkdocs serve --watch overrides --watch-theme --livereload
 ```
 
 ### Sending patches
 
+The gist via the CLI:
 
 ```bash
 # send patches via GitLab or GitHub through the CLI
-glab auth login --host "https://mau.dev" # authenticate CLI
+glab auth login # authenticate CLI against GitLab CI
 gh auth login # authenticate CLI, GitHub.com edition
-glab -R https://mau.dev/andreijiroh.dev/website mr create --allow-collaboration -b main
-gh -R ajhalili2006/tildeverse-web pr create # might automatically closes PR due to mirror status
+glab -R andreijiroh.dev/website mr create --allow-collaboration -b main
+gh -R andreijiroh-dev/website pr create # might automatically closes PR due to mirror status
 
 # or via my public inbox on sourcehut
 # see https://git-send-email.io for setup and guide
@@ -97,13 +100,17 @@ the patches for any reasons, including mental health breaks.
 
 ## Legalese
 
-Unless otherwise noted, source code is licensed under the MPL-2.0 while website content (text-only)
-is under CC BY-SA 4.0.
+Unless otherwise noted, source code is licensed under the MPL-2.0 while website content
+(text and ooriginal graphics) is under CC BY-SA 4.0.
 
-The only thing that's not covered by this is [the favicon version](markdown/assets/images/favicon.png)
-of my (current) profile picture.
+For my profile picture (which used as a favicon anyways), while it is technically under CC BY-SA 4.0
+([see Wikimedia Commons for context][commonspage]), please note that [I still retain personality rights][wikic-pr]
+there.
 
 ### Third-party code
 
-* [OpenWeb Icons Set](https://iconduck.com/sets/openweb-icons-set) ([source code](https://github.com/pfefferle/openwebicons?ref=iconduck.com))- [SIL Open Font License 1.1](https://github.com/pfefferle/openwebicons/blob/main/License.txt)
-* Upstream template code from Material for Mkdocs for overrides directory - MIT
+- [OpenWeb Icons Set](https://iconduck.com/sets/openweb-icons-set) ([source code](https://github.com/pfefferle/openwebicons?ref=iconduck.com))- [SIL Open Font License 1.1](https://github.com/pfefferle/openwebicons/blob/main/License.txt)
+- Upstream template code from Material for Mkdocs for overrides directory - MIT
+
+[commonspage]: https://commons.wikimedia.org/wiki/File:Andrei_Jiroh_Halili_from_March_2023.png#Licensing
+[wikic-pr]: https://commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Photographs_of_identifiable_people

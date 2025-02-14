@@ -2,6 +2,54 @@
 
 ![GitHub readme banner](https://github.com/ajhalili2006/ajhalili2006/raw/83d1552339fec8d91eadcab0289d43b6a9ef775c/static/readme-banner-2022.png)
 
+I am **Andrei Jiroh Halili** (he/they), an Autistic[^1] Filipino currently full-time student at day,
+open-sourcerer at [Recap Time Squad][rtdev] doing backend development in TypeScript across both
+Node.js and Deno runtimes and BDFL in most of its projects, a [Hack Clubber] (joined on July 2024 during
+[Arcade][hc-arcade] and maintainer of [leeksbot] (companion Slack app for leeks channel), future alumni 2025) and
+Alpine Linux packager (currently maintaining [GitHub CLI] [in the aports]) at night.
+
+## Quick Links
+
+_(see also [my links-in-bio page](./links.md) for all the links in one place)_
+
+* [Contact page](./contact/index.md) - have burning questions and need to contact
+me? look there first on where to and how do you drop off your emails or grab my contact details
+* [Personal digital garden](https://wiki.andreijiroh.dev) - see my public notes about well anything in one place
+
+## More about myself
+
+* While my early autism diagnosis helped me through speech therapy, I am still between masking/suffering in silence
+while being neurodivergent in real life.
+
+## Tools I use and my setup
+
+* **Laptop**: HP Notebook N0K71EA#A2N with 4 x Intel Core i7-5500U CPU @ 2.40GHz, 8 GB of RAM and 1TB HDD,
+currently daily-driving NixOS unstable
+* **Phone**: Infinix X6528B[^3] with Android 13, 8 GB of RAM, 248 GB of internal storage (256 GB total if adding
+8 GB reserved as virtual RAM).
+* **Programming Languages**: [Node.js](https://nodejs.org) + [Deno](https://deno.land), Bash
+* **Editors**: nano, [VS Code](https://vscode.dev) (switching between stable and Insiders), [Zed](https://go.andreijiroh.xyz/zed-editor)
+* **Cloud development environments as service**: [GitHub Codespaces](https://github.com/features/codespaces), [Gitpod](https://www.gitpod.io)
+* **Code forges**: [GitHub], [GitLab SaaS][saas] and [~tulir's instance][mau.dev][^2], [sourcehut], [codeberg]
+* **CI/CD**: [GitHub Actions](https://github.com/features/actions)
+* **Secrets management tools**: [dotenvx] for Git-based setup but encrypted,
+[Doppler SecretOps platform] for file-less remote configs
+
+[rtdev]: https://recaptime.dev
+[hc-arcade]: https://hackclub.com/arcade
+[Hack Clubber]: https://hackclub.com
+[leeksbot]: https://gitlab.com/recaptime-dev/hackclub-leeksbot
+[GitHub CLI]: https://cli.github.com
+[in the aports]: https://gitlab.alpinelinux.org/alpine/aports
+[mau.dev]: https://mau.dev/ajhalili2006
+[saas]: https://gitlab.com/ajhalili2006
+
+<!-- footnotes -->
+[^1]: I use identity first language instead of medical/person first language in context of my disability and neurodivergence. but will adjust accordingly to other disabled/neurodivergent people's preferences as needed.
+[^2]: `~tulir`: Tulir Asokan (<https://mau.fi>)
+[^3]: These are brought by my dad aboard and sent them back home as gift.
+
+<!--
 I'm **Andrei Jiroh Halili** (he/they), an 18 year old Autistic[^7] Filipino student,
 self-taught backend developer (in training), open-source contributor,
 building [Recap Time Squad](https://recaptime.dev)[^1], and part-time writer for
@@ -21,9 +69,10 @@ I am pretty searchable at [`@ajhalili2006`](./links.md) on [GitHub], [sourcehut]
 ## More about me
 
 Currently, I am part of the [Hack Club] community on their Slack workspace,
-participating on [High Seas] and even attended their in-person game
-jam [Counterspell]. I am the lead developer and maintainer for the [leeksbot] Slack app, an
-companion to the `#hackclub-leeks` channel for everything been cooking behind the scenes at HQ.
+participating on different YSWS (You Ship, We Ship) programs and even attended
+their in-person game jam [Counterspell]. I am the lead developer and maintainer for the
+[leeksbot] Slack app, an companion to the `#hackclub-leeks` channel for everything been
+cooking behind the scenes at HQ.
 
 Alongside being a Hack Clubber myself, I am a SABDFL (self-assigned benevolent dictator for life) or
 open-source developer and maintainer (if you prefer to use that term instead) at [Recap Time Squad], mostly
@@ -92,3 +141,4 @@ currently daily-driving Ubuntu LTS 24.04 via KDE Neon.[^3]
 [Doppler SecretOps platform]: https://go.andreijiroh.xyz/doppler
 [my personal launchpad issue tracker]: https://go.andreijiroh.xyz/launchpad
 [codeberg]: https://codeberg.org/ajhalili2006
+-->
