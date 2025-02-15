@@ -21,6 +21,6 @@ mkdocs-git-authors-plugin = "*"
 python_version = "3.12"
 
 [scripts]
-dev = "mkdocs serve --watch overrides --watch-theme --verbose"
+dev = "mkdocs serve --watch overrides --watch-theme"
 build = "mkdocs build -d public --verbose"
 build-staging = "pipenv run build -f mkdocs.readthedocs.yml"

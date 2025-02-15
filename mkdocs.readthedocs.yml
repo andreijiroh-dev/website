@@ -1,6 +1,6 @@
 INHERIT: mkdocs.yml
-site_name: ~ajhalili2006 (staging website)
-site_url: https://staging.andreijiroh.xyz/
+site_name: ~ajhalili2006 (on RTD Community)
+site_url: https://staging.andreijiroh.dev/
 docs_dir: markdown
 site_dir: public
 extra:

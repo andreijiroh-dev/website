@@ -7,7 +7,7 @@ _It's like Buffer and friends, but right inside this website and part of version
 ## Meta
 
 * :globe_with_meridians: [Personal website (you're actually here btw)](./index.md)
-* :material-file-document-multiple: [Personal User Manual](./user-manual/index.md)
+* :material-file-document-multiple: [Personal User Manual](https://wiki.andreijiroh.dev/garden/user-manual/index.md)
 * :octicons-book-16: [Personal wiki / Digital Garden](https://wiki.andreijiroh.dev)
 * :calendar: [now page](./now.md)
 
@@ -17,8 +17,9 @@ See them all in my portfolio and resume, both linked above in the previous secti
 
 * :infinity: [Awesome Neurodiversity](https://linktr.ee/AwesomeND) - awesome list for resources aimed at neurodivergent people and allies/friends of them. **Currently on hiatus**
 * :compass: [Andrei Jiroh in the multiverse / multifandom hellscapes](https://linktr.ee/MFHellscapes) - Just me across fandoms.
-* :writing_hand: [The Bloody Hell PH](https://fromthebshq.carrd.co/) - Not just political writings and other things not in the main blog.
-* :tools: [Recap Time Squad / RecapTime.dev](https://recaptime.dev) - home of most open-source work I do
+* :writing_hand: [The Bloody Hell PH](https://fromthebshq.carrd.co/) - Not just political writings and other things not in the main blog. **Probably on hiatus at the moment**
+* :tools: [Recap Time Squad / RecapTime.dev](https://recaptime.dev) - home of most open-source work I do, among other things **Currently cooking right now**
+* :simple-hackclub: **Hack Club** - online community for teenage hackers and makers
 * :computer: In The Tildeverse
     * [:simple-hackclub: Hack Club Nest](https://wiki.andreijiroh.dev/garden/tildeverse/hackclub-nest)
     * [:rocket: Uberspace](https://wiki.andreijiroh.dev/garden/tildeverse/uberspace)
@@ -28,8 +29,8 @@ See them all in my portfolio and resume, both linked above in the previous secti
 * :octicons-mark-github-24: [GitHub profile](https://github.com/ajhalili2006)
     * [Extended namespace](https://github.com/andreijiroh-dev)
     * [Experimential projects](https://github.com/ajhalili2006-experiments)
-* :simple-gitlab: [GitLab profile](https://mau.dev/ajhalili2006) ([also on GitLab SaaS](https://gitlab.com/ajhalili2006))
-    * [Extended namespace](https://mau.dev/andreijiroh-dev)
+* :simple-gitlab: [GitLab profile on SaaS](https://gitlab.com/ajhalili2006) ([also on Manimum GitLab](https://mau.dev/ajhalili2006))
+    * [Extended namespace](https://gitlab.com/andreijiroh-dev) ([alt](https://mau.dev/andreijiroh-dev))
 * :simple-codeberg: [Codeberg](https://codeberg.org/ajhalili2006)
 * :simple-sourcehut: [sourcehut](https://sr.ht/~ajhalili2006)
 * :simple-launchpad: [Launchpad.net](https://launchpad.net/~ajhalili2006)

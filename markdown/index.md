@@ -1,14 +1,20 @@
 # Well hello there!
 
+![Profile views](https://komarev.com/ghpvc/?username=ajhalili2006&label=profile+views&color=yellow&style=flat-square)
+[![Hack Club](https://badges.api.lorebooks.wiki/badges/hackclub/hackclub?style=flat-square)](https://hackclub.com)
+[![Community Lorebooks badge](https://img.shields.io/badge/lorebooks.wiki-008080?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjNGRkZGUwIj48cGF0aCBkPSJNMjYwLTMyMHE0NyAwIDkxLjUgMTAuNVQ0NDAtMjc4di0zOTRxLTQxLTI0LTg3LTM2dC05My0xMnEtMzYgMC03MS41IDdUMTIwLTY5MnYzOTZxMzUtMTIgNjkuNS0xOHQ3MC41LTZabTI2MCA0MnE0NC0yMSA4OC41LTMxLjVUNzAwLTMyMHEzNiAwIDcwLjUgNnQ2OS41IDE4di0zOTZxLTMzLTE0LTY4LjUtMjF0LTcxLjUtN3EtNDcgMC05MyAxMnQtODcgMzZ2Mzk0Wm0tNDAgMTE4cS00OC0zOC0xMDQtNTl0LTExNi0yMXEtNDIgMC04Mi41IDExVDEwMC0xOThxLTIxIDExLTQwLjUtMVQ0MC0yMzR2LTQ4MnEwLTExIDUuNS0yMVQ2Mi03NTJxNDYtMjQgOTYtMzZ0MTAyLTEycTU4IDAgMTEzLjUgMTVUNDgwLTc0MHE1MS0zMCAxMDYuNS00NVQ3MDAtODAwcTUyIDAgMTAyIDEydDk2IDM2cTExIDUgMTYuNSAxNXQ1LjUgMjF2NDgycTAgMjMtMTkuNSAzNXQtNDAuNSAxcS0zNy0yMC03Ny41LTMxVDcwMC0yNDBxLTYwIDAtMTE2IDIxdC0xMDQgNTlaTTI4MC00OTRaIi8%2BPC9zdmc%2B)](https://lorebooks.wiki)
+
 ![GitHub readme banner](https://github.com/ajhalili2006/ajhalili2006/raw/83d1552339fec8d91eadcab0289d43b6a9ef775c/static/readme-banner-2022.png)
 
-I am **Andrei Jiroh Halili** (he/they), an Autistic[^1] Filipino currently full-time student at day,
-open-sourcerer at [Recap Time Squad][rtdev] doing backend development in TypeScript across both
-Node.js and Deno runtimes and BDFL in most of its projects, a [Hack Clubber] (joined on July 2024 during
-[Arcade][hc-arcade] and maintainer of [leeksbot] (companion Slack app for leeks channel), future alumni 2025) and
-Alpine Linux packager (currently maintaining [GitHub CLI] [in the aports]) at night.
+I am **Andrei Jiroh Halili** (he/they), an Autistic[^1] Filipino currently full-time
+student at day,
+open-sourcerer[^4] at [Recap Time Squad][rtdev] doing backend development in TypeScript across both
+Node.js and Deno runtimes and being a [(SA)BDFL][sabdfl-wiki] on in most of its
+projects, a [Hack Clubber] (joined on July 2024 during [Arcade][hc-arcade]
+and maintainer of [leeksbot] (companion Slack app for leeks channel), future
+alumni 2025) and Alpine Linux packager (currently maintaining [GitHub CLI] [in the aports]) at night.
 
-## Quick Links
+## Quick Links>
 
 _(see also [my links-in-bio page](./links.md) for all the links in one place)_
 
@@ -18,8 +24,9 @@ me? look there first on where to and how do you drop off your emails or grab my 
 
 ## More about myself
 
-* While my early autism diagnosis helped me through speech therapy, I am still between masking/suffering in silence
-while being neurodivergent in real life.
+* Started in my TBD
+* While my early autism diagnosis helped me through speech therapy, I am still
+between masking/suffering in silence while being neurodivergent in real life.
 
 ## Tools I use and my setup
 
@@ -35,6 +42,7 @@ currently daily-driving NixOS unstable
 * **Secrets management tools**: [dotenvx] for Git-based setup but encrypted,
 [Doppler SecretOps platform] for file-less remote configs
 
+<!-- links -->
 [rtdev]: https://recaptime.dev
 [hc-arcade]: https://hackclub.com/arcade
 [Hack Clubber]: https://hackclub.com
@@ -43,11 +51,15 @@ currently daily-driving NixOS unstable
 [in the aports]: https://gitlab.alpinelinux.org/alpine/aports
 [mau.dev]: https://mau.dev/ajhalili2006
 [saas]: https://gitlab.com/ajhalili2006
+[sabdfl-wiki]: https://wiki.andreijiroh.dev/kooky-insane-stuff/vocabulary/sabdfl/
+[GitHub]: https://github.com/ajhlili2006
+[sourcehut]: https://sr.ht/~ajhalili2006
 
 <!-- footnotes -->
 [^1]: I use identity first language instead of medical/person first language in context of my disability and neurodivergence. but will adjust accordingly to other disabled/neurodivergent people's preferences as needed.
 [^2]: `~tulir`: Tulir Asokan (<https://mau.fi>)
 [^3]: These are brought by my dad aboard and sent them back home as gift.
+[^4]: I mean open-source developer and maintainer myself for the uninitialized
 
 <!--
 I'm **Andrei Jiroh Halili** (he/they), an 18 year old Autistic[^7] Filipino student,
@@ -134,8 +146,6 @@ currently daily-driving Ubuntu LTS 24.04 via KDE Neon.[^3]
 [^7]: While I am fine with anyone using person-first language (`person with autism`), I prefer identity-first language since neurodivergence is always part of human life and genome. See also this page in [my user manual](./user-manual/neurodivergence-and-disability.md) for more in depth guidance on language and disability.
 
 [Honest Government Ads]: https://go.andreijiroh.xyz/honest-govt-ads
-[GitHub]: https://github.com/ajhlili2006
-[sourcehut]: https://sr.ht/~ajhalili2006
 [across the fediverse]: https://tilde.zone/@ajhalili2006
 [dotenvx]: https://go.andreijiroh.xyz/dotenvx
 [Doppler SecretOps platform]: https://go.andreijiroh.xyz/doppler

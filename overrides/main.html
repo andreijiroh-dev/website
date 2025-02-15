@@ -6,7 +6,7 @@ SPDX-License-Identifier: MIT
 
 {% extends "base.html" %}
 {% block extrahead %}
-<link rel="stylesheet" href="{{ 'assets/stylesheets/mkdocs-material-styling.css' | url }}">
+<link rel="stylesheet" href="{{ 'assets/stylesheets/theme.css' | url }}">
 <script src="https://hypothes.is/embed.js" async></script>
 
 <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7086107380680684" crossorigin="anonymous"></script>-->
@@ -19,22 +19,28 @@ For updates follow <strong>@ajhalili2006</strong> on
         {% include ".icons/fontawesome/brands/mastodon.svg" %}
     </span>
 <strong>the tildeverse</strong>
+</a>,
+<a rel="me" href="https://bsky.app/profile/andreijiroh.dev">
+  <span class="twemoji bluesky">
+    {% include ".icons/simple/bluesky.svg" %}
+  </span>
+  <strong>Bluesky</strong>
 </a>
 and
 <a href="https://substack.com/@ajhalili2006">
-        <span class="twemoji substack">
-            {% include ".icons/simple/substack.svg" %}
-        </span>
-    <strong>Substack</strong>
+  <span class="twemoji substack">
+    {% include ".icons/simple/substack.svg" %}
+  </span>
+  <strong>Substack</strong>
 </a>
 {% endblock %}
 {% block container %}
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                {% block content %}
-                  {% include "partials/content.html" %}
-                {% endblock %}
-              </article>
-            </div>
-          {% endblock %}
+<div class="md-content" data-md-component="content">
+  <article class="md-content__inner md-typeset">
+    {% block content %}
+      {% include "partials/content.html" %}
+    {% endblock %}
+  </article>
+</div>
+{% endblock %}
 
