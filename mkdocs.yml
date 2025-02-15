@@ -115,14 +115,18 @@ plugins:
   - redirects:
       redirect_maps:
         "user-manual/portfolio.md": "portfolio/index.md"
-        "dni.md": "user-manual/dni.md"
+        "dni.md": "https://wiki.andreijiroh.dev/garden/user-manual/dni/"
         "resume.md": "user-manual/resume.md"
         "blog.md": "https://blog.andreijiroh.dev"
         "socials.md": "links.md#socials"
         "communities.md": "portfolio/communities.md"
         "tildes.md": "portfolio/tildes.md"
         "projects.md": "portfolio/projects.md"
-        #"contact.md": "contact/index.md"
+        "user-manual/index.md": "https://wiki.andreijiroh.dev/garden/user-manual/"
+        "user-manual/boundaries.md": "https://wiki.andreijiroh.dev/garden/user-manual/boundaries/"
+        "user-manual/communications.md": "https://wiki.andreijiroh.dev/garden/user-manual/communications/"
+        "user-manual/dni.md": "https://wiki.andreijiroh.dev/garden/user-manual/dni/"
+        "user-manual/encrypted-communications.md": "https://wiki.andreijiroh.dev/garden/user-manual/encrypted-communications"
   # debugging/bug reporting purposes only, proceed with caution
   #- info
   - git-revision-date-localized:
