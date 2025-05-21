@@ -9,7 +9,19 @@ scenes lately. ([sneak to my nownownow entry for this page][nownownow]) for some
 [nowpage-info]: https://nownownow.com/about
 [nownownow]: https://nownownow.com/p/Dxh0
 
-_**Last updated (PHT)**: 2025-02-15 from Marilao, Bulacan, PH_
+_**Last updated (PHT)**: 2025-05-14 from Marilao, Bulacan, PH_
+
+## May 2025
+
+### Listening on Loop
+
+### PH Politics
+
+Recently voted at the 2025 mid-terms elections for the first time after my
+first elections for Barangay and Sangguniang Kabataan (SK) elections in 2023.
+Imagine you want to do a marathon of ABS-CBN News' [Halalan 2025] coverage after the election week.
+
+[Halalan 2025]: https://go.fawn-cod.ts.net/get-link-todo
 
 ## February 2025
 

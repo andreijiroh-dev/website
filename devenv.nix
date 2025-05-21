@@ -3,8 +3,18 @@
   packages = with pkgs; [
     gitFull
     pipenv
-    python313 # this is a hack to use nixpkgs one instead of compiling from source
   ];
+
+  languages = {
+    javascript = {
+      enable = true;
+      package = pkgs.nodejs_22;
+    };
+    python = {
+      enable = true;
+      version = "3.13.3";
+    };
+  };
 
   enterShell = ''
     pipenv install

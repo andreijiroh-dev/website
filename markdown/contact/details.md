@@ -15,12 +15,13 @@ abuse them (or else get blocked).
 
 The most preferred address to use is either [:e-mail: **ajhalili2006@andreijiroh.dev**](mailto:ajhalili2006@andreijiroh.dev)
 (my personal address) or [:e-mail: **ajhalili2006@crew.recaptime.dev**](mailto:ajhalili2006@crew.recaptime.dev),
-(my RecapTime.dev staff address) although if Uberspace or VK WorkMail has flagged your mail as spam and you don't
+(my RecapTime.dev staff address) although if Cloudflare Email Routing or Hack Club Nest has flagged your mail as spam and you don't
 want to fill up not-spam forms, [use this Tally form](https://tally.so/r/nrB4o2) as an alternative.
 
 * **Gmail user?** You could try sending mail to [:e-mail: ajhalili2006@gmail.com](mailto:ajhalili2006@gmail.com)
 (sharing docs and files over Google Drive are fun but please no spam).
-* If you're using Microsoft 365 (personally), you may also try sending (or sharing OneDrive files) to [:e-mail: ajhalili2006@outlook.ph](mailto:ajhalili2006@outlook.ph).
+* If you're using Microsoft 365 (personally), you may also try sending (or sharing OneDrive files) to
+[:e-mail: ajhalili2006@outlook.ph](mailto:ajhalili2006@outlook.ph).
 For work-related file sharing, please use my `@crew.recaptime.dev` or `@andreijiroh.dev` email address instead.
 
 ## 💬 Chat
@@ -33,8 +34,9 @@ My Discord username (`ajhalili2006`) is pretty much the same across my socials. 
 Discord servers, please contact me in an appropriate channel within the server. Direct messages are probably
 fine too, but I rarely check them on Discord. I am often looking at these Discord servers:
 
-* lounfe.andreijiroh.dev ([invite link](https://discord.gg/TBD))
-* Gildedguy's Gilded Guild
+* lounge.andreijiroh.dev (personal server, [invite link](https://discord.gg/kf5nz4X))
+* Recap Time Squad / Community Lorebooks ([invite link](eva9EAgkty))
+* Gildedguy's Gilded Guild ([invite link](https://discord.gg/gildedguy))
 
 ## 👥 Over at socials
 
