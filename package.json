@@ -4,9 +4,9 @@
   "description": "Personal website for my tildes + Gemini version of blog posts",
   "scripts": {
     "start": "npm run dev",
-    "dev": "bash ./bin/localdev.sh",
-    "build": "bash ./bin/build.sh",
-    "deploy": "bash ./bin/deploy.sh",
+    "dev": "wrangler dev --port 8000",
+    "deploy": "npm run deploy:cf",
+    "deploy:cf": "wrangler deploy",
     "docker:ci": "DOCKER_BUILDKIT=1 docker build -t dock.mau.dev/andreijiroh-dev/website/build-ci:localdev ./docker"
   },
   "repository": {
@@ -21,9 +21,9 @@
   },
   "homepage": "https://andreijiroh.xyz",
   "devDependencies": {
-    "wrangler": "^3.80.4"
+    "wrangler": "^4.18.0"
   },
   "dependencies": {
-    "@dotenvx/dotenvx": "^1.22.0"
+    "@dotenvx/dotenvx": "^1.44.1"
   }
 }

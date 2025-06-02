@@ -3,6 +3,14 @@
   packages = with pkgs; [
     gitFull
     pipenv
+
+    # required for social cards in mkdocs-material
+    cairo
+    freetype
+    libffi
+    libjpeg
+    zlib
+    pngquant
   ];
 
   languages = {
