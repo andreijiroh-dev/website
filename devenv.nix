@@ -4,6 +4,9 @@
     gitFull
     pipenv
 
+    # doppler
+    doppler
+
     # required for social cards in mkdocs-material
     cairo
     freetype
@@ -26,5 +29,11 @@
 
   enterShell = ''
     pipenv install
+    npm install
   '';
+
+  tasks = {
+    "site:build".exec = "pipenv run build";
+    "site:deploy".exec = "npm run deploy";
+  };
 }
