@@ -23,4 +23,4 @@ python_version = "3.13"
 [scripts]
 dev = "mkdocs serve --watch overrides --watch-theme"
 build = "mkdocs build -d public --verbose"
-build-staging = "pipenv run build -f mkdocs.readthedocs.yml"
+build-staging = "pipenv run build -f mkdocs.readthedocs.yml --verbose"

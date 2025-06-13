@@ -7,7 +7,7 @@ stages:
 
 default:
   before_script:
-    - devenv shell echo "trigger install"
+    #- devenv shell echo "trigger install"
     #- curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
 
 # Global builds and stuff
