@@ -6,3 +6,6 @@ inputs:
         follows: nixpkgs
   nixpkgs:
     url: https://flakehub.com/f/DeterminateSystems/nixpkgs-weekly/*.tar.gz
+
+# If you're using non-OSS software, you can set allowUnfree to true.
+allowUnfree: true

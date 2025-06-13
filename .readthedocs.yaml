@@ -6,21 +6,26 @@ version: 2
 
 # Set the version of Python and other tools you might need
 build:
-  os: ubuntu-22.04
+  os: ubuntu-24.04
   tools:
-    python: "3.11"
-    #nodejs: 18
+    python: "3.13"
+    #nodejs: 22
   jobs:
     post_checkout:
       # Needed for some plugins/extensions to work
       - git fetch --unshallow || true
+    create_environment:
+      - pipenv install
+    build:
+      html:
+      - pipenv run mkdocs build -f mkdocs.redthedocs.yml -d "$READTHEDOCS_OUTPUT/html/"
     post_build:
       - |
-        mkdir $READTHEDOCS_OUTPUT/api
-        git rev-parse HEAD > $READTHEDOCS_OUTPUT/api/commit
-      - |
-        cp -rv markdown/.well-known $READTHEDOCS_OUTPUT/html/.well-known
-        cp $READTHEDOCS_OUTPUT/html/assets/images/favicon.png $READTHEDOCS_OUTPUT/favicon.ico
+        mkdir $READTHEDOCS_OUTPUT/html/api
+        git rev-parse HEAD > $READTHEDOCS_OUTPUT/html/api/commit
+      #- |
+      #  cp -rv markdown/.well-known $READTHEDOCS_OUTPUT/html/.well-known
+      #  cp -rv $READTHEDOCS_OUTPUT/html/assets/images/favicon.png $READTHEDOCS_OUTPUT/favicon.ico
   apt_packages:
     - libcairo2-dev
     - libfreetype6-dev
@@ -29,12 +34,4 @@ build:
     - libpng-dev
     - libz-dev
     - pngquant
-
-mkdocs:
-  configuration: mkdocs.readthedocs.yml
-  fail_on_warning: false
-
-# Optionally declare the Python requirements required to build your docs
-python:
-  install:
-  - requirements: requirements.txt
+    - pipenv

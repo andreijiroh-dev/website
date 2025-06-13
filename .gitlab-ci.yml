@@ -1,20 +1,14 @@
 # The Docker image that will be used to build your app
 image:
-  name: ghcr.io/andreijiroh-dev/docker-images/mkdocs-material:latest
-  entrypoint: ["/bin/bash", "-l", "-c"] # https://gitlab.com/gitlab-org/gitlab-runner/-/issues/2109#note_47480476
-
+  name: ghcr.io/cachix/devenv/devenv:latest
 stages:
   - test
   - build
 
 default:
-  tags:
-    - amd64 # currently, we only the image in amd64 right now.
-  # Functions that should be executed before the build script is run
   before_script:
-    - pipenv install --ignore-pipfile --deploy
-    - npm ci
-    - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+    - devenv shell echo "trigger install"
+    #- curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
 
 # Global builds and stuff
 variables:
@@ -32,14 +26,12 @@ variables:
 pages:
   stage: build
   script:
-    - bash ./bin/build.sh
-    - doppler run -- npm run deploy
+    - devenv shell doppler run -- npm run deploy:cf
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
       - public
   variables:
-    CF_PAGES_PROJECT_NAME: ajhalili2006
     # doppler
     DOPPLER_TOKEN: $DOPPLER_TOKEN
   rules:
