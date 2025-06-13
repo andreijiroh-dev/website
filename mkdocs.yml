@@ -63,6 +63,8 @@ theme:
     - content.action.view
     - content.code.annotate
     - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
@@ -70,6 +72,8 @@ theme:
     - navigation.footer
     - navigation.indexes
     # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
