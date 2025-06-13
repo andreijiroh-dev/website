@@ -22,11 +22,20 @@ nav:
   - Profile README: index.md
   - Meta:
       - nowpage: now.md
-      - "All my links": links.md
-      - Contact: contact/index.md
-      - PGP and SSH keys: keys/index.md
+      - Socials: links.md
+      - Contact:
+        - contact/index.md
+        - "Code reviews": contact/code-reviews.md
+        - "Donations and Sponsorships": contact/donations.md
+        - "Work with Andrei Jiroh": contact/work.md
+        - "Found a security issue?": contact/security.md
+        - "Aything else":
+          - contact/else.md
+          - "See all available contact methods": contact/details.md
+          - "PGP and SSH keys": keys.md
       - Legal:
           - Security policy: security.md
+          - Code of Conduct: https://policies.recaptime.dev/code-of-conduct
   - User manual: https://wiki.andreijiroh.dev/garden/user-manual
   - Portfolio:
       - portfolio/index.md

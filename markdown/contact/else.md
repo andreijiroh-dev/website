@@ -5,8 +5,8 @@
 ---
 
 !!! info "Thanks for getting in touch! Before you write, here's a few things to remind before you go:"
-    * Please [read my boundaries](../user-manual/boundaries.md), as well as [general communication policy](../user-manual/communications.md),
-    [Do Not Interact list](../user-manual/dni.md) and [on neurodivergence and disability](../user-manual/neurodivergence-and-disability.md) before you scroll down.
+    * Please [read my boundaries][boundaries], as well as [general communication policy][comms],
+    [Do Not Interact list][dni] and [on neurodivergence and disability][disability] before you scroll down.
     NOT following them will result in moderation actions, up to and including reporting as spam and blocks.
     * If you have a burning question, check other pages in the [main contact page](./index.md) or in the [FAQs](../faq.md).
     You may try also use your favorite search engine, forum, or even ask a real-life librarian for help since I can't do
@@ -28,3 +28,8 @@ often not possible to send personal responses — I’m sorry about that. And si
 of the time (apologies, my exective functioning issues cause me to scare my inbox a lot),
 please reach me out over at Matrix/Zulip first so I can dig over spam folders (contact VK Support
 or Google for help if you got the bounce mail for spam).
+
+[boundaries]: https://wiki.andreijiroh.dev/garden/user-manual/boundaries
+[comms]: https://wiki.andreijiroh.dev/garden/user-manual/communications
+[dni]: https://wiki.andreijiroh.dev/garden/user-manual/dni
+[disability]: https://wiki.andreijiroh.dev/garden/user-manual/neurodivergence-and-disability
