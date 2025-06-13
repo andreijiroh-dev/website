@@ -9,7 +9,6 @@
 
 # user manual
 /manual /user-manual
-/manual/* /user-manual/:path
 
 # legal
 /privacy /legal/privacy
@@ -25,3 +24,6 @@
 /security.txt /.well-known/security.txt
 /ads.txt /.well-known/ads.txt
 /keybase.txt /.well-known/keybase.txt
+
+# dynamic routing
+/manual/* /user-manual/:path
