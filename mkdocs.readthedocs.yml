@@ -8,3 +8,4 @@ extra:
   deployment: staging # for the announcement banner
 extra_javascript:
 - assets/javascripts/rtd.js
+- assets/javascripts/feedback.js

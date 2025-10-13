@@ -29,9 +29,9 @@ nav:
         - "Donations and Sponsorships": contact/donations.md
         - "Work with Andrei Jiroh": contact/work.md
         - "Found a security issue?": contact/security.md
-        - "Aything else":
+        - "Anything else":
           - contact/else.md
-          - "See all available contact methods": contact/details.md
+          - "Show all contact details": contact/details.md
           - "PGP and SSH keys": keys.md
       - Legal:
           - Security policy: security.md
@@ -226,6 +226,10 @@ extra:
       link: https://linkedin.com/in/ajhalili2006
       name: ~ajhalili2006 on linkedin for employers
   analytics:
+     provider: custom
 #    provider: plausible
 #    property: andreijiroh.eu.org
 #    url: "https://analytics.projectsegfau.lt"
+
+extra_javascript:
+- assets/javascripts/feedback.js
