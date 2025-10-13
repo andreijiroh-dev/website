@@ -2,6 +2,8 @@
     "recommendations": [
         "printfn.gemini-improved",
         "DavidAnson.vscode-markdownlint",
-        "streetsidesoftware.code-spell-checker"
+        "streetsidesoftware.code-spell-checker",
+        "yzhang.markdown-all-in-one",
+        "bierner.emojisense"
     ]
 }

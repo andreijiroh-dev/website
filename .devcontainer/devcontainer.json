@@ -3,7 +3,7 @@
 //
 // See https://aka.ms/devcontainer.json for more information.
 {
-	"name": "Gitpod",
+	"name": "andreijiroh.dev - Gitpod Workspace Images x Codespaces",
 	// Use "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
 	// instead of the build to use a pre-built image.
 	"build": {
@@ -24,7 +24,10 @@
 				"timonwong.shellcheck",
 				"ms-azuretools.vscode-docker",
 				"vivaxy.vscode-conventional-commits",
-				"akosyakov.gitpod-monitor"
+				"printfn.gemini-improved",
+				"streetsidesoftware.code-spell-checker",
+				"yzhang.markdown-all-in-one",
+				"bierner.emojisense"
 			]
 		}
 	}
