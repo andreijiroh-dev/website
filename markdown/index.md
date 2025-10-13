@@ -36,7 +36,7 @@ weeks, depending on my availability and how cluttered my inbox is.
 
 ## More about myself
 
-* Started in my TBD
+* Started in my journey as a backend dev since 2018 via Glitch dot com (RIP).
 * While my early autism diagnosis helped me through speech therapy, I am still
 between masking/suffering in silence while being neurodivergent in real life.
 
@@ -49,7 +49,7 @@ between masking/suffering in silence while being neurodivergent in real life.
     Raspberry Pi OS + Debian 12 Bookworm, both received from one of Hack Club's YSWS programs.
 * **Phone**: Infinix X6528B[^3] with Android 13, 8 GB of RAM, 248 GB of internal storage (256 GB total if adding
 8 GB reserved as virtual RAM).
-* **Programming Languages**: [Node.js](https://nodejs.org) + [Deno](https://deno.land), Bash
+* **Programming Languages**: TypeScript via [Node.js](https://nodejs.org) + [Deno](https://deno.land), Bash
 * **Editors**: mostly nano and [VS Code](https://vscode.dev) (switching between stable and Insiders), sometimes [Zed](https://zed.dev/)
 * **Cloud development environments as service**: [GitHub Codespaces](https://github.com/features/codespaces), [Gitpod](https://www.gitpod.io)
 * **Code forges**: Mainly [GitHub] and [GitLab SaaS][saas], also mirrors to
@@ -65,6 +65,9 @@ Free free to skip this if you are not keen on looking at stats.
 ### GitHub Activity stats
 
 [![github: activity stats](https://github-readme-stats.vercel.app/api?username=ajhalili2006&show_icons=true&theme=dark&title_color=ffffff&text_color=ffffff&locale=en)](https://github.com/anuraghazra/github-readme-stats)
+
+
+
 
 <!-- links -->
 [Recap Time Squad]: https://recaptime.dev

@@ -1,6 +1,7 @@
 # internal redirects
 /resume /user-manual/resume
 /dni /user-manual/dni
+/contact/sponsors /contact/donations
 
 # external redirects
 /blog https://blog.andreijiroh.dev
