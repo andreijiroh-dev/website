@@ -21,10 +21,10 @@
   },
   "homepage": "https://andreijiroh.xyz",
   "devDependencies": {
-    "npm-check-updates": "^18.0.1",
-    "wrangler": "^4.20.0"
+    "npm-check-updates": "^19.0.0",
+    "wrangler": "^4.42.1"
   },
   "dependencies": {
-    "@dotenvx/dotenvx": "^1.45.2"
+    "@dotenvx/dotenvx": "^1.51.0"
   }
 }

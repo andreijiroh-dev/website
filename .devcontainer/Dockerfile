@@ -1,5 +1,8 @@
-# syntax=docker/dockerfile:1
-FROM gitpod/workspace-full:latest as workspace
+# syntax=docker/dockerfile:experimental
+FROM gitpod/workspace-full:latest AS workspace
+
+# Disable direnv timeout warnings
+ENV DIRENV_WARN_TIMEOUT=0
 
 WORKDIR /tmp
 # setup work for scdoc and hut cli
