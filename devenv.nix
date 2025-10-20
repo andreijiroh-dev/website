@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
 
   packages = with pkgs; [
     gitFull
@@ -7,14 +7,32 @@
     # doppler
     doppler
 
-    # required for social cards in mkdocs-material
+    # required for social cards in mkdocs-material / CairoSVG
     cairo
+    pango
+    gdk-pixbuf
+    librsvg
+    fontconfig
     freetype
     libffi
     libjpeg
     zlib
     pngquant
   ];
+
+  # Ensure dynamic linker can find shared libs for Python ctypes consumers like CairoSVG
+  env.LD_LIBRARY_PATH = lib.makeLibraryPath [
+    pkgs.cairo
+    pkgs.pango
+    pkgs.gdk-pixbuf
+    pkgs.librsvg
+    pkgs.fontconfig
+    pkgs.freetype
+    pkgs.zlib
+  ];
+
+  # Optional, but silences CI warning and ensures predictable locale
+  env.LANG = "en_US.UTF-8";
 
   languages = {
     javascript = {
