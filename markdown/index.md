@@ -24,7 +24,7 @@ alumni 2025) and Alpine Linux packager (currently maintaining [GitHub CLI] [in t
     You do you: <https://links.andreijiroh.dev>
 
 * :telescope: I’m currently working on different projects, most of them are hosted under
-[Recap Time Squad] and some personal projects for [Hack Club Slack community].
+[Recap Time Squad] and some [Hack Club Slack community] projects, especially [the Alumni Society].
 * :seedling: I’m currently learning backend development in TypeScript at both
 Node.js and Deno runtimes, using Postgres + SQLite for database persistence,
 DevSecOps with GitHub Actions and GitLab CI/CI
@@ -39,6 +39,7 @@ weeks, depending on my availability and how cluttered my inbox is.
 * Started in my journey as a backend dev since 2018 via Glitch dot com (RIP).
 * While my early autism diagnosis helped me through speech therapy, I am still
 between masking/suffering in silence while being neurodivergent in real life.
+* A multifandom goober/chronically online person
 
 ## Tools I use and my setup
 
@@ -66,12 +67,14 @@ Free free to skip this if you are not keen on looking at stats.
 
 [![github: activity stats](https://github-readme-stats.vercel.app/api?username=ajhalili2006&show_icons=true&theme=dark&title_color=ffffff&text_color=ffffff&locale=en)](https://github.com/anuraghazra/github-readme-stats)
 
+## Hackatime / WakaTime
 
-
+[![Hackatime stats](https://github-readme-stats.hackclub.dev/api/wakatime?username=97&api_domain=hackatime.hackclub.com&&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8&theme=github_dark_dimmed)](https://hackatime.hackclub.com)
 
 <!-- links -->
 [Recap Time Squad]: https://recaptime.dev
 [Hack Club Slack community]: https://hackclub.com/slack
+[the Alumni Society]: https://alumni.hackclub.community
 [hc-arcade]: https://hackclub.com/arcade
 [Hack Clubber]: https://hackclub.com
 [leeksbot]: https://gitlab.com/recaptime-dev/hackclub-leeksbot
