@@ -13,7 +13,7 @@ docs_dir: markdown
 use_directory_urls: true
 
 # repos
-repo_url: https://mau.dev/andreijiroh-dev/website
+repo_url: https://gitlab.com/andreijiroh-dev/website
 edit_uri: edit/main/markdown
 repo_name: source code
 
@@ -191,9 +191,15 @@ extra:
       link: https://tilde.zone/@ajhalili2006
       name: ~ajhalili2006 on tildeverse
 
+    # bluesky
     - icon: simple/bluesky
       link: https://bsky.app/profile/andreijiroh.dev
       name: ~ajhalili2006 on bsky.app
+
+    # nostr
+    - icon: octicons/note-16
+      link: nostr:npub1ajhalili2006xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      name: ~ajhalili2006 on nostr
 
     # X/Twitter
     - icon: fontawesome/brands/twitter
@@ -217,14 +223,14 @@ extra:
       name: ~ajhalili2006 on sr.ht
 
     # facebook
-    - icon: fontawesome/brands/facebook
-      link: https://facebook.com/ajhalili2006
-      name: ~ajhalili2006's personal (slash professional profile) facebook account
+    #- icon: fontawesome/brands/facebook
+    #  link: https://facebook.com/ajhalili2006
+    #  name: ~ajhalili2006's personal (slash professional profile) facebook account
 
     # linkedin
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/ajhalili2006
-      name: ~ajhalili2006 on linkedin for employers
+    #  link: https://linkedin.com/in/ajhalili2006
+    #  name: ~ajhalili2006 on linkedin for employers
   analytics:
      provider: custom
 #    provider: plausible
