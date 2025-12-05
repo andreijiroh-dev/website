@@ -48,6 +48,7 @@ nav:
 # theme settings
 theme:
   name: material
+  variant: classic
   custom_dir: overrides
   favicon: assets/images/favicon.png
   icon:
