@@ -100,7 +100,7 @@ theme:
       primary: green
       accent: yellow
       toggle:
-        icon: material/brightness-auto
+        icon: lucide/sun-moon
         name: Switch to light mode
 
     # Palette toggle for light mode
@@ -109,7 +109,7 @@ theme:
       primary: green
       accent: yellow
       toggle:
-        icon: material/brightness-7
+        icon: lucide/sun
         name: Switch to dark mode
 
     # Palette toggle for dark mode
@@ -118,7 +118,7 @@ theme:
       primary: green
       accent: yellow
       toggle:
-        icon: material/brightness-4
+        icon: lucide/moon
         name: Switch to light mode
 
 # plugins
