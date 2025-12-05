@@ -9,11 +9,37 @@ scenes lately. ([sneak to my nownownow entry for this page][nownownow]) for some
 [nowpage-info]: https://nownownow.com/about
 [nownownow]: https://nownownow.com/p/Dxh0
 
-_**Last updated (PHT)**: 2025-05-14 from Marilao, Bulacan, PH_
+_**Last updated (PHT)**: 2025-10-27 from Marilao, Bulacan, PH_
+
+## December 2025
+
+It's Wrapped season! Check back here for the long-form blog post soon.
+
+## October-November 2025
+
+### Listening on loop
+
+There's a always-updating playlist of what's on the daily rotation on both [Spotify][drs]
+and [YouTube][dryt] with weekly updates. Here's a rundown of what's on the loop in the last
+October and November.
+
+- TBD
+
+### School
+
+### Hack Club Community / Alumni Society
+
+- Launched a community Tangled Knot server, running on Nest
+- Set up GitLab.com namespace for the Hack Club Community + Alumni Society projects
+under GitLab for Open-source Program
+- First subdomain user under the `hackclub.community` domain
 
 ## May 2025
 
 ### Listening on Loop
+
+!!! info "Note from @ajhalili2006 as of 2025-11-03"
+    Forgot to list what's on the loop at that period and might be busy lately, gonna check the stats later
 
 ### PH Politics
 
