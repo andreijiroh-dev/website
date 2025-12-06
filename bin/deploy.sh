@@ -22,8 +22,8 @@ info() {
 }
 
 if [[ $CI == "true" ]]; then
-  info "Deploying to Cloudflare Pages"
+  info "Deploying to Cloudflare Workers"
   if [[ $CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "web" ]] && [[ $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH ]]; then
-    npx wrangler pages publish ${_root_directory_git}/public --project-name ${CF_PAGES_PROJECT_NAME:-"ajhalili2006"} --branch main
+    npx wrangler deploy
   fi
 fi
