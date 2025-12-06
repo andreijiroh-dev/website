@@ -1,0 +1,12 @@
+# enable CORS on well-known routes
+/.well-known/*:
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet
+
+# disable indexing on pages.dev/workers.dev
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
+https://:project.:org.workers.dev
+  X-Robots-Tag: noindex
