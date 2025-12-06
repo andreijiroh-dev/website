@@ -1,13 +1,17 @@
 # The Docker image that will be used to build your app
 image:
-  name: ghcr.io/cachix/devenv/devenv:latest
+  name: "$CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX/nixos/nix:latest"
+  entrypoint:
+    - /root/.nix-profile/bin/bash
 stages:
   - test
   - build
 
 default:
   before_script:
-    - nix profile install nixpkgs#curl nixpkgs#gitFull nixpkgs#which nixpkgs#ncurses --experimental-features "nix-command flakes" -vv --show-trace
+    - echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
+    - nix profile remove git-minimal
+    - nix profile install nixpkgs#curl nixpkgs#gitFull nixpkgs#which nixpkgs#ncurses nixpkgs#devenv -vv --show-trace
     - devenv shell echo "trigger install"
     - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
 
