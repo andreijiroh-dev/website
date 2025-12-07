@@ -29,23 +29,28 @@ dependencies:
     - libjpeg
     - zlib
     - pngquant
+    # needed to generate LD_LIBRARY_PATH for cairo and friends
+    - findutils
 
 environment:
   CI: "true" # https://tangled.org/tangled.org/core/issues/310 (resolved via merging https://tangled.org/tangled.org/core/pulls/843)
   # GitLab CI compatibility for some of our scripts that check these variables (for branch names
   # and commit hashes, we simply use `git rev-parse` directly)
   CI_PIPELINE_SOURCE: "push"
+  # technically we have --ingore-pipfile in the install command below, but just to be safe
+  PIPENV_IGNORE_PIPFILE: "true"
+  # 
 
 steps:
   - name: Install deps
     command: |
       pipenv install --deploy --ignore-pipfile
       npm ci
-    environment:
-      PIPENV_IGNORE_PIPFILE: "true"
   # We configured our wrangler.toml to use our build script (at ../../bin/build.sh)
   # for building the site and doing post-build prep (like copying well-known files
   # and such). To minimize admin overhead on secrets management, we use `doppler run`
   # to inject secrets from Doppler into the environment for the build and deploy steps.
   - name: Deploy to Cloudflare Workers (as Static Site)
-    command: doppler run -- npm run deploy:cf
+    command: |
+      export LD_LIBRARY_PATH=$(find /nix/store -maxdepth 3 -type d -name lib | grep -E 'cairo|pango|gdk-pixbuf|librsvg|fontconfig|freetype|zlib' | tr '\n' ':')
+      doppler run -- npm run deploy:cf
