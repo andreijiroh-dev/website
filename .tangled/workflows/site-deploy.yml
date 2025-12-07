@@ -8,7 +8,7 @@ when:
 engine: nixery
 
 clone:
-  depth: 0
+  depth: 500
   submodules: true
 
 # sync this with devenv.nix + devenv.yaml (if applicable for additional flakes
@@ -39,9 +39,13 @@ environment:
 steps:
   - name: Install deps
     command: |
-      pipenv install
+      pipenv install --deploy --ignore-pipfile
       npm ci
     environment:
       PIPENV_IGNORE_PIPFILE: "true"
+  # We configured our wrangler.toml to use our build script (at ../../bin/build.sh)
+  # for building the site and doing post-build prep (like copying well-known files
+  # and such). To minimize admin overhead on secrets management, we use `doppler run`
+  # to inject secrets from Doppler into the environment for the build and deploy steps.
   - name: Deploy to Cloudflare Workers (as Static Site)
     command: doppler run -- npm run deploy:cf
