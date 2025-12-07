@@ -1,0 +1,47 @@
+# This is a minimal Tangled Spindle workflow file for deploying a static site
+# to Cloudflare Pages/Workers Static Sites. Secret management is handled via
+# Doppler (setting the DOPPLER_TOKEN secret on repo settings -> spindle is required).
+when:
+- event: ["push", "manual"]
+  branch: ["main"]
+
+engine: nixery
+
+clone:
+  depth: 0
+  submodules: true
+
+# sync this with devenv.nix + devenv.yaml (if applicable for additional flakes
+# alongside the default nixpkgs) for consistency
+dependencies:
+  nixpkgs:
+    - python314
+    - pipenv
+    - nodejs_22
+    - doppler
+    - cairo
+    - pango
+    - gdk-pixbuf
+    - librsvg
+    - fontconfig
+    - freetype
+    - libffi
+    - libjpeg
+    - zlib
+    - pngquant
+
+environment:
+  CI: "true" # https://tangled.org/tangled.org/core/issues/310 (resolved via merging https://tangled.org/tangled.org/core/pulls/843)
+  # GitLab CI compatibility for some of our scripts that check these variables (for branch names
+  # and commit hashes, we simply use `git rev-parse` directly)
+  CI_PIPELINE_SOURCE: "push"
+
+steps:
+  - name: Install deps
+    command: |
+      pipenv install
+      npm ci
+    environment:
+      PIPENV_IGNORE_PIPFILE: "true"
+  - name: Deploy to Cloudflare Workers (as Static Site)
+    command: doppler run -- npm run deploy:cf
