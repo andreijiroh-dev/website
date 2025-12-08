@@ -7,7 +7,7 @@ verification without requiring an government-issued ID.
 
 ## Keysigning ceremories
 
-_This is moved to [Encrypted communications](../user-manual/encrypted-communications.md#key-signing-ceremories) section of the personal user manual._
+_This is moved to [Encrypted communications](https://wiki.andreijiroh.dev/garden/user-manual/encrypted-communications#key-signing-ceremories) section of the personal user manual._
 
 ## GPG Keys
 

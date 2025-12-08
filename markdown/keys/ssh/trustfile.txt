@@ -1,0 +1,25 @@
+# Import these public SSH keys into your trustfile (https://man.openbsd.org/ssh-keygen#ALLOWED_SIGNERS)
+# to make your life even easier on verifying SSH signatures. This file contains every public key I actively
+# use with every possible email address I actively use for sending and receiving emails. When in doubt, chat
+# over Matrix (@ajhalili2006:envs.net or @ajhalili2006:vern.cc), XMPP (ajhalili2006@vern.cc), Keybase (AJHaliliDev06)
+# OR Session (052b5390ba98e49d4b7d0b5ecaecb68e467c6a7d57ec6980ba2bd451aa86c1cf4b) over EE2E.
+#
+# Tutorial: https://www.agwa.name/blog/post/ssh_signatures
+# PUBKEYS LAST UPDATED: 2025-12-08
+# DOCS LAST UPDATED: 2023-02-18
+
+# personal addresses
+ajhalili2006@andreijiroh.dev ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEXuD3hJwInlcHs3wkXWAWNo8es3bPAd2e8ipjyqgGp2 SSH Key - main personal key, circa 2022
+ajhalili2006@andreijiroh.dev ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzMlrUe7qMA1P0lP56lq2dKTrwFU6CrVltQ9um+PhOMLkoi31kAlujHtWF6mqGRLXcK0Ao/0Wqug++r82Zu0u7dpAv8LCExtaRRMzagwPkEe4OOqUBOpS6mggfsik8mNA+1UtpkXJ+ZiB4cXtNKEZC0jtxWOTXSV67qgkSxuO+YBWB+7pnESkB0KorqwOoWGGUVfYQtbKUAt6VqM4s6dn7saXqwmN0tCPO6a+4L4mazkYjFD11HhktYsjP9dvnxYSOtMrSFb9JOXRST2LdiIJgwg+HTqBSWGO7aBRHMJaTF3ajlbMtKDQI/EcNQLyGgX6yFdjjzz9DRY+2oU0vPTytdqM2BKsfLlR0GVg7BVL7TZPaLJ1lgpCl4Z1oClW9FOzhnYJVT0W+IKPsnYsFPfv/BVgjWF7YtLdc5zqFJ31PULtikCyd0I6Kt95YD0HdrlR2faWcBHI8KKEAwCCanodGnK/xTOxisTX2dXOxx3mvR/L3Wil2ca5hnD+vt500/o8= SSH Key - ajhalili2006@launchpad.net
+ajhalili2006@gmail.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEXuD3hJwInlcHs3wkXWAWNo8es3bPAd2e8ipjyqgGp2 SSH Key - main personal key, circa 2022
+ajhalili2006@gmail.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzMlrUe7qMA1P0lP56lq2dKTrwFU6CrVltQ9um+PhOMLkoi31kAlujHtWF6mqGRLXcK0Ao/0Wqug++r82Zu0u7dpAv8LCExtaRRMzagwPkEe4OOqUBOpS6mggfsik8mNA+1UtpkXJ+ZiB4cXtNKEZC0jtxWOTXSV67qgkSxuO+YBWB+7pnESkB0KorqwOoWGGUVfYQtbKUAt6VqM4s6dn7saXqwmN0tCPO6a+4L4mazkYjFD11HhktYsjP9dvnxYSOtMrSFb9JOXRST2LdiIJgwg+HTqBSWGO7aBRHMJaTF3ajlbMtKDQI/EcNQLyGgX6yFdjjzz9DRY+2oU0vPTytdqM2BKsfLlR0GVg7BVL7TZPaLJ1lgpCl4Z1oClW9FOzhnYJVT0W+IKPsnYsFPfv/BVgjWF7YtLdc5zqFJ31PULtikCyd0I6Kt95YD0HdrlR2faWcBHI8KKEAwCCanodGnK/xTOxisTX2dXOxx3mvR/L3Wil2ca5hnD+vt500/o8= SSH Key - ajhalili2006@launchpad.net
+
+# release signing keys
+releases@andreijiroh.dev ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHzLVfKtq8vBYeSrrVhwFwkpfu6TDLFgyjb3UmB+Jdhl
+releases@recaptime.dev ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO0+1KY7/oVd+umDYBKfxmeQ6689365dlfk28MNiAl4e
+
+# crew.recaptime.dev specific
+ajhalili2006@crew.recaptime.dev ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDEYDna7HlVN6FL+Mxaof+WH5EoVmaUrM7GFAdQSveTJ RecapTIme.dev Crew SSH Key - @ajhalili2006
+
+# school specifics
+halili.459491@meycauayan.sti.edu.ph ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFI1Mj7gTG1IwnxPyr2AsXDq2kBq98hnijhgkGklkhWH
