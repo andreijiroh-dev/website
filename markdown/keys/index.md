@@ -53,8 +53,10 @@ release, especially on my own Debian package repos/Launchpad PPAs.
 
 You can also get all the keys in one file (and its signers file) at the following URLs:
 
-* Website as its deployed via CI: <https://andreijiroh.dev/keys/ssh-trustfile.txt>
-* As pushed via Git: <https://mau.dev/andreijiroh-dev/website/-/blob/main/markdown/keys/ssh-trustfile.txt>
+* Website as its deployed via CI: <https://andreijiroh.dev/keys/ssh/trustfile.txt>
+* As pushed via Git: <https://gitlab.com/andreijiroh-dev/website/-/blob/main/markdown/keys/ssh/trustfile.txt>
 
-These SSH keys are used for signing Git commits and tags occassionally, as well for signing checksums file and identity verification on
-account recovery for sr.ht and Miraheze.
+These SSH keys are used for signing Git commits and tags occasionally, as well
+for signing checksums file on release tarballs, encrypting and decrypting
+secrets via `agenix` and friends and identity verification on account recovery
+for sr.ht and Miraheze.
