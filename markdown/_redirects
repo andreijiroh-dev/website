@@ -30,6 +30,7 @@
 /security.txt /.well-known/security.txt
 /ads.txt /.well-known/ads.txt
 /keybase.txt /.well-known/keybase.txt
+/keys/ssh-trustfile.txt /keys/ssh/trustfile.txt
 
 # anything else
 /socials /links

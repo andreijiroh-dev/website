@@ -1,5 +1,5 @@
 # enable CORS on well-known routes
-/.well-known/*:
+/.well-known/*
   Access-Control-Allow-Origin: *
   X-Robots-Tag: nosnippet
 

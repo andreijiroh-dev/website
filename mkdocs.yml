@@ -32,7 +32,7 @@ nav:
         - "Anything else":
           - contact/else.md
           - "Show all contact details": contact/details.md
-          - "PGP and SSH keys": keys.md
+          - "PGP and SSH keys": keys/index.md
       - Legal:
           - Security policy: security.md
           - Code of Conduct: https://policies.recaptime.dev/code-of-conduct
