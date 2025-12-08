@@ -1,15 +1,20 @@
-# internal redirects
-/resume /user-manual/resume
-/dni /user-manual/dni
+# contact links
 /contact/sponsors /contact/donations
+/contact/hire-me /contact/work
+/contact/open-source /contact/code-reviews
 
 # external redirects
 /blog https://blog.andreijiroh.dev
+/blog/* https://blog.andreijiroh.dev/:splat
 /pkgs https://pkgs.andreijiroh.dev
-/socials /links
+/pkgs/* https://pkgs.andreijiroh.dev/:splat
 
 # user manual
 /manual /user-manual
+/resume /user-manual/resume
+/dni /user-manual/dni
+/manual/* https://wiki.andreijiroh.dev/garden/user-manual/:splat
+/user-manual/* https://wiki.andreijiroh.dev/garden/user-manual/:splat
 
 # legal
 /privacy /legal/privacy
@@ -26,5 +31,5 @@
 /ads.txt /.well-known/ads.txt
 /keybase.txt /.well-known/keybase.txt
 
-# dynamic routing
-/manual/* /user-manual/:path
+# anything else
+/socials /links
