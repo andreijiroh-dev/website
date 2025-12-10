@@ -2,8 +2,8 @@
 # to Cloudflare Pages/Workers Static Sites. Secret management is handled via
 # Doppler (setting the DOPPLER_TOKEN secret on repo settings -> spindle is required).
 when:
-- event: ["push", "manual"]
-  branch: ["main"]
+  - event: ["push", "manual"]
+    branch: ["main"]
 
 engine: nixery
 
@@ -31,6 +31,7 @@ dependencies:
     - pngquant
     # needed to generate LD_LIBRARY_PATH for cairo and friends
     - findutils
+    - coreutils
 
 environment:
   CI: "true" # https://tangled.org/tangled.org/core/issues/310 (resolved via merging https://tangled.org/tangled.org/core/pulls/843)
@@ -39,9 +40,11 @@ environment:
   CI_PIPELINE_SOURCE: "push"
   # technically we have --ingore-pipfile in the install command below, but just to be safe
   PIPENV_IGNORE_PIPFILE: "true"
-  # 
 
 steps:
+  - name: env debugger
+    command: |
+      env | grep -i 'CI\|PIP\|NODE\|CAIRO\|PANGO\|GDK\|LIBRSVG\|FONTCONFIG\|FREETYPE\|ZLIB\|LD_LIBRARY_PATH\|NIX'
   - name: Install deps
     command: |
       pipenv install --deploy --ignore-pipfile

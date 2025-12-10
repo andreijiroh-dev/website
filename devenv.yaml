@@ -1,11 +1,16 @@
 inputs:
-  nixpkgs-python:
-    url: github:cachix/nixpkgs-python
+  mk-shell-bin:
+    url: github:rrbutani/nix-mk-shell-bin
+  nix2container:
+    url: github:nlewo/nix2container
     inputs:
       nixpkgs:
         follows: nixpkgs
   nixpkgs:
     url: https://flakehub.com/f/DeterminateSystems/nixpkgs-weekly/*.tar.gz
-
-# If you're using non-OSS software, you can set allowUnfree to true.
+  nixpkgs-python:
+    url: github:cachix/nixpkgs-python
+    inputs:
+      nixpkgs:
+        follows: nixpkgs
 allowUnfree: true

@@ -1,5 +1,7 @@
 { pkgs, lib, ... }: {
 
+  name = "site";
+
   packages = with pkgs; [
     gitFull
     pipenv
@@ -45,10 +47,10 @@
     };
   };
 
-  enterShell = ''
-    pipenv install
-    npm install
-  '';
+  #enterShell = ''
+  #  pipenv install
+  #  npm install
+  #'';
 
   tasks = {
     "site:build".exec = "pipenv run build";
