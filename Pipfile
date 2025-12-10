@@ -25,3 +25,10 @@ python_version = "3.14"
 dev = "mkdocs serve --watch overrides --watch-theme"
 build = "mkdocs build -d public --verbose"
 build-staging = "pipenv run build -f mkdocs.readthedocs.yml --verbose"
+# next under zensical
+next-dev = "zensical serve"
+next-build = "zensical build"
+# legacy builds under mkdocs
+legacy-build = "mkdocs build -d public --verbose"
+legacy-build-staging = "pipenv run build -f mkdocs.readthedocs.yml --verbose"
+legacy-dev = "mkdocs serve --watch overrides --watch-theme"
