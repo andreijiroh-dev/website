@@ -42,9 +42,6 @@ environment:
   PIPENV_IGNORE_PIPFILE: "true"
 
 steps:
-  - name: env debugger
-    command: |
-      env | grep -i 'CI\|PIP\|NODE\|CAIRO\|PANGO\|GDK\|LIBRSVG\|FONTCONFIG\|FREETYPE\|ZLIB\|LD_LIBRARY_PATH\|NIX'
   - name: Install deps
     command: |
       pipenv install --deploy --ignore-pipfile
