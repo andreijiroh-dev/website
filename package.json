@@ -7,6 +7,7 @@
     "dev": "wrangler dev --port 8000 --live-reload",
     "deploy": "npm run deploy:cf",
     "deploy:cf": "wrangler deploy",
+    "deploy:cf-next": "wrangler deploy --config wrangler-next.jsonc",
     "docker:ci": "DOCKER_BUILDKIT=1 docker build -t dock.mau.dev/andreijiroh-dev/website/build-ci:localdev ./docker"
   },
   "repository": {
