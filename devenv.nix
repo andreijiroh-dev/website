@@ -41,7 +41,7 @@
     };
     python = {
       enable = true;
-      version = "3.13.3";
+      package = pkgs.python314;
     };
   };
 

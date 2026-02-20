@@ -1,6 +1,10 @@
 # To learn more about how to use Nix to configure your environment
 # see: https://firebase.google.com/docs/studio/customize-workspace
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
+  imports = lib.optionals (builtins.pathExists ./dev.local.nix) [
+    ./dev.local.nix
+  ];
+
   # Which nixpkgs channel to use.
   channel = "unstable"; # or "unstable"
 
