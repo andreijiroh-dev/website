@@ -22,7 +22,7 @@
   "homepage": "https://andreijiroh.xyz",
   "devDependencies": {
     "npm-check-updates": "^19.0.0",
-    "wrangler": "^4.42.1"
+    "wrangler": "^4.59.1"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1.51.0"
