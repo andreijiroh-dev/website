@@ -1,27 +1,27 @@
 # Frequently Asked Questions
 
-_Last updated: 2023-12-17_
+_[Last updated]: 2025-12-11_
 
-[Last updated]: https://mau.dev/andreijiroh.dev/website/-/commits/main/markdown/faq.md
+[Last updated]: https://gitlab.com/andreijiroh-dev/website/-/commits/main/markdown/faq.md
 
 !!! warning "This page is a working draft"
-    I'll be compiling some more answers to frequently asked questions about me in the future. In the meanwhile, if your
-    answer is not here, [let me know](./contact/index.md) or search the internet.
+    I'll be compiling some more answers to frequently asked questions about me in the future. In the
+    meanwhile, if your answer is not here, [let me know](./contact/index.md) or
+    [find me on socials](./socials.md).
 
-## Disability and neurodivergence
-
-!!! note "Dive deeper"
-    I may expect to get questions about autism in general, so I compile these resources ahead of time.
-
-    * **Personal user manual**: [Neurodivergence and Disability](./user-manual/neurodivergence-and-disability.md)
-    * **Community resources**: [Public Neurodiversity Support Center (PNDSC)](https://coda.io/@mykola-bilokonsky/public-neurodiversity-support-center), plus resources at [Awesome Neurodiversity](https://linktr.ee/AwesomeND) list
-
-
-## Personal basics
+## The basics
 
 ### Pronouns?
 
 My pronouns are he/they, but I'm more than welcome to use gender-neutral pronouns instead.
+
+### Gender identity and experssion?
+
+I might be look straight, but in reality I currently hold the **questioning** label with
+a chance of triggering the gaydar according to my IDR Labs results. (If you are at Hack Club Slack,
+you may know it.)
+
+### Wait, are you autistic (all along)?
 
 ### Can I send you a physical letter or gift?
 
@@ -60,13 +60,19 @@ simplifies maintainers' life when relicensing, the problem here in open-core com
 that contributions are being "milked" by capitalistic forces (pardon the NSFW references)
 for profit at expense of the community.
 
+## Fandom related activities
+
+!!! info "There's a dedicated Notion page for that"
+    You do you: <https://multifandom-hellscapes.notion.site/faq>
+
 ## The Bloody Hell PH
 
 ### Do you plan to dig anyone's grave (past in this case) to get them cancelled to hell and back?
 
 Wish I could say no thanks on doing a lot of OSINT, but Twitter's (now X) been a hot mess lately and
-while writing every single internet shitfuckery (not just people getting cancelled) costs more spoons than in school while masking hard. Sure, I may cover some of them,
-but there's a lot of stuff happening across the interwebs and I can't do the homework alone.
+while writing every single internet shitfuckery (not just people getting cancelled) costs more spoons than
+in school while masking hard. Sure, I may cover some of them, but there's a lot of stuff happening across
+the interwebs and I can't do the homework alone hence the extended hiatus.
 
 ### So if you don't intend to dig anyone's grave, [then why are you digging?][toh-eclipse-lake-transcript]
 

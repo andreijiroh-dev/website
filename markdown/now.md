@@ -1,6 +1,8 @@
 ---
 title: Currently cooking now
 description: What ~ajhalili2006 been doing lately, sometimes behind the scenes.
+hide:
+- navigation
 ---
 
 Welcome to my [now page][nowpage-info] where I log what's been cooking behind the
@@ -9,27 +11,59 @@ scenes lately. ([sneak to my nownownow entry for this page][nownownow]) for some
 [nowpage-info]: https://nownownow.com/about
 [nownownow]: https://nownownow.com/p/Dxh0
 
-_**Last updated (PHT)**: 2025-10-27 from Marilao, Bulacan, PH_
+_**Last updated (PHT)**: 2026-01-09 from Marilao, Bulacan, PH_
 
 ## December 2025
 
-It's Wrapped season! Check back here for the long-form blog post soon.
+It's Wrapped season! Check back here for the long-form blog post soon (but you can
+[have a peek in this album][wrapped-szn-album] for spoilers).
+
+- TBD
+
+[wrapped-szn-album]: https://photos.app.goo.gl/9rbamnT8awa1s7VY8
+
+### Listening on loop
+
+Visit my Top Songs 2025 playlist [here for Spotify Wrapped][wrapped25-playlist]
+and [this one for YouTube Music][musicrecap25-playlist], but just this month
+here's what been vibing on loop for the month of December:
+
+- TBD
+
+[wrapped25-playlist]: https://open.spotify.com/playlist/37i9dQZEVXdgmI6fdWAKgC
+[musicrecap25-playlist]: https://music.youtube.com/playlist?list=LRYR_F8DYkL9_q9KC946wSO7J5tSOhrZmmcdL
+
+### What's Cooking
+
+Other than shipping the
 
 ## October-November 2025
 
 ### Listening on loop
 
 There's a always-updating playlist of what's on the daily rotation on both [Spotify][drs]
-and [YouTube][dryt] with weekly updates. Here's a rundown of what's on the loop in the last
-October and November.
+and [YouTube][dryt] with weekly updates. Here's a rundown of what's on the loop in the
+last October and November according to [Last.fm](https://www.last.fm/user/ajhalili2006/library?from=2025-10-01&to=2025-11-30).
 
-- TBD
+- F.O.O.L - Overdrive
+- caspro - Thunder Drive
+- fur:trash - PUPLIFE
+- fur:trash - unabomber arc
+- F.O.O.L - Damage
+- F.O.O.L - The Future
+- F.O.O.L - Drifter
+- caspro - Stranger Things (remix)
+- MUST DIE! - LIFE SUCK
+- caspro - Spooky Scary Skeletons (remix)
+
+[drs]: https://open.spotify.com/playlist/6gooX30vcKsj001tih3FoG
+[dryt]: https://music.youtube.com/playlist?list=PLGqidsjkmgSLHdj2aJFs8Bv7vmSzYWKC7
 
 ### School
 
 ### Hack Club Community / Alumni Society
 
-- Launched a community Tangled Knot server, running on Nest
+- Launched [a community Tangled Knot server][knots], running on Nest
 - Set up GitLab.com namespace for the Hack Club Community + Alumni Society projects
 under GitLab for Open-source Program
 - First subdomain user under the `hackclub.community` domain
@@ -55,13 +89,9 @@ Imagine you want to do a marathon of ABS-CBN News' [Halalan 2025] coverage after
 
 Here are the songs I listen on loop for the month of [February 2025](https://www.last.fm/user/ajhalili2006/library?from=2025-02-01&to=2025-02-28):
 
-* Royal Blood - Tell Me When It's Too Late ([last.fm scrobbling data][scrbl-tmwitl])
-* Koven - Industrial Strain ([last.dm scrobbling data][scrbl-is])
-* Nitro Fun - POWER ([last.fm scrobbling data][scrbl-pwr])
-
-[scrbl-tmwitl]: https://www.last.fm/user/ajahalili2006/library/music/Royal+Blood/_/Tell+Me+When+It’s+Too+Late
-[scrbl-is]: https:///www.last.fm/user/ajhalili2006/library/music
-[scrbl-pwr]: https://www.last.fm/user/ajhalili2006/library/music/Nitro+Fun/_/POWER
+* Royal Blood - Tell Me When It's Too Late
+* Koven - Industrial Strain
+* Nitro Fun - POWER
 
 ### Recap Time Squad and friends
 

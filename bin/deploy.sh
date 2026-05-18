@@ -10,20 +10,28 @@ CI_COMMIT_BRANCH=${CI_COMMIT_BRANCH:-$_git_current_branch}
 CI_DEFAULT_BRANCH="main"
 
 warn() {
-    echo "warning: $*"
+  echo "warning: $*"
 }
 
 error() {
-    echo "error: $*"
+  echo "error: $*"
 }
 
 info() {
   echo "info: $*"
 }
 
+deploy_script() {
+  if [[ $FF_USE_ZENSICAL_BUILD != "" ]]; then
+    npx wrangler deploy --config wrangler-next.jsonc
+  else
+    npx wrangler deploy
+  fi
+}
+
 if [[ $CI == "true" ]]; then
   info "Deploying to Cloudflare Workers"
   if [[ $CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "web" ]] && [[ $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH ]]; then
-    npx wrangler deploy
+
   fi
 fi

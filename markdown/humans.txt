@@ -5,7 +5,8 @@
 /* AUTHOR */
     Tilde:        ~ajhalili2006
     Standard:     Andrei Jiroh
-    Full legal:   Andrei Jiroh Eugenio Halili
+    Real name:    Andrei Jiroh Halili
+    Legal name:   Andrei Jiroh Eugenio Halili (for transparency)
     Pronouns:     he/they
     Contact:      https://andreijiroh.dev/contact
     Socials:      https://andreijiroh.dev/links
@@ -16,25 +17,34 @@
     Currently in: Marilao, Bulacan, PH (also my hometown)
 
 /* SITE */
-    Last update:  2025-11-03 (might not be in sync with commit logs)
-    Timezone:     PHT (GMT+8)
+    Last update:  2025-12-10 (might not be in sync with commit logs)
+    Timezone:     Philippine Standard Time (PHST / GMT+8)
     Version:      Rolling release / edge
     Language:     English
     Doctype:      HTML5
     IDE:          nano-editor.org, (insiders.)vscode.dev, zed.dev
-    Technologies: pip3:mkdocs, pip3:mkdocs-material, jsr:@hono/hono (for API routing),
-                  GitLab CI, Cloudflare Workers, Deno Deploy, Nixpkgs via devenv.sh,
-                  Read The Docs Community
+    Technologies: pip3:zensical (previously pip3:mkdocs + pip3:mkdocs-material),
+                  jsr:@hono/hono (for API routing), GitLab CI, Tangled Spindle, Cloudflare Workers,
+                  Deno Deploy, Nixpkgs via devenv.sh, Read The Docs Community
     Sources:      https://gitlab.com/andreijiroh-dev/website (canonical website source)
+                  https://tangled.org/andreijiroh.dev/site (tangled git mirror for containerized
+                  CI workflows on spindle via nixery.dev)
                   https://github.com/andreijiroh-dev/api-servers/tree/main/apps/website-api
                   (API backend, hosted on Deno Deploy)
 
 /* How is it deployed? */
-   I use GitLab CI over at GitLab SaaS (aka https://gitlab.com) thanks to GitLab for Open-source Program,
-   previously on Manimum GitLab (https://mau.dev) by ~tulir (https://mau.fi), and deployed on both Cloudflare
-   Workers (production) and RTD Community (as backup in case things go wrong and for previewing changes).
+    tl;dr: Using GitLab CI for site deployments on Cloudflare Workers, with RTD Community on
+           the side.
 
-   You can view the GitLab CI config used for deployments at https://gitlab.com/andreijiroh-dev/website/-/blob/main/.gitlab-ci.yml.
+    I use GitLab CI over at GitLab SaaS (aka https://gitlab.com) thanks to GitLab for Open-source
+    Program (https://about.gitlab.com/solutions/open-source/join) with some Nixery (nixery.dev)
+    involved on Tangled Spindle (https://blog.tangled.org/ci), previously on Manimum GitLab
+    (https://mau.dev) by ~tulir (https://mau.fi), and deployed on both Cloudflare Workers in
+    production and RTD Community (https://readthedocs.org).
+
+    You can view the GitLab CI config used for deployments at
+    https://gitlab.com/andreijiroh-dev/website/-/blob/main/.gitlab-ci.yml. For Tangled Spindle,
+   see https://tangled.org/andreijiroh.dev/site/blob/main/.tangled/workflows/site-deploy.yml.
    Deployments on RTD Community can be tracked separately at https://readthedocs.org/projects/ajhalili2006/.
 
 /* Legalese */
@@ -44,18 +54,19 @@
 
 /* SEE ALSO */
    // Open-source projects/orgs I lead/contribute to...
-   Recap Time Squad:    https://recaptime.dev
-   Community Lorebooks: https://lorebooks.wiki
-   Hack Club Alumni Society:
-                        https://alumni.hackclub.community
+   Recap Time Squad:          https://recaptime.dev
+   Community Lorebooks:       https://lorebooks.wiki
+   Hack Club Alumni Society:  https://alumni.hackclub.community
 
    // ..and tools I use
+   Zensical:            https://zensical.org
    Material for Mkdocs: https://squidfunk.github.io/mkdocs-material
    Nix/Nixpkgs/NixOS:   https://nixos.org / https://discourse.nixos.org
-   
+
    // Hacker / tech communities
    Hack Club:           https://hackclub.com
    Hack Club Nest:      https://hackclub.app
+   Active Members Chat: https://amcforum.wiki
    Prudue Hackers:      https://pruduehackers.xyz (some of its community are friends of Hack Club HQ / Alumni Society)
    MusicBrainz/ListenBrainz:
                         https://musicbrainz.org / https://listenbrainz.org (via https://metabrainz.org)

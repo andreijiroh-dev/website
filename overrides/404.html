@@ -1,33 +1,48 @@
-{#-
-  SPDX-License-Identifier: MIT
-  
-  This file is copied from https://github.com/squidfunk/mkdocs-material/blob/81c15d5eced1b34e3636acb27d4cf16dad5c26e7/material/404.html
-  alongside with customizations for live site development.
--#}
-{% extends "main.html" %}
-{% block content %}
-  <h1>404 - Not found</h1>
-    <p>
-      Either the URL has been moved without redirects, taken down for any reasons, or it doesn't exist (yet).
-    </p>
-    <p>
-      If this is not intended to happen, please report this as a bug in the webiste's issue tracker. Otherwise, you can press back
-      on your browser or go back to homepage.
-    </p>
-    <a class="md-button" href="https://gitlab.com/andreijiroh-dev/website/-/issues/new/?issue[title]=Broken link in <URL>">Report this broken link</a>
-    <a class="md-button" href="/">Go back home</a>
-  <h2>Troubleshooting tips</h2>
-    <p>Try checking the URL for any misspellings or improper use of dashes, underscores and periods.</p>
-    <p>
-      If you're working in this site (either locally or in a cloud development environment) and you hit an URL
-      configured for redirects (at Cloudflare Pages or similiar), try
-      <a href="https://pypi.org/project/mkdocs-redirects/">configuring redirects in the Mkdocs config</a>,
-      <a href="https://developers.cloudflare.com/workers/static-assets/redirects/">in the <code>_redirects</code> file for Cloudflare Workers</a>, and/or
-      <a href="https://docs.readthedocs.com/platform/stable/user-defined-redirects.html">in the Read the Docs Community project settings</a>.
-    </p>
-    <p>
-      Depending on the site version you're viewing, you may need to switch between <a href="https://andreijiroh.dev">production</a>
-      and <a href="https://staging.andreijiroh.dev">staging</a> versions of the website. (The tilde versions of the site may be
-      may lag behind Cloudflare Pages deploys.)
-    </p>
+{#- SPDX-License-Identifier: MIT This file is copied from
+https://github.com/squidfunk/mkdocs-material/blob/81c15d5eced1b34e3636acb27d4cf16dad5c26e7/material/404.html
+alongside with customizations for live site development. -#} {% extends
+"main.html" %} {% block content %}
+<h1>404 - Not found</h1>
+<p>
+  Either the URL has been moved without redirects, taken down for any reasons,
+  or it doesn't exist (yet).
+</p>
+<p>
+  If this is not intended to happen, please report this as a bug in the
+  webiste's issue tracker. Otherwise, you can press back on your browser or go
+  back to homepage.
+</p>
+<a
+  class="md-button"
+  href="https://gitlab.com/andreijiroh-dev/website/-/issues/new/?issue[title]=Broken link in <URL>"
+  >Report this broken link</a
+>
+<a class="md-button" href="/">Go back home</a>
+<h2>Troubleshooting tips</h2>
+<p>
+  Try checking the URL for any misspellings or improper use of dashes,
+  underscores and periods.
+</p>
+<p>
+  If you're working in this site (either locally or in a cloud development
+  environment) and you hit an URL configured for redirects (at Cloudflare Pages
+  or similiar), try
+  <a href="https://pypi.org/project/mkdocs-redirects/"
+    >configuring redirects in the Mkdocs config</a
+  >,
+  <a href="https://developers.cloudflare.com/workers/static-assets/redirects/"
+    >in the <code>_redirects</code> file for Cloudflare Workers</a
+  >, and/or
+  <a
+    href="https://docs.readthedocs.com/platform/stable/user-defined-redirects.html"
+    >in the Read the Docs Community project settings</a
+  >.
+</p>
+<p>
+  Depending on the site version you're viewing, you may need to switch between
+  <a href="https://andreijiroh.dev">production</a> and
+  <a href="https://staging.andreijiroh.dev">staging</a> versions of the website.
+  (The tilde versions of the site may be may lag behind Cloudflare Workers
+  deploys.)
+</p>
 {% endblock %}

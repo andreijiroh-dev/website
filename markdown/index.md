@@ -65,9 +65,9 @@ Free free to skip this if you are not keen on looking at stats.
 
 ### GitHub Activity stats
 
-[![github: activity stats](https://github-readme-stats.vercel.app/api?username=ajhalili2006&show_icons=true&theme=dark&title_color=ffffff&text_color=ffffff&locale=en)](https://github.com/anuraghazra/github-readme-stats)
+[![github: activity stats](https://gh-readme-stats-patches.vercel.app/api?username=ajhalili2006&show_icons=true&theme=dark&title_color=ffffff&text_color=ffffff&locale=en)](https://github.com/anuraghazra/github-readme-stats)
 
-## Hackatime / WakaTime
+### Hackatime / WakaTime
 
 [![Hackatime stats](https://github-readme-stats.hackclub.dev/api/wakatime?username=97&api_domain=hackatime.hackclub.com&&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8&theme=github_dark_dimmed)](https://hackatime.hackclub.com)
 

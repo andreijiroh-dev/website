@@ -24,15 +24,15 @@ nav:
       - nowpage: now.md
       - Socials: links.md
       - Contact:
-        - contact/index.md
-        - "Code reviews": contact/code-reviews.md
-        - "Donations and Sponsorships": contact/donations.md
-        - "Work with Andrei Jiroh": contact/work.md
-        - "Found a security issue?": contact/security.md
-        - "Anything else":
-          - contact/else.md
-          - "Show all contact details": contact/details.md
-          - "PGP and SSH keys": keys/index.md
+          - contact/index.md
+          - "Code reviews": contact/code-reviews.md
+          - "Donations and Sponsorships": contact/donations.md
+          - "Work with Andrei Jiroh": contact/work.md
+          - "Found a security issue?": contact/security.md
+          - "Anything else":
+              - contact/else.md
+              - "Contact details": contact/details.md
+              - "PGP and SSH keys": keys/index.md
       - Legal:
           - Security policy: security.md
           - Code of Conduct: https://policies.recaptime.dev/code-of-conduct
@@ -195,7 +195,7 @@ extra:
     # bluesky
     - icon: simple/bluesky
       link: https://bsky.app/profile/andreijiroh.dev
-      name: ~ajhalili2006 on bsky.app
+      name: ~ajhalili2006 on the atmosphere
 
     # nostr
     - icon: octicons/note-16
@@ -233,10 +233,10 @@ extra:
     #  link: https://linkedin.com/in/ajhalili2006
     #  name: ~ajhalili2006 on linkedin for employers
   analytics:
-     provider: custom
+    provider: custom
 #    provider: plausible
 #    property: andreijiroh.eu.org
 #    url: "https://analytics.projectsegfau.lt"
 
 extra_javascript:
-- assets/javascripts/feedback.js
+  - assets/javascripts/feedback.js
