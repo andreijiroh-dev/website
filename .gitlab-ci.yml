@@ -1,8 +1,6 @@
 # The Docker image that will be used to build your app
 image:
-  name: "$CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX/nixos/nix:latest"
-  entrypoint:
-    - /root/.nix-profile/bin/bash
+  name: "ghcr.io/cachix/devenv/devenv:latest"
 stages:
   - test
   - build
