@@ -1,0 +1,30 @@
+[project]
+name = "ajhalili2006-web"
+version = "0.1.0"
+description = "Tooling for building Andrei Jiroh's personal website, powered by Zensical (formerly Material for Mkdocs)"
+requires-python = ">=3.14"
+readme = "README.md"
+dependencies = [
+    "cairosvg>=2.9.0",
+    "mkdocs-autolinks-plugin>=0.7.1",
+    "mkdocs-git-authors-plugin>=0.10.0",
+    "mkdocs-git-committers-plugin-2>=2.5.0",
+    "mkdocs-git-revision-date-localized-plugin>=1.5.3",
+    "mkdocs-material>=9.7.6",
+    "mkdocs-minify-plugin>=0.8.0",
+    "mkdocs-redirects>=1.2.3",
+    "mkdocs-rss-plugin>=1.19.0",
+    "pillow>=12.2.0",
+    "zensical>=0.0.46",
+]
+
+[dependency-groups]
+dev = []
+
+[tool.uv]
+package = false
+default-groups = "all"
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
