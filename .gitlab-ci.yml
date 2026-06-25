@@ -30,6 +30,8 @@ variables:
 pages:
   stage: build
   script:
+    - git submodule update --init --recursive || true
+    - git config --global --add safe.directory "$CI_PROJECT_DIR"
     - devenv shell doppler run -- npm run deploy:cf
   artifacts:
     paths:
