@@ -6,13 +6,13 @@ SOURCE_DIR="${GIT_ROOT}/markdown"
 TARGET_DIR="${GIT_ROOT}/public"
 
 if [[ $SKIP_BUILD == "" ]]; then
-  if [[ $FF_LABS_ZENSICAL_BUILD != "" ]]; then
-    pipenv run next-build
-  else
-    pipenv run build
-  fi
+    if [[ $FF_LABS_ZENSICAL_BUILD != "" ]]; then
+        uv run zensical build
+    else
+        uv run mkdocs build -d "$TARGET_DIR"
+    fi
 else
-  echo "Skipping build step"
+    echo "Skipping build step"
 fi
 
 cp "$TARGET_DIR/assets/images/favicon.png" "$TARGET_DIR/favicon.ico" -v
